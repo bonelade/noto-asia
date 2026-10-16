@@ -1,0 +1,61 @@
+/* ==========================================================================
+   PT Noto Water Envirotech - Contact Page Stylesheet (css/contact.css)
+   ========================================================================== */
+
+/* Contact Info Card */
+.contact-info-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+  border-color: #12AABF;
+  box-shadow: 0 12px 25px -5px rgba(18, 170, 191, 0.15);
+  transform: translateY(-4px);
+}
+
+.contact-info-card i {
+  transition: transform 0.25s ease;
+}
+
+.contact-info-card:hover i {
+  transform: scale(1.1);
+}
+
+/* Form Container */
+.contact-form-container {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  padding: 2.25rem;
+  box-shadow: 0 20px 40px -15px rgba(9, 37, 52, 0.08);
+}
+
+.form-input-field {
+  width: 100%;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.form-input-field:focus {
+  outline: none;
+  border-color: #12AABF;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(18, 170, 191, 0.15);
+}
+
+/* Map Simulation Card */
+.map-embed-card {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  background: #f1f5f9;
+  position: relative;
+}

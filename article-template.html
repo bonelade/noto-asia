@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ================================================================= -->
+  <!-- [PANDUAN PENULIS]: GANTI JUDUL, DESKRIPSI & KATA KUNCI DI BAWAH INI -->
+  <!-- ================================================================= -->
+  <title>[JUDUL ARTIKEL DISINI - MAKS 65 KARAKTER] | PT Noto Water Envirotech</title>
+  <meta name="description" content="[DESKRIPSI ARTIKEL DISINI - Rangkuman menarik antara 130-155 karakter dengan kata kunci utama untuk Google Search Snippet].">
+  <meta name="keywords" content="filter air bandung, reverse osmosis, water treatment, [tambah kata kunci terkait]">
+  <link rel="canonical" href="https://noto.asia/[NAMA-FILE-INI.html]">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <!-- Open Graph / Media Sosial -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://noto.asia/[NAMA-FILE-INI.html]">
+  <meta property="og:title" content="[JUDUL ARTIKEL UNTUK SOSIAL MEDIA]">
+  <meta property="og:description" content="[RINGKASAN SINGKAT ARTIKEL UNTUK SOSIAL MEDIA]">
+  <meta property="og:image" content="https://noto.asia/assets/img/hero-water.jpg">
+  <meta property="article:published_time" content="2026-10-02T08:00:00+07:00">
+  <meta property="article:author" content="Tim Teknis PT Noto Water Envirotech">
+  <meta property="article:section" content="[KATEGORI: Regulasi / Edukasi Air / Industri & F&B / IPAL & Lingkungan]">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="[JUDUL ARTIKEL]">
+  <meta name="twitter:description" content="[DESKRIPSI ARTIKEL]">
+  <meta name="twitter:image" content="https://noto.asia/assets/img/hero-water.jpg">
+
+  <!-- Schema.org JSON-LD Structured Data: NewsArticle & Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NewsArticle",
+        "@id": "https://noto.asia/[NAMA-FILE-INI.html]#article",
+        "isPartOf": { "@id": "https://noto.asia/#website" },
+        "headline": "[JUDUL LENGKAP ARTIKEL UNTUK SCHEMA GOOGLE]",
+        "description": "[DESKRIPSI ARTIKEL UNTUK SCHEMA GOOGLE]",
+        "datePublished": "2026-10-02T08:00:00+07:00",
+        "dateModified": "2026-10-02T08:00:00+07:00",
+        "mainEntityOfPage": "https://noto.asia/[NAMA-FILE-INI.html]",
+        "author": {
+          "@type": "Organization",
+          "name": "Tim Ahli PT Noto Water Envirotech",
+          "url": "https://noto.asia"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "PT Noto Water Envirotech",
+          "url": "https://noto.asia",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://noto.asia/assets/logo/logo-noto.png"
+          }
+        },
+        "image": "https://noto.asia/assets/img/hero-water.jpg"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://noto.asia/index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Berita & Edukasi",
+            "item": "https://noto.asia/news.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "[JUDUL SINGKAT BREADCRUMB]",
+            "item": "https://noto.asia/[NAMA-FILE-INI.html]"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noto: {
+              navy: '#092534',
+              ocean: '#2B6F8B',
+              cyan: '#12AABF',
+              ice: '#DCEDFA',
+              slate: '#F8FAFC',
+              dark: '#051822'
+            }
+          },
+          fontFamily: {
+            sans: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            heading: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+
+  <!-- Reading Progress Bar -->
+  <div id="reading-progress"></div>
+
+  <!-- Header / Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-headless">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
+          <div class="hidden sm:block border-l border-white/20 pl-3">
+            <span class="block text-xs sm:text-sm font-bold tracking-wider text-white uppercase group-hover:text-noto-cyan transition-colors">Noto Water Envirotech</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-5 text-[13px] xl:text-sm font-medium text-slate-200">
+          <a href="index.html" class="nav-link hover:text-noto-cyan transition-colors">Beranda</a>
+          <a href="about.html" class="nav-link hover:text-noto-cyan transition-colors">Tentang Kami</a>
+          <a href="solutions.html" class="nav-link hover:text-noto-cyan transition-colors">Solusi & Layanan</a>
+          <a href="technology.html" class="nav-link hover:text-noto-cyan transition-colors">Teknologi</a>
+          <a href="diagnostic.html" class="nav-link flex items-center gap-1.5 text-noto-cyan hover:text-white transition-colors">
+            <span>Diagnosa Air</span>
+          </a>
+          <a href="portfolio.html" class="nav-link hover:text-noto-cyan transition-colors">Portofolio</a>
+          <a href="news.html" class="nav-link active">Berita</a>
+          <a href="careers.html" class="nav-link hover:text-noto-cyan transition-colors">Karir</a>
+          <a href="contact.html" class="nav-link hover:text-noto-cyan transition-colors">Kontak</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center space-x-3">
+          <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi%20analisis%20kualitas%20air." target="_blank" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-noto-cyan/30 hover:scale-105">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span>Konsultasi Gratis</span>
+          </a>
+        </div>
+
+        <div class="lg:hidden flex items-center">
+          <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none" aria-label="Buka Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-noto-navy border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
+      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Beranda</a>
+      <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Tentang Kami</a>
+      <a href="solutions.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Solusi & Layanan</a>
+      <a href="technology.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Teknologi</a>
+      <a href="diagnostic.html" class="block px-3 py-2 rounded-md text-base font-medium text-noto-cyan hover:bg-white/10">Diagnosa Kebutuhan Air (Kalkulator)</a>
+      <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Portofolio & Klien</a>
+      <a href="news.html" class="block px-3 py-2 rounded-md text-base font-bold text-noto-cyan bg-white/10">Berita & Wawasan SEO</a>
+      <a href="careers.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Karir & Rekrutmen</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Kontak Kami</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner pt-36 pb-16 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="flex items-center gap-2 mb-4 text-xs font-bold uppercase tracking-wider text-noto-cyan">
+        <a href="news.html" class="hover:underline flex items-center gap-1">
+          <i class="fas fa-arrow-left"></i>
+          <span>Kembali ke Indeks Berita</span>
+        </a>
+        <span>•</span>
+        <!-- Pilih salah satu: badge-cat-regulasi / badge-cat-edukasi / badge-cat-industri / badge-cat-ipal -->
+        <span class="badge-cat badge-cat-edukasi bg-white/10 text-cyan-200 border-cyan-400/30">[KATEGORI ARTIKEL]</span>
+      </div>
+
+      <!-- [GANTI]: Judul Utama H1 Halaman -->
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+        [TULIS JUDUL UTAMA ARTIKEL SECARA LENGKAP & MENARIK DI SINI]
+      </h1>
+
+      <div class="mt-6 flex flex-wrap items-center gap-4 text-xs text-slate-300">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-noto-cyan text-white font-bold flex items-center justify-center">NT</div>
+          <span>Oleh: <strong>Tim Teknis PT Noto Water Envirotech</strong></span>
+        </div>
+        <span>•</span>
+        <time datetime="2026-10-02"><i class="far fa-calendar-alt mr-1 text-noto-cyan"></i> [TANGGAL TERBIT]</time>
+        <span>•</span>
+        <span><i class="far fa-clock mr-1 text-noto-cyan"></i> [X] Menit Waktu Baca</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Article Body -->
+  <main class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Featured Image -->
+      <div class="rounded-3xl overflow-hidden shadow-lg border border-slate-200 mb-10 bg-slate-900 h-72 sm:h-96">
+        <img src="assets/img/hero-water.jpg" alt="[DESKRIPSI GAMBAR UTAMA]" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Quick Summary Box -->
+      <div class="p-6 rounded-2xl bg-sky-50/80 border border-noto-cyan/30 mb-10">
+        <div class="text-xs font-bold text-noto-navy uppercase tracking-wider mb-2 flex items-center gap-2">
+          <i class="fas fa-bolt text-noto-cyan"></i>
+          <span>Poin Inti Ringkasan (Executive Summary)</span>
+        </div>
+        <ul class="space-y-1.5 text-xs sm:text-sm text-slate-700">
+          <li>• [Poin penting 1 yang menjadi kesimpulan pembaca].</li>
+          <li>• [Poin penting 2 mengenai masalah atau regulasi].</li>
+          <li>• [Poin penting 3 mengenai solusi teknis NOTO Water].</li>
+        </ul>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200 mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-noto-navy block mb-3">
+          <i class="fas fa-list-ul text-noto-cyan mr-1.5"></i> Daftar Isi Artikel
+        </span>
+        <ol class="space-y-1.5 text-xs sm:text-sm text-slate-600">
+          <li><a href="#bagian-1" class="text-noto-ocean hover:text-noto-cyan hover:underline">1. [Subjudul Bagian Pertama]</a></li>
+          <li><a href="#bagian-2" class="text-noto-ocean hover:text-noto-cyan hover:underline">2. [Subjudul Bagian Kedua]</a></li>
+          <li><a href="#bagian-3" class="text-noto-ocean hover:text-noto-cyan hover:underline">3. [Subjudul Solusi Rekayasa NOTO]</a></li>
+          <li><a href="#kesimpulan" class="text-noto-ocean hover:text-noto-cyan hover:underline">4. Kesimpulan & Rekomendasi</a></li>
+        </ol>
+      </div>
+
+      <!-- Article Prose Content -->
+      <div class="article-prose">
+        
+        <h2 id="bagian-1">1. [Subjudul Bagian Pertama]</h2>
+        <p>
+          [Tulis paragraf pembuka artikel di sini. Jelaskan konteks masalah yang dialami target pembaca, baik pemilik rumah tangga, pengelola pabrik, maupun fasilitas perhotelan].
+        </p>
+
+        <blockquote>
+          “[Kutipan penting atau penekanan teknis yang menarik perhatian pembaca].”
+        </blockquote>
+
+        <h2 id="bagian-2">2. [Subjudul Bagian Kedua]</h2>
+        <p>
+          [Jelaskan penyebab teknis secara ilmiah namun mudah dipahami masyarakat umum]:
+        </p>
+        <ul>
+          <li><strong>[Parameter 1]:</strong> [Penjelasan dampak dan gejalanya].</li>
+          <li><strong>[Parameter 2]:</strong> [Penjelasan dampak dan gejalanya].</li>
+        </ul>
+
+        <h2 id="bagian-3">3. [Subjudul Solusi Rekayasa NOTO]</h2>
+        <p>
+          [Jelaskan bagaimana teknologi NOTO Water menyelesaikan masalah tersebut secara efektif, bergaransi, dan awet]:
+        </p>
+
+        <!-- Adobe Acrobat Pro - PDF Reviewer Frame -->
+        <div class="adobe-reader-frame">
+          
+          <!-- 1. Adobe Titlebar & Tab Strip -->
+          <div class="adobe-titlebar">
+            <div class="adobe-titlebar-left">
+              <div class="adobe-logo-badge">A</div>
+              <span class="adobe-app-title hidden sm:inline">Adobe Acrobat Pro &bull; Review & Comment</span>
+              <div class="adobe-tab-container">
+                <div class="adobe-tab">
+                  <i class="fas fa-file-pdf text-[#ED2224]"></i>
+                  <span class="font-mono">NOTO_DataSheet_Dokumen_Teknis.pdf</span>
+                  <span class="adobe-tab-tag">Read-Only</span>
+                </div>
+              </div>
+            </div>
+            <div class="adobe-titlebar-right">
+              <span class="hidden md:inline font-mono text-[10px] text-slate-400">Verifikasi Dokumen Resmi</span>
+              <div class="adobe-window-controls">
+                <span class="adobe-win-btn bg-amber-500/80"></span>
+                <span class="adobe-win-btn bg-emerald-500/80"></span>
+                <span class="adobe-win-btn bg-rose-500/80"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Adobe Acrobat Reviewer Command Ribbon / Toolbar -->
+          <div class="adobe-toolbar">
+            <!-- Group 1: Navigation & Sidebar Toggle -->
+            <div class="adobe-toolbar-group">
+              <button type="button" class="adobe-btn adobe-btn-sidebar active" title="Buka/Tutup Panel Reviewer & Thumbnail">
+                <i class="fas fa-columns text-slate-300"></i>
+                <span class="hidden sm:inline">Panel</span>
+              </button>
+              <div class="adobe-toolbar-divider"></div>
+              <button type="button" class="adobe-btn" title="Halaman Sebelumnya"><i class="fas fa-chevron-left text-[10px]"></i></button>
+              <input type="text" value="1" readonly class="adobe-page-input" title="Halaman Saat Ini">
+              <span class="text-[11px] text-slate-400 font-mono">/ 1</span>
+              <button type="button" class="adobe-btn" title="Halaman Selanjutnya"><i class="fas fa-chevron-right text-[10px]"></i></button>
+            </div>
+
+            <!-- Group 2: Tools (Select & Hand) -->
+            <div class="adobe-toolbar-group hidden sm:flex">
+              <div class="adobe-toolbar-divider"></div>
+              <button type="button" class="adobe-btn adobe-btn-select active" title="Select Tool (Kursor Pemilih)"><i class="fas fa-mouse-pointer"></i></button>
+              <button type="button" class="adobe-btn adobe-btn-hand" title="Hand Tool (Geser Kanvas)"><i class="fas fa-hand-paper"></i></button>
+            </div>
+
+            <!-- Group 3: Zoom Controls -->
+            <div class="adobe-toolbar-group">
+              <div class="adobe-toolbar-divider"></div>
+              <button type="button" class="adobe-btn adobe-btn-zoomout" title="Perkecil (-)"><i class="fas fa-search-minus"></i></button>
+              <span class="adobe-zoom-badge font-mono">100%</span>
+              <button type="button" class="adobe-btn adobe-btn-zoomin" title="Perbesar (+)"><i class="fas fa-search-plus"></i></button>
+              <button type="button" class="adobe-btn adobe-btn-fitwidth hidden md:inline-flex" title="Sesuaikan Lebar"><i class="fas fa-arrows-alt-h"></i></button>
+            </div>
+
+            <!-- Group 4: Reviewer Tools (Highlighter, Sticky Comment, Stempel) -->
+            <div class="adobe-toolbar-group">
+              <div class="adobe-toolbar-divider"></div>
+              <button type="button" class="adobe-btn adobe-btn-reviewer" title="Sorot Hasil Analisa Penting (Reviewer Highlighter)">
+                <i class="fas fa-highlighter text-yellow-400"></i>
+                <span class="hidden md:inline">Sorot Hasil</span>
+              </button>
+              <button type="button" class="adobe-btn adobe-btn-print" title="Cetak Dokumen / Simpan PDF">
+                <i class="fas fa-print"></i>
+                <span>Cetak</span>
+              </button>
+              <button type="button" class="adobe-btn adobe-btn-fullscreen" title="Layar Penuh (Presentation Mode)">
+                <i class="fas fa-expand"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 3. Adobe Main Workspace (Collapsible Sidebar + Adobe Canvas) -->
+          <div class="adobe-workspace">
+            
+            <!-- Collapsible Left Sidebar (Thumbnails & Reviewer Comments) -->
+            <div class="adobe-sidebar">
+              <div class="adobe-sidebar-header">
+                <span>Reviewer & Halaman</span>
+                <i class="fas fa-clipboard-check text-emerald-400"></i>
+              </div>
+              <div class="adobe-sidebar-content">
+                
+                <!-- Page Thumbnail -->
+                <div>
+                  <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">Thumbnail Dokumen</span>
+                  <div class="adobe-thumb-card">
+                    <div class="adobe-thumb-preview"></div>
+                    <div class="adobe-thumb-label">Hal 1 (A4)</div>
+                  </div>
+                </div>
+
+                <!-- Reviewer Card -->
+                <div>
+                  <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">Catatan Verifikasi Tim Ahli</span>
+                  <div class="adobe-reviewer-card">
+                    <div class="adobe-reviewer-author">
+                      <div class="adobe-avatar">NT</div>
+                      <div>
+                        <div class="adobe-reviewer-name">Tim Teknis PT Noto Water</div>
+                        <div class="adobe-reviewer-time">Dokumen Resmi &bull; PT Noto Water</div>
+                      </div>
+                    </div>
+                    <p class="adobe-reviewer-body">
+                      "Verifikasi data parameter mutu air dan konfigurasi spesifikasi rekayasa filtrasi."
+                    </p>
+                    <span class="adobe-reviewer-badge"><i class="fas fa-check-circle mr-1"></i>VERIFIED APPROVED</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Adobe Canvas Backdrop (#525659) -->
+            <div class="adobe-canvas">
+              
+              <!-- Paper Sheet (Print Document Simulation) -->
+              <div class="adobe-paper-sheet">
+                
+                <!-- Reviewer Sticky Note -->
+                <div class="adobe-sticky-note" title="Klik untuk menyorot baris data penting">
+                  <i class="fas fa-comment-dots text-amber-600"></i>
+                  <span class="adobe-sticky-text">Catatan Reviewer: Terverifikasi</span>
+                </div>
+
+                <!-- Letterhead -->
+                <div class="adobe-doc-header">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="adobe-doc-company">PT NOTO WATER ENVIROTECH &bull; DIVISI ANALISIS AIR</div>
+                      <div class="adobe-doc-sub">Jl Permai 33 no 34, Kab. Bandung &bull; Hotline: +62 821-2098-8201</div>
+                    </div>
+                    <div class="text-right hidden sm:block">
+                      <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-widest block">LAMPIRAN TEKNIS RESMI</span>
+                      <span class="text-xs font-bold text-noto-ocean">REF: NT-DS-2026/DOC</span>
+                    </div>
+                  </div>
+                  <h3 class="adobe-doc-title">[JUDUL TABEL / SPESIFIKASI DATA TEKNIS DISINI]</h3>
+                  
+                  <div class="adobe-doc-meta">
+                    <div><strong>Dasar Regulasi:</strong> Standar Baku Mutu / SNI</div>
+                    <div><strong>Metode Uji:</strong> Laboratorium Presisi NOTO</div>
+                    <div><strong>Lokasi Sampel:</strong> Fasilitas Klien / Lapangan</div>
+                    <div><strong>Status:</strong> Terverifikasi Tim Ahli</div>
+                  </div>
+                </div>
+
+                <!-- Scrollable Table Viewport with Sticky Header -->
+                <div class="adobe-table-viewport">
+                  <table class="adobe-table-rigid">
+                    <thead>
+                      <tr>
+                        <th class="w-[30%]">Parameter / Kriteria Uji</th>
+                        <th class="w-[23%] text-center">Baku Mutu Standar</th>
+                        <th class="w-[23%] text-center">Kondisi Air Baku</th>
+                        <th class="w-[24%] text-center">Hasil Setelah Sistem NOTO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="row-section">
+                        <td colspan="4">I. Kategori Parameter Utama</td>
+                      </tr>
+                      <tr>
+                        <td class="font-semibold text-slate-900">[Nama Parameter 1]<br><span class="text-[10px] text-slate-500 font-normal">Keterangan satuan (mg/L)</span></td>
+                        <td class="text-center font-medium text-slate-700">[Batas Standar]</td>
+                        <td class="text-center font-bold text-rose-700">[Kondisi Buruk]</td>
+                        <td class="text-center"><span class="font-bold text-emerald-700">[Nilai Bersih]</span> <span class="pdf-badge pdf-badge-pass ml-1.5">Sesuai</span></td>
+                      </tr>
+                      <tr>
+                        <td class="font-semibold text-slate-900">[Nama Parameter 2]<br><span class="text-[10px] text-slate-500 font-normal">Keterangan satuan (mg/L)</span></td>
+                        <td class="text-center font-medium text-slate-700">[Batas Standar]</td>
+                        <td class="text-center font-bold text-rose-700">[Kondisi Buruk]</td>
+                        <td class="text-center"><span class="font-bold text-emerald-700">[Nilai Bersih]</span> <span class="pdf-badge pdf-badge-pass ml-1.5">Sesuai</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <!-- Sheet Footer -->
+                <div class="adobe-doc-footer">
+                  <div class="space-y-1">
+                    <p>* Catatan: Data pengujian bersumber dari hasil uji laboratorium resmi dan simulasi lapangan PT Noto Water Envirotech.</p>
+                    <p class="text-[10px] text-slate-400">Hubungi tim konsultan kami untuk analisis sampel air spesifik di lokasi Anda.</p>
+                  </div>
+                  <div class="adobe-doc-stamp">
+                    <div class="text-[9px] text-slate-500">STANDAR NOTO</div>
+                    <div class="text-emerald-700 font-extrabold">VERIFIED DATA</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <h2 id="kesimpulan">4. Kesimpulan & Rekomendasi</h2>
+        <p>
+          [Rangkum kesimpulan akhir dan dorong pembaca untuk melakukan konsultasi atau uji sampel air bersama tim teknis PT Noto Water Envirotech].
+        </p>
+
+      </div>
+
+      <!-- Share & Tag Section -->
+      <div class="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Bagikan:</span>
+          <button type="button" class="btn-share p-2.5 rounded-xl bg-slate-100 hover:bg-sky-100 text-noto-navy transition-all" data-platform="whatsapp" title="Bagikan ke WhatsApp">
+            <i class="fab fa-whatsapp text-emerald-600"></i>
+          </button>
+          <button type="button" class="btn-share p-2.5 rounded-xl bg-slate-100 hover:bg-sky-100 text-noto-navy transition-all" data-platform="facebook" title="Bagikan ke Facebook">
+            <i class="fab fa-facebook text-blue-600"></i>
+          </button>
+          <button type="button" class="btn-share p-2.5 rounded-xl bg-slate-100 hover:bg-sky-100 text-noto-navy transition-all" data-platform="linkedin" title="Bagikan ke LinkedIn">
+            <i class="fab fa-linkedin text-sky-700"></i>
+          </button>
+          <button type="button" class="btn-share p-2.5 rounded-xl bg-slate-100 hover:bg-sky-100 text-noto-navy transition-all" data-platform="copy" title="Salin Tautan">
+            <i class="fas fa-link text-slate-600"></i>
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-2 text-[11px]">
+          <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full font-medium">#FilterAir</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full font-medium">#WaterTreatment</span>
+          <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full font-medium">#NotoWater</span>
+        </div>
+      </div>
+
+      <!-- CTA Box Bottom -->
+      <div class="mt-12 p-8 rounded-3xl bg-gradient-to-br from-noto-navy to-noto-ocean text-white relative overflow-hidden shadow-xl">
+        <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-noto-cyan/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 max-w-2xl">
+          <span class="text-xs uppercase font-bold tracking-widest text-noto-cyan block mb-2">Konsultasi Tanpa Biaya</span>
+          <h3 class="text-2xl font-extrabold text-white">Ingin Mengetahui Solusi Kualitas Air di Lokasi Anda?</h3>
+          <p class="text-xs sm:text-sm text-slate-200 mt-2 leading-relaxed">
+            Tim analis kami siap membantu menguji sampel air dan merancang sistem purifikasi yang presisi serta hemat energi untuk kebutuhan hunian maupun industri.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="https://wa.me/6282120988201?text=Halo%20Tim%20Teknis%20NOTO,%20saya%20ingin%20konsultasi%20seputar%20artikel%20air." target="_blank" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-6 py-3 rounded-xl font-bold text-xs shadow-lg transition-all hover:scale-105">
+              <i class="fab fa-whatsapp text-lg"></i>
+              <span>Hubungi via WhatsApp</span>
+            </a>
+            <a href="diagnostic.html" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-xl font-bold text-xs transition-all">
+              <i class="fas fa-calculator text-noto-cyan"></i>
+              <span>Kalkulator Diagnosa Air</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-noto-navy border-t border-white/10 text-slate-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <img src="assets/logo/logo-noto.png" alt="Logo PT Noto Water Envirotech" class="h-10 w-auto mb-4">
+          <p class="text-xs leading-relaxed text-slate-400">
+            Pelopor rekayasa water treatment, reverse osmosis, dan pengolahan limbah industri di Indonesia sejak 1995.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white mb-3 uppercase tracking-wider">Navigasi Utama</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-noto-cyan transition-colors">Beranda</a></li>
+            <li><a href="about.html" class="hover:text-noto-cyan transition-colors">Tentang Kami</a></li>
+            <li><a href="solutions.html" class="hover:text-noto-cyan transition-colors">Solusi & Layanan</a></li>
+            <li><a href="technology.html" class="hover:text-noto-cyan transition-colors">Teknologi</a></li>
+            <li><a href="diagnostic.html" class="hover:text-noto-cyan transition-colors">Diagnosa Air Online</a></li>
+            <li><a href="news.html" class="hover:text-noto-cyan transition-colors">Berita & Edukasi</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white mb-3 uppercase tracking-wider">Topik Terpopuler</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="article-standar-permenkes-2023.html" class="hover:text-noto-cyan transition-colors">Standar Permenkes 2/2023</a></li>
+            <li><a href="article-air-sumur-bor-bandung.html" class="hover:text-noto-cyan transition-colors">Air Sumur Kuning & Karat</a></li>
+            <li><a href="article-water-softener-kapur-boiler.html" class="hover:text-noto-cyan transition-colors">Solusi Air Sadah & Kapur</a></li>
+            <li><a href="solutions.html#industrial-ro" class="hover:text-noto-cyan transition-colors">Mesin RO Industri AMDK</a></li>
+            <li><a href="solutions.html#wwtp" class="hover:text-noto-cyan transition-colors">IPAL Limbah Cair Industri</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-bold text-white mb-3 uppercase tracking-wider">Hubungi Kantor Pusat</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-2">
+            Jl Permai 33 no 34, Kab Bandung, Jawa Barat 40218
+          </p>
+          <p class="text-xs text-slate-400 mb-4">
+            WhatsApp Hotline: <a href="https://wa.me/6282120988201" class="text-noto-cyan font-bold">+62 821-2098-8201</a>
+          </p>
+          <span class="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] text-noto-cyan">
+            Tersedia Layanan On-Site Seluruh Indonesia
+          </span>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/10 text-center text-xs text-slate-500">
+        &copy; 2026 PT Noto Water Envirotech. Seluruh Hak Cipta Dilindungi Undang-Undang.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+</body>
+</html>

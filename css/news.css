@@ -1,0 +1,145 @@
+/* ==========================================================================
+   PT Noto Water Envirotech - News & Articles Stylesheet (css/news.css)
+   Pusat Edukasi & Publikasi SEO Kualitas Air
+   ========================================================================== */
+
+/* Reading progress bar */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #12AABF 0%, #2B6F8B 100%);
+  z-index: 100;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* Category Filter Pills */
+.news-category-pill {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  font-weight: 600;
+}
+
+.news-category-pill.active {
+  background-color: var(--color-cyan) !important;
+  color: #ffffff !important;
+  border-color: var(--color-cyan) !important;
+  box-shadow: 0 4px 14px rgba(18, 170, 191, 0.35);
+}
+
+/* News Article Card Hover Effect */
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(9, 37, 52, 0.08), 0 10px 10px -5px rgba(9, 37, 52, 0.04);
+  border-color: rgba(18, 170, 191, 0.5);
+}
+
+.article-card:hover .article-title {
+  color: var(--color-cyan);
+}
+
+.article-card .article-img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.article-card:hover .article-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Badge Sector / Categories */
+.badge-cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.badge-cat-regulasi {
+  background-color: rgba(18, 170, 191, 0.12);
+  color: #0c7a8a;
+  border: 1px solid rgba(18, 170, 191, 0.25);
+}
+
+.badge-cat-edukasi {
+  background-color: rgba(43, 111, 139, 0.12);
+  color: #2B6F8B;
+  border: 1px solid rgba(43, 111, 139, 0.25);
+}
+
+.badge-cat-industri {
+  background-color: rgba(9, 37, 52, 0.08);
+  color: #092534;
+  border: 1px solid rgba(9, 37, 52, 0.18);
+}
+
+.badge-cat-ipal {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+/* Search bar glow */
+.search-input:focus {
+  border-color: var(--color-cyan);
+  box-shadow: 0 0 0 3px rgba(18, 170, 191, 0.15);
+}
+
+/* Prose formatting for article detail */
+.article-prose {
+  color: #334155;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.article-prose h2 {
+  color: #092534;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  border-left: 4px solid #12AABF;
+  padding-left: 0.75rem;
+}
+
+.article-prose h3 {
+  color: #092534;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-prose p {
+  margin-bottom: 1.25rem;
+}
+
+.article-prose ul, .article-prose ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.article-prose li {
+  margin-bottom: 0.5rem;
+}
+
+.article-prose blockquote {
+  border-left: 4px solid #2B6F8B;
+  background-color: #f8fafc;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  font-style: italic;
+  color: #1e293b;
+  margin: 1.5rem 0;
+}

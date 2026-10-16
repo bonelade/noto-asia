@@ -1,0 +1,219 @@
+/* PT Noto Water Envirotech - Custom CSS Enhancements */
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('../assets/fonts/AlteHaasGroteskRegular.woff2') format('woff2'),
+       url('../assets/fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('../assets/fonts/AlteHaasGroteskBold.woff2') format('woff2'),
+       url('../assets/fonts/AlteHaasGroteskBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-navy: #092534;
+  --color-ocean: #2B6F8B;
+  --color-cyan: #12AABF;
+  --color-cyan-glow: rgba(18, 170, 191, 0.4);
+  --color-ice: #DCEDFA;
+  --color-ice-soft: #f0f7fd;
+  --color-slate-bg: #F8FAFC;
+  --color-dark-surface: #0e3042;
+}
+
+body {
+  font-family: 'Alte Haas Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Alte Haas Grotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #2B6F8B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #12AABF;
+}
+
+/* Gradient Utilities */
+.bg-noto-gradient {
+  background: linear-gradient(135deg, #092534 0%, #153e54 50%, #2B6F8B 100%);
+}
+
+.bg-noto-hero {
+  background: radial-gradient(circle at 85% 20%, rgba(18, 170, 191, 0.25) 0%, transparent 50%),
+              radial-gradient(circle at 15% 80%, rgba(43, 111, 139, 0.3) 0%, transparent 60%),
+              linear-gradient(180deg, #092534 0%, #0d3448 60%, #092534 100%);
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(120deg, #ffffff 30%, #12AABF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-ocean {
+  background: linear-gradient(120deg, #092534 0%, #2B6F8B 60%, #12AABF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Water Glow & Shimmer */
+.glow-cyan {
+  box-shadow: 0 10px 30px -5px rgba(18, 170, 191, 0.4);
+}
+
+.glow-cyan-hover:hover {
+  box-shadow: 0 15px 35px -5px rgba(18, 170, 191, 0.55);
+}
+
+/* Before / After Comparison Slider Container */
+.ba-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  border-radius: 1rem;
+}
+
+.ba-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  z-index: 10;
+  border-right: 3px solid #12AABF;
+}
+
+.ba-before-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ba-after-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.ba-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 30;
+  margin: 0;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: #12AABF;
+  color: white;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 20;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.1s ease;
+}
+
+/* Pulse animation */
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.9;
+  }
+}
+
+.animate-soft-pulse {
+  animation: softPulse 3s infinite ease-in-out;
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 237, 250, 0.7);
+}
+
+.glass-card-dark {
+  background: rgba(14, 48, 66, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(18, 170, 191, 0.25);
+}
+
+/* Wizard card active state */
+.wizard-option.active {
+  border-color: #12AABF !important;
+  background-color: #f0f9ff !important;
+  box-shadow: 0 4px 14px rgba(18, 170, 191, 0.2) !important;
+}
+
+/* Custom Accordion Chevron */
+.faq-btn[aria-expanded="true"] .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Smooth Tab transitions */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.35s ease forwards;
+}
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

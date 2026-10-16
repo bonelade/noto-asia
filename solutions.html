@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solusi & Layanan | PT Noto Water Envirotech</title>
+  <meta name="description" content="Solusi lengkap pengolahan air bersih untuk rumah tangga, hotel, cafe, pabrik industri, WWTP/IPAL, dan layanan pemeliharaan berkala di Bandung.">
+  <link rel="canonical" href="https://noto.asia/solutions.html">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noto: {
+              navy: '#092534',
+              ocean: '#2B6F8B',
+              cyan: '#12AABF',
+              ice: '#DCEDFA',
+              slate: '#F8FAFC',
+              dark: '#051822'
+            }
+          },
+          fontFamily: {
+            sans: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            heading: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets: Common + Solutions -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/solutions.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-headless">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
+          <div class="hidden sm:block border-l border-white/20 pl-3">
+            <span class="block text-xs sm:text-sm font-bold tracking-wider text-white uppercase group-hover:text-noto-cyan transition-colors">Noto Water Envirotech</span>
+            </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-5 text-[13px] xl:text-sm font-medium text-slate-200">
+          <a href="index.html" class="nav-link hover:text-noto-cyan transition-colors">Beranda</a>
+          <a href="about.html" class="nav-link hover:text-noto-cyan transition-colors">Tentang Kami</a>
+          <a href="solutions.html" class="nav-link active">Solusi & Layanan</a>
+          <a href="technology.html" class="nav-link hover:text-noto-cyan transition-colors">Teknologi</a>
+          <a href="diagnostic.html" class="nav-link flex items-center gap-1.5 text-noto-cyan hover:text-white transition-colors">
+            <span>Diagnosa Air</span>
+          </a>
+          <a href="portfolio.html" class="nav-link hover:text-noto-cyan transition-colors">Portofolio</a>
+          <a href="news.html" class="nav-link hover:text-noto-cyan transition-colors">Berita</a>
+          <a href="careers.html" class="nav-link hover:text-noto-cyan transition-colors">Karir</a>
+          <a href="contact.html" class="nav-link hover:text-noto-cyan transition-colors">Kontak</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi%20solusi%20pengolahan%20air." target="_blank" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-noto-cyan/30 hover:scale-105">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span>Konsultasi Gratis</span>
+          </a>
+        </div>
+
+        <div class="lg:hidden flex items-center">
+          <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none" aria-label="Buka Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-noto-navy border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
+      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Beranda</a>
+      <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Tentang Kami</a>
+      <a href="solutions.html" class="block px-3 py-2 rounded-md text-base font-bold text-noto-cyan bg-white/10">Solusi & Layanan</a>
+      <a href="technology.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Teknologi</a>
+      <a href="diagnostic.html" class="block px-3 py-2 rounded-md text-base font-medium text-noto-cyan hover:bg-white/10">Diagnosa Kebutuhan Air (Kalkulator)</a>
+      <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Portofolio & Klien</a>
+      <a href="careers.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Karir & Rekrutmen</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Kontak Kami</a>
+      <div class="pt-3">
+        <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi." target="_blank" class="w-full flex items-center justify-center gap-2 bg-noto-cyan text-white py-3 rounded-lg font-semibold shadow-md">
+          <i class="fab fa-whatsapp text-xl"></i>
+          <span>Konsultasi via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner pt-36 pb-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="text-xs uppercase font-bold tracking-widest text-noto-cyan mb-3">
+        Rekayasa Sistem Air Terpadu
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
+        Katalog Solusi & Layanan NOTO
+      </h1>
+      <p class="text-slate-300 mt-4 text-base sm:text-lg max-w-2xl mx-auto italic font-heading">
+        “Dari Air Keruh & Bau Karat Menjadi Air Bersih Standar Laboratorium”
+      </p>
+    </div>
+  </section>
+
+  <!-- Filterable Solutions Section -->
+  <section class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filter Tabs Bar -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-14">
+        <button type="button" class="solution-tab-btn active bg-noto-cyan text-white shadow-md px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold border border-transparent" data-category="all">
+          Semua Solusi
+        </button>
+        <button type="button" class="solution-tab-btn bg-white text-slate-700 border border-slate-200 hover:border-noto-cyan px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold" data-category="residential">
+          Residensial & Villa
+        </button>
+        <button type="button" class="solution-tab-btn bg-white text-slate-700 border border-slate-200 hover:border-noto-cyan px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold" data-category="commercial">
+          Komersial & Hospitality
+        </button>
+        <button type="button" class="solution-tab-btn bg-white text-slate-700 border border-slate-200 hover:border-noto-cyan px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold" data-category="industrial">
+          Industri & Manufaktur
+        </button>
+        <button type="button" class="solution-tab-btn bg-white text-slate-700 border border-slate-200 hover:border-noto-cyan px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold" data-category="wwtp">
+          WWTP & IPAL Limbah
+        </button>
+        <button type="button" class="solution-tab-btn bg-white text-slate-700 border border-slate-200 hover:border-noto-cyan px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold" data-category="maintenance">
+          Maintenance & Media
+        </button>
+      </div>
+
+      <!-- Solutions Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Residensial FRP -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="residential">
+          <div class="h-44 bg-gradient-to-br from-noto-navy to-noto-ocean p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-residential self-start">Residensial Premium</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">FRP Multimedia Iron & Odor Filter</h3>
+              <p class="text-xs text-noto-ice">Debit 1.000 - 3.000 Liter / Jam</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Solusi tuntas untuk air sumur bor rumah di Bandung yang kuning, berbau karat besi/mangan, dan meninggalkan flek cokelat di wastafel.
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Tabung FRP 1054 / 1354 Anti-Karat & Tekanan Tinggi</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Media Manganese Greensand Plus & Karbon Iodin 1000</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> 3-Way Manual Valve / Digital Automatic Backwash</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20saya%20ingin%20konsultasi%20Filter%20FRP%20Rumah%20Tangga." target="_blank" class="w-full text-center py-3 bg-noto-cyan hover:bg-[#0ea5b8] text-white font-bold text-xs rounded-xl transition-colors shadow">
+              Konsultasi Residensial <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Drinking Water Under-Sink RO -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="residential commercial">
+          <div class="h-44 bg-gradient-to-br from-sky-800 to-noto-cyan p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-residential self-start">Air Siap Minum</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">Under-Sink Drinking RO 500 GPD</h3>
+              <p class="text-xs text-white/90">Kran Khusus Air Minum Higienis</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Sistem Reverse Osmosis langsung di dapur rumah atau pantry kantor. Bebas bakteri, kuman, logam berat, dan menurunkan TDS drastis < 15 ppm.
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Membran RO 0.0001 Mikron berdaya saring steril</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Post-Carbon penstabil rasa & mineralization filter</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Tangki penampung food-grade tekanan presisi</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20saya%20ingin%20info%20RO%20Air%20Minum%20Under-Sink." target="_blank" class="w-full text-center py-3 bg-noto-cyan hover:bg-[#0ea5b8] text-white font-bold text-xs rounded-xl transition-colors shadow">
+              Pesan Sistem RO Rumah <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Commercial Water Softener -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="commercial">
+          <div class="h-44 bg-gradient-to-br from-noto-ocean to-[#17485f] p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-commercial self-start">Hotel & F&B</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">Water Softener Ion Exchange</h3>
+              <p class="text-xs text-noto-ice">Debit 3.000 - 15.000 L/Jam</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Menghilangkan kapur keras (CaCO3) pemicu kerak di shower hotel, boiler, dan mesin kopi cafe. Menghemat deterjen pada usaha laundry komersial.
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Resin Kation Strong Acid berkapasitas tukar tinggi</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Brine Tank & Otomatisasi Hisap Garam Regenerasi</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Digital Automatic Control Valve Fleck / Runxin</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20saya%20butuh%20Water%20Softener%20Hotel/Cafe/Laundry." target="_blank" class="w-full text-center py-3 bg-noto-cyan hover:bg-[#0ea5b8] text-white font-bold text-xs rounded-xl transition-colors shadow">
+              Konsultasi Softener <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Industrial WTP & RO -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="industrial">
+          <div class="h-44 bg-gradient-to-br from-noto-navy to-[#051822] p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-industrial self-start">Pabrik Industri</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">Industrial WTP & RO Skid Mounted</h3>
+              <p class="text-xs text-noto-ice">Kapasitas &gt; 10 - 100 m³ / Jam</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Instalasi lengkap rekayasa pengolahan air baku sungai/sumur dalam debit besar untuk proses produksi industri kosmetik, farmasi, dan tekstil.
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Multi-Membran 8040 Toray / Filmtec dengan High Recovery</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Pompa Tekanan Tinggi Stainless Steel Grundfos / CNP</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Panel Kontrol PLC & Sensor Conductivity Real-time</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20saya%20ingin%20penawaran%20Industrial%20RO%20dan%20WTP." target="_blank" class="w-full text-center py-3 bg-noto-cyan hover:bg-[#0ea5b8] text-white font-bold text-xs rounded-xl transition-colors shadow">
+              Konsultasi Industri <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Demineralizer -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="industrial">
+          <div class="h-44 bg-gradient-to-br from-[#123142] to-noto-ocean p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-industrial self-start">Boiler & Laboratorium</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">Two-Bed / Mixed-Bed Demineralizer</h3>
+              <p class="text-xs text-noto-ice">Konduktivitas &lt; 1 µS/cm</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Menghasilkan air bebas mineral (*demineralized / deionized water*) untuk air umpan boiler uap, pendingin turbin, dan industri kimia baterai.
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Tabung Kation (H+) dan Anion (OH-) Resin berkualitas</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Sistem regenerasi asam HCl dan basa NaOH terintegrasi</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Instrumentasi pemantauan resistivitas air digital</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20saya%20butuh%20Sistem%20Demineralizer%20Pabrik." target="_blank" class="w-full text-center py-3 bg-noto-cyan hover:bg-[#0ea5b8] text-white font-bold text-xs rounded-xl transition-colors shadow">
+              Konsultasi Demineralizer <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: WWTP IPAL -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="wwtp">
+          <div class="h-44 bg-gradient-to-br from-noto-dark via-noto-navy to-noto-ocean p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-wwtp self-start">Lingkungan & Daur Ulang</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">WWTP / IPAL & Water Recycling</h3>
+              <p class="text-xs text-noto-ice">Baku Mutu PP No. 22/2021</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Pengolahan limbah cair industri dan komersial (hotel/RS) secara fisika, kimia, dan biologi agar aman dibuang atau digunakan kembali (*reuse water*).
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Unit DAF (Dissolved Air Flotation) & Clarifier Pemisah</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Anaerobic & Aerobic MBBR Biofilter System</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Pendampingan pengujian lab akreditasi KAN</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20kami%20butuh%20sistem%20IPAL%20dan%20WWTP." target="_blank" class="w-full text-center py-3 bg-noto-cyan hover:bg-[#0ea5b8] text-white font-bold text-xs rounded-xl transition-colors shadow shadow-noto-cyan/25">
+              Konsultasi IPAL / WWTP <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 7: Media Replacement & Maintenance -->
+        <div class="solution-card sol-card flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm" data-category="maintenance">
+          <div class="h-44 bg-gradient-to-br from-noto-navy via-noto-ocean to-noto-dark p-6 flex flex-col justify-between text-white">
+            <span class="badge-sector badge-maintenance self-start">Pemeliharaan Rutin</span>
+            <div>
+              <h3 class="text-xl font-bold font-heading">Penggantian Media Filter & Cuci Membran</h3>
+              <p class="text-xs text-noto-ice">Media Asli Bergaransi</p>
+            </div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Jasa bongkar muat dan peremajaan media filter yang sudah jenuh (pasir, karbon, resin) serta chemical cleaning (CIP) membran RO yang mampet.
+            </p>
+            <div class="space-y-2 text-xs text-slate-700">
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Karbon Aktif Iodin 800 - 1200 & Manganese Greensand</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Resin Kation / Anion Purolite / Dowex Asli</div>
+              <div class="metric-pill"><i class="fas fa-check text-noto-cyan"></i> Pengecekan menyeluruh valve, pressure gauge & pompa</div>
+            </div>
+            <a href="https://wa.me/6282120988201?text=Halo%20NOTO,%20saya%20butuh%20layanan%20penggantian%20media%20filter." target="_blank" class="w-full text-center py-3 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs rounded-xl transition-colors shadow">
+              Order Maintenance <i class="fab fa-whatsapp ml-1"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sector Comparison Matrix -->
+  <section class="py-20 bg-noto-slate relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-noto-navy">
+          Matriks Rekomendasi Sistem Berdasarkan Sektor
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-2">Panduan cepat memilih konfigurasi sistem pengolahan air yang ideal.</p>
+      </div>
+
+      <!-- Adobe Acrobat Pro - PDF Reviewer Frame -->
+      <div class="adobe-reader-frame">
+        
+        <!-- 1. Adobe Titlebar & Tab Strip -->
+        <div class="adobe-titlebar">
+          <div class="adobe-titlebar-left">
+            <div class="adobe-logo-badge">A</div>
+            <span class="adobe-app-title hidden sm:inline">Adobe Acrobat Pro &bull; Review & Comment</span>
+            <div class="adobe-tab-container">
+              <div class="adobe-tab">
+                <i class="fas fa-file-pdf text-[#ED2224]"></i>
+                <span class="font-mono">NOTO_Matriks_Solusi_Sektor_2026.pdf</span>
+                <span class="adobe-tab-tag">Read-Only</span>
+              </div>
+            </div>
+          </div>
+          <div class="adobe-titlebar-right">
+            <span class="hidden md:inline font-mono text-[10px] text-slate-400">Matriks Rekomendasi Sektor</span>
+            <div class="adobe-window-controls">
+              <span class="adobe-win-btn bg-amber-500/80"></span>
+              <span class="adobe-win-btn bg-emerald-500/80"></span>
+              <span class="adobe-win-btn bg-rose-500/80"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Adobe Acrobat Reviewer Command Ribbon / Toolbar -->
+        <div class="adobe-toolbar">
+          <!-- Group 1: Navigation & Sidebar Toggle -->
+          <div class="adobe-toolbar-group">
+            <button type="button" class="adobe-btn adobe-btn-sidebar active" title="Buka/Tutup Panel Reviewer & Thumbnail">
+              <i class="fas fa-columns text-slate-300"></i>
+              <span class="hidden sm:inline">Panel</span>
+            </button>
+            <div class="adobe-toolbar-divider"></div>
+            <button type="button" class="adobe-btn" title="Halaman Sebelumnya"><i class="fas fa-chevron-left text-[10px]"></i></button>
+            <input type="text" value="1" readonly class="adobe-page-input" title="Halaman Saat Ini">
+            <span class="text-[11px] text-slate-400 font-mono">/ 1</span>
+            <button type="button" class="adobe-btn" title="Halaman Selanjutnya"><i class="fas fa-chevron-right text-[10px]"></i></button>
+          </div>
+
+          <!-- Group 2: Tools (Select & Hand) -->
+          <div class="adobe-toolbar-group hidden sm:flex">
+            <div class="adobe-toolbar-divider"></div>
+            <button type="button" class="adobe-btn adobe-btn-select active" title="Select Tool (Kursor Pemilih)"><i class="fas fa-mouse-pointer"></i></button>
+            <button type="button" class="adobe-btn adobe-btn-hand" title="Hand Tool (Geser Kanvas)"><i class="fas fa-hand-paper"></i></button>
+          </div>
+
+          <!-- Group 3: Zoom Controls -->
+          <div class="adobe-toolbar-group">
+            <div class="adobe-toolbar-divider"></div>
+            <button type="button" class="adobe-btn adobe-btn-zoomout" title="Perkecil (-)"><i class="fas fa-search-minus"></i></button>
+            <span class="adobe-zoom-badge font-mono">100%</span>
+            <button type="button" class="adobe-btn adobe-btn-zoomin" title="Perbesar (+)"><i class="fas fa-search-plus"></i></button>
+            <button type="button" class="adobe-btn adobe-btn-fitwidth hidden md:inline-flex" title="Sesuaikan Lebar"><i class="fas fa-arrows-alt-h"></i></button>
+          </div>
+
+          <!-- Group 4: Reviewer Tools (Highlighter, Sticky Comment, Stempel) -->
+          <div class="adobe-toolbar-group">
+            <div class="adobe-toolbar-divider"></div>
+            <button type="button" class="adobe-btn adobe-btn-reviewer" title="Sorot Hasil Analisa Penting (Reviewer Highlighter)">
+              <i class="fas fa-highlighter text-yellow-400"></i>
+              <span class="hidden md:inline">Sorot Hasil</span>
+            </button>
+            <button type="button" class="adobe-btn adobe-btn-print" title="Cetak Dokumen / Simpan PDF">
+              <i class="fas fa-print"></i>
+              <span>Cetak</span>
+            </button>
+            <button type="button" class="adobe-btn adobe-btn-fullscreen" title="Layar Penuh (Presentation Mode)">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Adobe Main Workspace (Collapsible Sidebar + Adobe Canvas) -->
+        <div class="adobe-workspace">
+          
+          <!-- Collapsible Left Sidebar (Thumbnails & Reviewer Comments) -->
+          <div class="adobe-sidebar">
+            <div class="adobe-sidebar-header">
+              <span>Reviewer & Halaman</span>
+              <i class="fas fa-clipboard-check text-emerald-400"></i>
+            </div>
+            <div class="adobe-sidebar-content">
+              
+              <!-- Page Thumbnail -->
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">Thumbnail Dokumen</span>
+                <div class="adobe-thumb-card">
+                  <div class="adobe-thumb-preview"></div>
+                  <div class="adobe-thumb-label">Hal 1 (A4)</div>
+                </div>
+              </div>
+
+              <!-- Reviewer Card -->
+              <div>
+                <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1.5">Catatan Verifikasi Tim Ahli</span>
+                <div class="adobe-reviewer-card">
+                  <div class="adobe-reviewer-author">
+                    <div class="adobe-avatar">EN</div>
+                    <div>
+                      <div class="adobe-reviewer-name">Divisi Solusi & Rekayasa</div>
+                      <div class="adobe-reviewer-time">Versi 2026 &bull; Standar NOTO</div>
+                    </div>
+                  </div>
+                  <p class="adobe-reviewer-body">
+                    "Matriks panduan pemilihan sistem berdasarkan tantangan spesifik sektor residensial hingga industri manufaktur."
+                  </p>
+                  <span class="adobe-reviewer-badge"><i class="fas fa-check-circle mr-1"></i>OFFICIAL SPEC</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Adobe Canvas Backdrop (#525659) -->
+          <div class="adobe-canvas">
+            
+            <!-- Paper Sheet (Print Document Simulation) -->
+            <div class="adobe-paper-sheet">
+              
+              <!-- Reviewer Sticky Note -->
+              <div class="adobe-sticky-note" title="Klik untuk menyorot baris data penting">
+                <i class="fas fa-comment-dots text-amber-600"></i>
+                <span class="adobe-sticky-text">Catatan Reviewer: Terverifikasi</span>
+              </div>
+
+              <!-- Letterhead -->
+              <div class="adobe-doc-header">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="adobe-doc-company">PT NOTO WATER ENVIROTECH &bull; DIVISI KONSULTASI & PROYEK</div>
+                    <div class="adobe-doc-sub">Jl Permai 33 no 34, Kab. Bandung &bull; Hotline: +62 821-2098-8201</div>
+                  </div>
+                  <div class="text-right hidden sm:block">
+                    <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-widest block">LEMBAR REKOMENDASI TEKNIK</span>
+                    <span class="text-xs font-bold text-noto-ocean">REF: NT-MATRIKS-2026/01</span>
+                  </div>
+                </div>
+                <h3 class="adobe-doc-title">Matriks Pemilihan Konfigurasi Sistem Pengolahan Air Bersih & Limbah</h3>
+                
+                <div class="adobe-doc-meta">
+                  <div><strong>Cakupan Sektor:</strong> Hunian, Komersial, F&B, Pabrik</div>
+                  <div><strong>Pendekatan:</strong> Rekayasa Multi-Barrier Presisi</div>
+                  <div><strong>Kualitas Komponen:</strong> Food Grade & Standar Tekanan</div>
+                  <div><strong>Layanan:</strong> Survey & Uji Air Tersedia</div>
+                </div>
+              </div>
+
+              <!-- Scrollable Table Viewport with Sticky Header -->
+              <div class="adobe-table-viewport">
+                <table class="adobe-table-rigid">
+                  <thead>
+                    <tr>
+                      <th class="w-[22%]">Sektor Penggunaan</th>
+                      <th class="w-[24%]">Tantangan Air Baku</th>
+                      <th class="w-[26%]">Rekomendasi Sistem NOTO</th>
+                      <th class="w-[14%] text-center">Kapasitas Tipikal</th>
+                      <th class="w-[14%] text-center">Standar Mutu Target</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="row-section">
+                      <td colspan="5">I. Sektor Residensial & Hospitality</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-noto-navy">Residensial & Villa</td>
+                      <td class="text-slate-700">Besi, kuning berkarat, bau lumpur, kapur</td>
+                      <td class="text-slate-700 font-semibold">FRP Multimedia + Softener / Under-Sink RO</td>
+                      <td class="text-center font-mono">1 - 3 m³/hari</td>
+                      <td class="text-center"><span class="pdf-badge pdf-badge-pass">Air Bersih & Minum</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-noto-navy">Hotel & Resort</td>
+                      <td class="text-slate-700">Kapur tinggi, kerak water heater, linen kusam</td>
+                      <td class="text-slate-700 font-semibold">Water Softener Otomatis + UV Sanitizer</td>
+                      <td class="text-center font-mono">10 - 50 m³/hari</td>
+                      <td class="text-center"><span class="pdf-badge pdf-badge-pass">Permenkes Higiene</span></td>
+                    </tr>
+                    <tr class="row-section">
+                      <td colspan="5">II. Sektor Komersial F&B & Manufaktur Industri</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-noto-navy">Cafe & Restoran</td>
+                      <td class="text-slate-700">Klorin, bau kaporit, TDS tidak stabil</td>
+                      <td class="text-slate-700 font-semibold">Commercial RO Skid + Carbon Polisher</td>
+                      <td class="text-center font-mono">2 - 10 m³/hari</td>
+                      <td class="text-center"><span class="pdf-badge pdf-badge-pass">Seduhan Kopi & AMDK</span></td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-noto-navy">Pabrik & Boiler Industri</td>
+                      <td class="text-slate-700">Silika, TDS tinggi, garam mineral sadah</td>
+                      <td class="text-slate-700 font-semibold">Industrial RO + Mixed-Bed Demineralizer</td>
+                      <td class="text-center font-mono">&gt; 50 m³/hari</td>
+                      <td class="text-center"><span class="pdf-badge pdf-badge-pass">Conductivity &lt; 1 µS</span></td>
+                    </tr>
+                    <tr class="row-section">
+                      <td colspan="5">III. Pengolahan Air Limbah & Efluen</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-noto-navy">WWTP / IPAL Limbah Pabrik</td>
+                      <td class="text-slate-700">BOD/COD tinggi, minyak lemak, surfaktan, logam</td>
+                      <td class="text-slate-700 font-semibold">WWTP DAF + Biological Aerobik Biofilter</td>
+                      <td class="text-center font-mono">Sesuai Debit Efluen</td>
+                      <td class="text-center"><span class="pdf-badge pdf-badge-pass">Baku Mutu KLHK</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Sheet Footer -->
+              <div class="pdf-doc-footer">
+                <div class="space-y-1">
+                  <p>* Catatan: Kapasitas riil dan konfigurasi sistem disesuaikan dengan hasil uji laboratorium sampel air dan anggaran proyek.</p>
+                  <p class="text-[10px] text-slate-400">Garansi instalasi, suku cadang, dan maintenance berkala oleh PT Noto Water Envirotech Bandung.</p>
+                </div>
+                <div class="pdf-doc-stamp">
+                  <div class="text-[9px] text-slate-500">STANDAR TEKNIK</div>
+                  <div class="text-noto-ocean font-extrabold">RESMI NOTO ASIA</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-noto-dark border-t border-white/10 text-slate-400 text-xs py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-5 space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="NOTO Water Logo" class="h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
+          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            <strong>PT Noto Water Envirotech</strong> — Berdiri di Bandung sejak 1995. Spesialis rekayasa teknologi purifikasi air murni, Reverse Osmosis, Water Softener, dan Wastewater Treatment Plant.
+          </p>
+          <p class="text-noto-cyan italic text-xs font-heading">
+            “Every Drop Counts — drink pure, live well.”
+          </p>
+        </div>
+        <div class="md:col-span-3 space-y-2">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Navigasi Halaman</h4>
+          <ul class="space-y-1.5">
+            <li><a href="index.html" class="hover:text-noto-cyan transition-colors">Beranda</a></li>
+            <li><a href="about.html" class="hover:text-noto-cyan transition-colors">Tentang Perusahaan</a></li>
+            <li><a href="solutions.html" class="text-noto-cyan font-bold">Solusi & Layanan</a></li>
+            <li><a href="technology.html" class="hover:text-noto-cyan transition-colors">Teknologi Purifikasi</a></li>
+            <li><a href="diagnostic.html" class="hover:text-noto-cyan transition-colors">Diagnosa Air Interaktif</a></li>
+            <li><a href="portfolio.html" class="hover:text-noto-cyan transition-colors">Portofolio & Klien</a>
+      <a href="news.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Berita & Edukasi</a></li>
+            <li><a href="careers.html" class="hover:text-noto-cyan transition-colors">Karir & Rekrutmen</a></li>
+            <li><a href="contact.html" class="hover:text-noto-cyan transition-colors">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-4 space-y-2">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Kontak Bandung HQ</h4>
+          <p class="text-slate-300">Jl Permai 33 no 34, Kabupaten Bandung, Jawa Barat, Indonesia, 40218</p>
+          <p class="text-slate-300">WhatsApp: +62 821-2098-8201</p>
+          <p class="text-slate-300">Email: sales@noto.asia</p>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <p>© 2026 PT Noto Water Envirotech. Seluruh Hak Cipta Dilindungi.</p>
+        <p>Bandung, Jawa Barat, Indonesia • Est. 1995</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div id="wa-teaser" class="mb-3 max-w-xs bg-white text-slate-800 p-3.5 rounded-2xl shadow-2xl border border-slate-200 opacity-0 pointer-events-none translate-y-4 transition-all duration-300 flex items-start gap-3">
+      <i class="fas fa-headset text-xl text-noto-ocean flex-shrink-0 mt-0.5"></i>
+      <div class="text-xs">
+        <div class="flex items-center justify-between mb-0.5">
+          <span class="font-bold text-noto-navy">Konsultan Air NOTO</span>
+          <button type="button" id="wa-teaser-close" class="text-slate-400 hover:text-slate-600 text-xs ml-2" aria-label="Tutup"><i class="fas fa-times"></i></button>
+        </div>
+        <p class="text-slate-600 leading-snug">Butuh penawaran spesifik untuk properti atau pabrik Anda? Konsultasikan gratis!</p>
+      </div>
+    </div>
+    <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi." target="_blank" class="w-14 h-14 rounded-full bg-noto-cyan hover:bg-[#0ea5b8] text-white flex items-center justify-center text-2xl shadow-xl shadow-noto-cyan/35 hover:scale-110 transition-all duration-200 relative" aria-label="Hubungi via WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="absolute top-0 right-0 w-3.5 h-3.5 bg-noto-ocean rounded-full border-2 border-white"></span>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/solutions.js"></script>
+</body>
+</html>

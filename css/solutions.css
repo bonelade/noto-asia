@@ -1,0 +1,70 @@
+/* ==========================================================================
+   PT Noto Water Envirotech - Solutions Page Stylesheet (css/solutions.css)
+   ========================================================================== */
+
+/* Solution Category Tabs */
+.solution-tab-btn {
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.solution-tab-btn.active {
+  background-color: var(--color-cyan) !important;
+  color: #ffffff !important;
+  border-color: var(--color-cyan) !important;
+  box-shadow: 0 4px 14px rgba(18, 170, 191, 0.35);
+}
+
+/* Solution Detail Cards */
+.sol-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #e2e8f0;
+}
+
+.sol-card:hover {
+  transform: translateY(-6px);
+  border-color: #12AABF;
+  box-shadow: 0 20px 30px -10px rgba(9, 37, 52, 0.12);
+}
+
+/* Sector Badges */
+.badge-sector {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-residential {
+  color: #2B6F8B;
+}
+
+.badge-commercial {
+  color: #2B6F8B;
+}
+
+.badge-industrial {
+  color: #092534;
+}
+
+.badge-wwtp {
+  color: #12AABF;
+}
+
+.badge-maintenance {
+  color: #2B6F8B;
+}
+
+/* Key Features List */
+.metric-pill {
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #475569;
+}
+

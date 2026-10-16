@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | PT Noto Water Envirotech - Bandung Sejak 1995</title>
+  <meta name="description" content="Sejarah, filosofi brand, dan dedikasi PT Noto Water Envirotech (NOTO) sejak 1995 di Bandung dalam menghadirkan kemurnian air murni bagi lebih dari 800+ klien.">
+  <link rel="canonical" href="https://noto.asia/about.html">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noto: {
+              navy: '#092534',
+              ocean: '#2B6F8B',
+              cyan: '#12AABF',
+              ice: '#DCEDFA',
+              slate: '#F8FAFC',
+              dark: '#051822'
+            }
+          },
+          fontFamily: {
+            sans: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            heading: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            body: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets: Common + About -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+
+  <!-- Navigation -->
+  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-headless">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
+          <div class="hidden sm:block border-l border-white/20 pl-3">
+            <span class="block text-xs sm:text-sm font-bold tracking-wider text-white uppercase group-hover:text-noto-cyan transition-colors">Noto Water Envirotech</span>
+            </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-5 text-[13px] xl:text-sm font-medium text-slate-200">
+          <a href="index.html" class="nav-link hover:text-noto-cyan transition-colors">Beranda</a>
+          <a href="about.html" class="nav-link active">Tentang Kami</a>
+          <a href="solutions.html" class="nav-link hover:text-noto-cyan transition-colors">Solusi & Layanan</a>
+          <a href="technology.html" class="nav-link hover:text-noto-cyan transition-colors">Teknologi</a>
+          <a href="diagnostic.html" class="nav-link flex items-center gap-1.5 text-noto-cyan hover:text-white transition-colors">
+            <span>Diagnosa Air</span>
+          </a>
+          <a href="portfolio.html" class="nav-link hover:text-noto-cyan transition-colors">Portofolio</a>
+          <a href="news.html" class="nav-link hover:text-noto-cyan transition-colors">Berita</a>
+          <a href="careers.html" class="nav-link hover:text-noto-cyan transition-colors">Karir</a>
+          <a href="contact.html" class="nav-link hover:text-noto-cyan transition-colors">Kontak</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center space-x-4">
+          <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi%20mengenai%20profil%20dan%20solusi%20air." target="_blank" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-noto-cyan/30 hover:scale-105">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span>Konsultasi Gratis</span>
+          </a>
+        </div>
+
+        <div class="lg:hidden flex items-center">
+          <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none" aria-label="Buka Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-noto-navy border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
+      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Beranda</a>
+      <a href="about.html" class="block px-3 py-2 rounded-md text-base font-bold text-noto-cyan bg-white/10">Tentang Kami</a>
+      <a href="solutions.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Solusi & Layanan</a>
+      <a href="technology.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Teknologi</a>
+      <a href="diagnostic.html" class="block px-3 py-2 rounded-md text-base font-medium text-noto-cyan hover:bg-white/10">Diagnosa Kebutuhan Air (Kalkulator)</a>
+      <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Portofolio & Klien</a>
+      <a href="careers.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Karir & Rekrutmen</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Kontak Kami</a>
+      <div class="pt-3">
+        <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi." target="_blank" class="w-full flex items-center justify-center gap-2 bg-noto-cyan text-white py-3 rounded-lg font-semibold shadow-md">
+          <i class="fab fa-whatsapp text-xl"></i>
+          <span>Konsultasi via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-banner pt-36 pb-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div class="text-xs uppercase font-bold tracking-widest text-noto-cyan mb-3">
+        Warisan & Kredibilitas
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
+        Tentang PT Noto Water Envirotech
+      </h1>
+      <p class="text-slate-300 mt-4 text-base sm:text-lg max-w-2xl mx-auto italic font-heading">
+        “Where Purity Meets Innovation — Berdiri di Bandung Sejak 1995”
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Story Section -->
+  <section class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <div class="text-xs uppercase font-bold tracking-widest text-noto-ocean mb-3">
+            Sejarah Perjalanan
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-noto-navy leading-tight">
+            Lebih Dari Dua Dekade Menguasai Seni & Sains <span class="text-noto-cyan">Purifikasi Air.</span>
+          </h2>
+
+          <p class="text-slate-600 leading-relaxed">
+            Selamat datang di <strong>NOTO</strong>. Didirikan di jantung kota Bandung pada tahun 1995, kami telah mendedikasikan lebih dari dua dekade untuk menyempurnakan rekayasa pengolahan air bersih. Dengan lebih dari <strong>800 pelanggan terpuaskan</strong> hingga saat ini, reputasi kami dibangun kokoh di atas fondasi kepercayaan, efisiensi kerja, dan kualitas layanan tanpa kompromi.
+          </p>
+
+          <p class="text-slate-600 leading-relaxed">
+            Semua berawal dari visi sederhana: menghadirkan solusi air yang bersih, aman, dan berkelanjutan bagi masyarakat. Seiring berjalannya waktu, dedikasi kami membawa NOTO bertumbuh dari operasi lokal menjadi salah satu nama paling terpercaya di industri pengolahan air (*water filtration & wastewater treatment*).
+          </p>
+
+          <div class="p-5 rounded-2xl bg-noto-slate border-l-4 border-noto-cyan text-slate-700 italic text-sm">
+            “Kami percaya bahwa akses terhadap air murni bukanlah sekadar komoditas atau kebutuhan pokok semata, melainkan hak mutlak bagi setiap keluarga, industri, dan lingkungan. Misi kami adalah mewujudkan hal ini menjadi kenyataan nyata bagi setiap mitra kami.”
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 relative">
+          <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-noto-ice relative">
+            <img src="assets/img/water-feature.jpg" alt="Fasilitas dan Dedikasi NOTO Water" class="w-full h-[480px] object-cover">
+          </div>
+          <!-- Floating Brand Mark -->
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-noto-navy rounded-full p-5 shadow-2xl border-4 border-white flex items-center justify-center">
+            <img src="assets/logo/logo-noto.png" alt="NOTO Logo" class="w-full h-full object-contain">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3 Brand Pillars Section -->
+  <section class="py-24 bg-noto-slate relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-xs uppercase font-bold tracking-widest text-noto-ocean mb-3">
+          Makna & Filosofi Brand
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-noto-navy">
+          Tiga Pilar Utama di Balik Identitas NOTO
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Setiap lekukan dan warna dalam identitas kami mencerminkan prinsip integritas teknis yang kami pegang teguh.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="pillar-card bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <i class="fas fa-eye text-3xl text-noto-ocean mb-3 block"></i>
+            <h3 class="text-xl font-bold text-noto-navy">Clarity in Purpose</h3>
+            <p class="text-xs uppercase font-bold text-noto-cyan tracking-wider">Kejelasan & Transparansi</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Desain lugas huruf 'N' di dalam lingkaran oval menandakan komitmen kami terhadap transparansi. Kami memberikan solusi yang jelas dan terbukti secara teknis untuk kebutuhan pengolahan air yang rumit, memastikan klien memahami proses, sains, dan manfaat nyata dari teknologi kami.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <i class="fas fa-sync-alt text-3xl text-noto-cyan mb-3 block"></i>
+            <h3 class="text-xl font-bold text-noto-navy">Full Cycle & Integrity</h3>
+            <p class="text-xs uppercase font-bold text-noto-cyan tracking-wider">Siklus Utuh & Integritas</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Bentuk oval solid yang membingkai huruf 'N' adalah simbol integritas dan siklus layanan menyeluruh yang kami sediakan. Kami berkomitmen pada praktik etis di setiap aspek bisnis: mulai dari survei awal, desain rekayasa, pemasangan presisi, hingga layanan pemeliharaan berkala seumur hidup.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar-card bg-white p-8 rounded-2xl shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <i class="fas fa-water text-3xl text-noto-ocean mb-3 block"></i>
+            <h3 class="text-xl font-bold text-noto-navy">Fluid Innovation</h3>
+            <p class="text-xs uppercase font-bold text-noto-cyan tracking-wider">Inovasi Berkelanjutan</p>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Garis-garis dinamis di dalam huruf 'N' merepresentasikan aliran air dan ide-ide baru yang tak pernah berhenti. Kami senantiasa berada di garis terdepan teknologi purifikasi air, terus mencari metode inovatif untuk meningkatkan kualitas, higienitas, dan efisiensi energi.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Color Palette Meaning Section (from PDF Page 8) -->
+  <section class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-xs uppercase font-bold tracking-widest text-noto-ocean mb-3">
+          Simbolisme Visual
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-noto-navy">
+          Makna di Balik Palet Warna NOTO
+        </h2>
+        <p class="text-slate-600 mt-3 text-base sm:text-lg">
+          Setiap warna merefleksikan nilai emosional dan dedikasi profesional dalam melayani masyarakat.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-[#092534] mb-4 shadow"></div>
+          <span class="text-xs font-bold text-slate-400">#092534</span>
+          <h4 class="text-base font-bold text-noto-navy mt-1">Professionalism</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Warna biru gelap mencerminkan profesionalisme tinggi, wawasan mendalam, dan otoritas ilmiah dalam rekayasa sistem air.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-[#2B6F8B] mb-4 shadow"></div>
+          <span class="text-xs font-bold text-slate-400">#2B6F8B</span>
+          <h4 class="text-base font-bold text-noto-navy mt-1">Trust & Dependability</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Warna laut dan langit yang memberikan rasa stabil, andal, dan menenangkan. Menegaskan bahwa klien dapat selalu mengandalkan kami.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-[#12AABF] mb-4 shadow"></div>
+          <span class="text-xs font-bold text-slate-400">#12AABF</span>
+          <h4 class="text-base font-bold text-noto-navy mt-1">Innovation & Future</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Aksen biru cerah yang futuristis, menyimbolkan teknologi mutakhir (*cutting-edge technology*) dan keterbukaan terhadap kemajuan.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-12 h-12 rounded-xl bg-[#DCEDFA] mb-4 border border-slate-300 shadow"></div>
+          <span class="text-xs font-bold text-slate-400">#DCEDFA</span>
+          <h4 class="text-base font-bold text-noto-navy mt-1">Purity & Cleanliness</h4>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Warna es dan air jernih kristal, melambangkan kemurnian hakiki (*drink pure, live well*) yang kami hadirkan di setiap tetes air.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Historical Milestones Timeline -->
+  <section class="py-24 bg-noto-slate relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <div class="text-xs uppercase font-bold tracking-widest text-noto-ocean mb-3">
+          Tonggak Sejarah
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-noto-navy">
+          Perjalanan Lebih Dari 28 Tahun
+        </h2>
+      </div>
+
+      <div class="timeline-container">
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <span class="text-xs font-extrabold text-noto-cyan uppercase tracking-wider">1995</span>
+            <h3 class="text-lg font-bold text-noto-navy mt-1">Awal Berdiri di Bandung</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Memulai operasional di Bandung dengan fokus pada perakitan filter air sumur bor rumah tangga dan depot air minum isi ulang.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <span class="text-xs font-extrabold text-noto-cyan uppercase tracking-wider">2005</span>
+            <h3 class="text-lg font-bold text-noto-navy mt-1">Ekspansi ke Sektor Industri & Komersial</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Mengembangkan kapasitas fabrikasi Water Treatment Plant (WTP) untuk pabrik tekstil, hotel berbintang, dan fasilitas rumah sakit di Jawa Barat.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <span class="text-xs font-extrabold text-noto-cyan uppercase tracking-wider">2015</span>
+            <h3 class="text-lg font-bold text-noto-navy mt-1">Adopsi Membran RO & Sistem IPAL Modern</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Mengintegrasikan membran Reverse Osmosis (RO) berskala industri dan sistem pengolahan limbah cair (WWTP) sesuai regulasi baku mutu lingkungan nasional.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+            <span class="text-xs font-extrabold text-noto-cyan uppercase tracking-wider">2026</span>
+            <h3 class="text-lg font-bold text-noto-navy mt-1">800+ Klien & Solusi Berkelanjutan</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              Terus bertransformasi dengan otomasi PLC, instrumentasi digital, dan komitmen layanan purna jual menyeluruh bagi ratusan mitra di seluruh Indonesia.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 bg-noto-navy text-white text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <h2 class="text-3xl font-extrabold">Siap Mempercayakan Kualitas Air Anda kepada Ahlinya?</h2>
+      <p class="text-slate-300 text-sm max-w-xl mx-auto">Konsultasikan kendala air Anda bersama insinyur dan teknisi berpengalaman kami di Bandung.</p>
+      <div>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-8 py-3.5 rounded-xl font-bold text-sm shadow-lg transition-transform hover:scale-105">
+          <i class="fas fa-envelope"></i>
+          <span>Hubungi Tim NOTO</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-noto-dark border-t border-white/10 text-slate-400 text-xs py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+        <div class="md:col-span-5 space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="NOTO Water Logo" class="h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
+          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            <strong>PT Noto Water Envirotech</strong> — Berdiri di Bandung sejak 1995. Spesialis rekayasa teknologi purifikasi air murni, Reverse Osmosis, Water Softener, dan Wastewater Treatment Plant.
+          </p>
+          <p class="text-noto-cyan italic text-xs font-heading">
+            “Every Drop Counts — drink pure, live well.”
+          </p>
+        </div>
+        <div class="md:col-span-3 space-y-2">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Navigasi Halaman</h4>
+          <ul class="space-y-1.5">
+            <li><a href="index.html" class="hover:text-noto-cyan transition-colors">Beranda</a></li>
+            <li><a href="about.html" class="text-noto-cyan font-bold">Tentang Perusahaan</a></li>
+            <li><a href="solutions.html" class="hover:text-noto-cyan transition-colors">Solusi & Layanan</a></li>
+            <li><a href="technology.html" class="hover:text-noto-cyan transition-colors">Teknologi Purifikasi</a></li>
+            <li><a href="diagnostic.html" class="hover:text-noto-cyan transition-colors">Diagnosa Air Interaktif</a></li>
+            <li><a href="portfolio.html" class="hover:text-noto-cyan transition-colors">Portofolio & Klien</a>
+      <a href="news.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Berita & Edukasi</a></li>
+            <li><a href="careers.html" class="hover:text-noto-cyan transition-colors">Karir & Rekrutmen</a></li>
+            <li><a href="contact.html" class="hover:text-noto-cyan transition-colors">Kontak & Lokasi</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-4 space-y-2">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Kontak Bandung HQ</h4>
+          <p class="text-slate-300">Jl Permai 33 no 34, Kabupaten Bandung, Jawa Barat, Indonesia, 40218</p>
+          <p class="text-slate-300">WhatsApp: +62 821-2098-8201</p>
+          <p class="text-slate-300">Email: sales@noto.asia</p>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <p>© 2026 PT Noto Water Envirotech. Seluruh Hak Cipta Dilindungi.</p>
+        <p>Bandung, Jawa Barat, Indonesia • Est. 1995</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div id="wa-teaser" class="mb-3 max-w-xs bg-white text-slate-800 p-3.5 rounded-2xl shadow-2xl border border-slate-200 opacity-0 pointer-events-none translate-y-4 transition-all duration-300 flex items-start gap-3">
+      <i class="fas fa-headset text-xl text-noto-ocean flex-shrink-0 mt-0.5"></i>
+      <div class="text-xs">
+        <div class="flex items-center justify-between mb-0.5">
+          <span class="font-bold text-noto-navy">Konsultan Air NOTO</span>
+          <button type="button" id="wa-teaser-close" class="text-slate-400 hover:text-slate-600 text-xs ml-2" aria-label="Tutup"><i class="fas fa-times"></i></button>
+        </div>
+        <p class="text-slate-600 leading-snug">Ada kendala air keruh, bau, atau berkerak? Konsultasikan gratis sekarang!</p>
+      </div>
+    </div>
+    <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi." target="_blank" class="w-14 h-14 rounded-full bg-noto-cyan hover:bg-[#0ea5b8] text-white flex items-center justify-center text-2xl shadow-xl shadow-noto-cyan/35 hover:scale-110 transition-all duration-200 relative" aria-label="Hubungi via WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="absolute top-0 right-0 w-3.5 h-3.5 bg-noto-ocean rounded-full border-2 border-white"></span>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

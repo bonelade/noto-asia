@@ -1,0 +1,116 @@
+/* ==========================================================================
+   PT Noto Water Envirotech - Careers Page Stylesheet (css/careers.css)
+   Role: Business Development (Strategic Marketing & Hunting-to-Closing)
+   ========================================================================== */
+
+/* Careers Hero */
+.careers-hero {
+  position: relative;
+  overflow: hidden;
+  background-image: 
+    radial-gradient(circle at 80% 20%, rgba(18, 170, 191, 0.35) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(43, 111, 139, 0.4) 0%, transparent 65%),
+    linear-gradient(180deg, rgba(9, 37, 52, 0.92) 0%, rgba(12, 51, 72, 0.82) 50%, rgba(9, 37, 52, 0.98) 100%),
+    url('../assets/img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Badge Typography */
+.badge-urgent {
+  color: #12AABF;
+}
+
+.badge-bd-featured {
+  color: #12AABF;
+}
+
+/* Core Competency Cards */
+.pillar-competency {
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #e2e8f0;
+}
+
+.pillar-competency:hover {
+  transform: translateY(-6px);
+  border-color: #12AABF;
+  box-shadow: 0 15px 30px -10px rgba(18, 170, 191, 0.18);
+}
+
+/* Timeline Process Node */
+.step-node {
+  position: relative;
+}
+
+.step-node::after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #12AABF, #cbd5e1);
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .step-node::after {
+    display: none;
+  }
+}
+
+/* Interactive Accordion for Requirements */
+.req-item {
+  transition: all 0.25s ease-in-out;
+}
+
+.req-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.req-header:hover {
+  color: #12AABF;
+}
+
+/* Application Form Container */
+.application-box {
+  box-shadow: 0 25px 50px -12px rgba(9, 37, 52, 0.15);
+  border: 1px solid rgba(220, 237, 250, 0.8);
+}
+
+.custom-file-dropzone {
+  border: 2px dashed #94a3b8;
+  transition: all 0.3s ease;
+  background-color: #f8fafc;
+}
+
+.custom-file-dropzone:hover,
+.custom-file-dropzone.dragover {
+  border-color: #12AABF;
+  background-color: rgba(18, 170, 191, 0.05);
+}
+
+/* Success Alert Animation */
+@keyframes fadeInUpScale {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-success-popup {
+  animation: fadeInUpScale 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Sticky Quick Action Box */
+.sticky-apply-sidebar {
+  position: sticky;
+  top: 100px;
+}

@@ -1,0 +1,14 @@
+# Backup & temp files
+*.backup
+*.bak
+capture_view.mjs
+
+# Large documents (keep raw designs local)
+*.pdf
+
+# OS generated
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+__pycache__/
