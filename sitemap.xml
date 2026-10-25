@@ -1,100 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Halaman Utama (Homepage) -->
+  <!-- Main Corporate Homepage -->
   <url>
     <loc>https://noto.asia/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://noto.asia/index.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Halaman Berita & Wawasan SEO (Update Sering) -->
-  <url>
-    <loc>https://noto.asia/news.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Halaman Solusi & Produk -->
-  <url>
-    <loc>https://noto.asia/solutions.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- Halaman Teknologi & Rekayasa -->
+  <!-- Pillar 1: R&D & Engineering Division -->
   <url>
     <loc>https://noto.asia/technology.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Interactive Diagnostic Calculator Tool -->
+  <!-- Pillar 2: Skid Manufacturing & Systems -->
   <url>
-    <loc>https://noto.asia/diagnostic.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <loc>https://noto.asia/solutions.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Halaman Portofolio Klien & Proyek -->
+  <!-- Pillar 3: Export-Import & Global Trade -->
+  <url>
+    <loc>https://noto.asia/export-import.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Global Projects & Case Studies -->
   <url>
     <loc>https://noto.asia/portfolio.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Halaman Tentang Kami -->
+  <!-- System Sizing Calculator -->
+  <url>
+    <loc>https://noto.asia/diagnostic.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Corporate Profile -->
   <url>
     <loc>https://noto.asia/about.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Halaman Karir -->
+  <!-- Engineering Insights & News -->
+  <url>
+    <loc>https://noto.asia/news.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Careers -->
   <url>
     <loc>https://noto.asia/careers.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- Halaman Kontak -->
+  <!-- Global Contact & RFQ -->
   <url>
     <loc>https://noto.asia/contact.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Artikel SEO Terbitan -->
-  <url>
-    <loc>https://noto.asia/article-standar-permenkes-2023.html</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://noto.asia/article-air-sumur-bor-bandung.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://noto.asia/article-water-softener-kapur-boiler.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 </urlset>

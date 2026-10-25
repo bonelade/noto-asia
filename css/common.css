@@ -106,25 +106,25 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border-color: var(--color-ice);
 }
 
-/* Text Gradients */
+/* Clean Executive Typography (Non-Neon) */
 .text-gradient-cyan {
-  background: linear-gradient(120deg, #ffffff 30%, #12AABF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #DCEDFA;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 .text-gradient-ocean {
-  background: linear-gradient(120deg, #092534 0%, #2B6F8B 60%, #12AABF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #2B6F8B;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
-/* Glow effects */
+/* Non-Neon Clean Shadows */
 .glow-cyan {
-  box-shadow: 0 10px 25px -5px var(--color-cyan-glow);
+  box-shadow: 0 4px 12px -2px rgba(9, 37, 52, 0.15);
 }
 .glow-cyan-hover:hover {
-  box-shadow: 0 14px 30px -5px rgba(18, 170, 191, 0.5);
+  box-shadow: 0 8px 16px -2px rgba(9, 37, 52, 0.2);
 }
 
 /* Navigation active indicator */

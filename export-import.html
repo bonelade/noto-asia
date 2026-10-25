@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export-Import & Global Supply Chain | PT Noto Water Envirotech</title>
+  <meta name="description" content="Global trade, maritime freight logistics, and authorized tier-1 component distribution for industrial water and wastewater systems. Direct export via Port of Tanjung Priok.">
+  <link rel="canonical" href="https://noto.asia/export-import.html">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noto: {
+              navy: '#092534',
+              ocean: '#2B6F8B',
+              cyan: '#12AABF',
+              ice: '#DCEDFA',
+              slate: '#F8FAFC',
+              dark: '#051822',
+              border: '#E2E8F0'
+            }
+          },
+          fontFamily: {
+            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Page Stylesheets -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/waterplus-theme.css">
+
+  <style>
+    /* Clean Industrial Architectural Design (Non-Neon) */
+    .pillar-card {
+      transition: all 0.25s ease;
+    }
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
+    }
+    .rfq-modal-enter {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    .rfq-modal-leave {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 "></span>
+          Export-Import Division
+        </span>
+        <span class="text-slate-300 font-medium">Incoterms 2020: FOB Tanjung Priok (IDTPP), CIF, CFR, DDP Global Shipping</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-400">
+        <a href="mailto:export@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
+          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
+          <span>export@noto.asia</span>
+        </a>
+        <span class="hidden sm:inline text-slate-700">•</span>
+        <a href="tel:+622220568900" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5 font-mono">
+          <i class="fas fa-phone-alt text-noto-cyan text-xs"></i>
+          <span>+62 22 2056 8900</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
+        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
+          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
+            PT Noto Water Envirotech
+          </span>
+          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
+            R&D • Manufacturing • Global Trade
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
+        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
+        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Lab</a>
+        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Manufacturing</a>
+        <a href="export-import.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Case Studies</a>
+        <a href="diagnostic.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Sizing Tool</a>
+        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
+          <i class="fas fa-file-invoice"></i>
+          <span>Request B2B RFQ</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="relative bg-noto-navy text-white py-20 ">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-widest border border-emerald-500/30">
+        Pillar 03 • Global Logistics & Sourcing
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+        Turnkey Maritime Export & <br>
+        <span class="text-noto-ice font-extrabold">Global Supply Chain Distribution</span>
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+        PT Noto Water Envirotech delivers Indonesian engineering excellence across international borders. From full-container ocean freight to authorized stocking of Tier-1 membranes, we provide complete supply chain certainty.
+      </p>
+    </div>
+  </section>
+
+  <!-- Logistics Infrastructure Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl">
+            <i class="fas fa-anchor"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-emerald-600 uppercase">MARITIME PORT HUB</span>
+          <h2 class="text-2xl font-bold text-noto-navy">Port of Tanjung Priok, Jakarta (IDTPP)</h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Located less than 150 km from our West Java fabrication bays via direct tollways, the Port of Tanjung Priok serves as our international maritime springboard. We coordinate Full Container Load (FCL) and Flat Rack shipments for heavy skids with international shipping lines including Maersk, MSC, Evergreen, and ONE.
+          </p>
+          <div class="space-y-2 text-xs text-slate-700">
+            <div class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Direct feeder loops to Singapore (SGSIN) & Port Klang (MYPKG) in 24-48 hours</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Dedicated breakbulk & heavy-lift crane handling for oversize clarifiers</div>
+            <div class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> On-site bonded warehouse facilities for staged project dispatches</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-noto-slate rounded-2xl p-8 border border-slate-200 space-y-4">
+          <h3 class="font-bold text-sm text-noto-navy uppercase tracking-wider">Export Compliance Dossier</h3>
+          <div class="space-y-3 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">ISPM-15 Certified Timber Packaging</strong>
+              <span class="text-slate-500">Heat-treated seaworthy timber crating with vapor-barrier foil and desiccant packs.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Certificate of Origin (COO)</strong>
+              <span class="text-slate-500">Form D (ASEAN), Form E (China), Form AK, and Standard COO for preferential customs tariffs.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Comprehensive Quality Dossier</strong>
+              <span class="text-slate-500">Signed FAT report, hydrostatic pressure test charts, 3.1 material test certificates (MTC), and electrical diagrams.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sourcing Division -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-12 border-t border-slate-100">
+        <div class="lg:col-span-6 bg-noto-slate rounded-2xl p-8 border border-slate-200 space-y-4 order-2 lg:order-1">
+          <h3 class="font-bold text-sm text-noto-navy uppercase tracking-wider">Authorized Global Brand Portfolio</h3>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">DuPont™ FilmTec™</strong>
+              <span class="text-slate-500">BW30-400, SW30HR, NF270 elements stocked in climate-controlled storage.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Danfoss High Pressure</strong>
+              <span class="text-slate-500">APP pumps & isobaric energy recovery devices for desalination.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Grundfos Pumps</strong>
+              <span class="text-slate-500">CR, CRI, CRN multi-stage centrifugal pumps in SS316L and Titanium.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Pentair CodeLine</strong>
+              <span class="text-slate-500">300 to 1200 PSI ASME-certified fiberglass pressure vessels.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-4 order-1 lg:order-2">
+          <div class="w-12 h-12 rounded-xl bg-noto-ocean/10 text-noto-ocean flex items-center justify-center text-xl">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-noto-ocean uppercase">DIRECT IMPORTATION & SOURCING</span>
+          <h2 class="text-2xl font-bold text-noto-navy">Authorized Direct Sourcing of Tier-1 Components</h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            We avoid intermediary markups and counterfeit risks. PT Noto Water Envirotech maintains direct distributor relationships with global membrane and pump manufacturers, ensuring factory serial tracking, genuine manufacturer warranties, and prompt spare part dispatch.
+          </p>
+          <div class="pt-2">
+            <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-noto-cyan hover:underline">
+              <span>Request Component Stock List & Pricing &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Incoterms Guide -->
+  <section class="py-16 bg-noto-slate border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-mono font-bold text-noto-ocean uppercase tracking-widest">TRADE TERMS SUPPORTED</span>
+        <h2 class="text-2xl font-bold text-noto-navy">Incoterms 2020 Compliance Matrix</h2>
+        <p class="text-slate-600 text-xs">Flexible commercial terms structured for international EPC contractors, state enterprises, and industrial clients.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+        <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <span class="font-mono font-bold text-noto-navy text-sm block">FOB Tanjung Priok</span>
+          <p class="text-slate-500">We manage factory packing, inland haulage, export customs clearance, and loading onto your nominated ocean vessel.</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <span class="font-mono font-bold text-noto-ocean text-sm block">CIF Destination Port</span>
+          <p class="text-slate-500">We cover ocean freight and international marine cargo insurance up to your country's seaport of arrival.</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <span class="font-mono font-bold text-noto-cyan text-sm block">CFR Destination Port</span>
+          <p class="text-slate-500">Cost and Freight covered up to arrival discharge port, allowing client's local marine insurance policies.</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-slate-200 shadow-sm space-y-2">
+          <span class="font-mono font-bold text-emerald-600 text-sm block">DDP Job Site</span>
+          <p class="text-slate-500">Delivered Duty Paid directly to your project site including import clearance, local taxes, and offloading coordination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
+        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
+        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

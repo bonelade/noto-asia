@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diagnosa Air & Kalkulator | PT Noto Water Envirotech</title>
-  <meta name="description" content="Alat diagnosa masalah air mandiri dan kalkulator sistem filtrasi PT Noto Water Envirotech. Dapatkan rekomendasi sistem yang tepat untuk air sumur atau PDAM Anda.">
+  <title>Industrial Water Sizing Calculator & Configurator | PT Noto Water Envirotech</title>
+  <meta name="description" content="Calculate industrial RO membrane requirements, high-pressure pump sizing, and containerized WWTP footprint with PT Noto Water Envirotech's engineering calculator.">
   <link rel="canonical" href="https://noto.asia/diagnostic.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,13 +26,14 @@
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822'
+              dark: '#051822',
+              border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
-            heading: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
-            body: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace'],
           }
         }
       }
@@ -37,314 +43,187 @@
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Stylesheets: Common + Diagnostic -->
+  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/diagnostic.css">
+  <link rel="stylesheet" href="css/waterplus-theme.css">
+
+  <style>
+    /* Clean Industrial Architectural Design (Non-Neon) */
+    .pillar-card {
+      transition: all 0.25s ease;
+    }
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
+    }
+    .rfq-modal-enter {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    .rfq-modal-leave {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </head>
+
 <body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
 
-  <!-- Navigation -->
-  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-headless">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between">
-        
-        <a href="index.html" class="flex items-center gap-3 group">
-          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
-          <div class="hidden sm:block border-l border-white/20 pl-3">
-            <span class="block text-xs sm:text-sm font-bold tracking-wider text-white uppercase group-hover:text-noto-cyan transition-colors">Noto Water Envirotech</span>
-            </div>
+  <!-- Top Announcement Bar -->
+  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
+          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
+          Engineering Utilities
+        </span>
+        <span class="text-slate-300 font-medium">Preliminary System Sizing & Hydraulic Calculations for Industrial EPCs</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-400">
+        <a href="mailto:engineering@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
+          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
+          <span>engineering@noto.asia</span>
         </a>
-
-        <nav class="hidden lg:flex items-center space-x-5 text-[13px] xl:text-sm font-medium text-slate-200">
-          <a href="index.html" class="nav-link hover:text-noto-cyan transition-colors">Beranda</a>
-          <a href="about.html" class="nav-link hover:text-noto-cyan transition-colors">Tentang Kami</a>
-          <a href="solutions.html" class="nav-link hover:text-noto-cyan transition-colors">Solusi & Layanan</a>
-          <a href="technology.html" class="nav-link hover:text-noto-cyan transition-colors">Teknologi</a>
-          <a href="diagnostic.html" class="nav-link active flex items-center gap-1.5 text-noto-cyan">
-            <span>Diagnosa Air</span>
-          </a>
-          <a href="portfolio.html" class="nav-link hover:text-noto-cyan transition-colors">Portofolio</a>
-          <a href="news.html" class="nav-link hover:text-noto-cyan transition-colors">Berita</a>
-          <a href="careers.html" class="nav-link hover:text-noto-cyan transition-colors">Karir</a>
-          <a href="contact.html" class="nav-link hover:text-noto-cyan transition-colors">Kontak</a>
-        </nav>
-
-        <div class="hidden lg:flex items-center space-x-4">
-          <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi%20analisis%20air." target="_blank" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-noto-cyan/30 hover:scale-105">
-            <i class="fab fa-whatsapp text-lg"></i>
-            <span>Konsultasi Gratis</span>
-          </a>
-        </div>
-
-        <div class="lg:hidden flex items-center">
-          <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none" aria-label="Buka Menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-
       </div>
     </div>
+  </div>
 
-    <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-noto-navy border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
-      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Beranda</a>
-      <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Tentang Kami</a>
-      <a href="solutions.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Solusi & Layanan</a>
-      <a href="technology.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Teknologi</a>
-      <a href="diagnostic.html" class="block px-3 py-2 rounded-md text-base font-bold text-noto-cyan bg-white/10">Diagnosa Kebutuhan Air (Kalkulator)</a>
-      <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Portofolio & Klien</a>
-      <a href="careers.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Karir & Rekrutmen</a>
-      <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Kontak Kami</a>
-      <div class="pt-3">
-        <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi." target="_blank" class="w-full flex items-center justify-center gap-2 bg-noto-cyan text-white py-3 rounded-lg font-semibold shadow-md">
-          <i class="fab fa-whatsapp text-xl"></i>
-          <span>Konsultasi via WhatsApp</span>
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
+        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
+          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
+            PT Noto Water Envirotech
+          </span>
+          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
+            R&D • Manufacturing • Global Trade
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
+        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
+        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Lab</a>
+        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Manufacturing</a>
+        <a href="export-import.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Case Studies</a>
+        <a href="diagnostic.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Sizing Tool</a>
+        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
+          <i class="fas fa-file-invoice"></i>
+          <span>Request B2B RFQ</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Page Banner -->
-  <section class="page-banner pt-36 pb-20 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-      <div class="text-xs uppercase font-bold tracking-widest text-noto-cyan mb-3">
-        Alat Diagnosa Interaktif
-      </div>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
-        Kalkulator Solusi Kebutuhan Air Anda
+  <!-- Hero Header -->
+  <section class="relative bg-noto-navy text-white py-20 ">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
+        System Configurator
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+        Industrial Water & Wastewater <br>
+        <span class="text-noto-ice font-extrabold">System Sizing Calculator</span>
       </h1>
-      <p class="text-slate-300 mt-4 text-base sm:text-lg max-w-2xl mx-auto italic font-heading">
-        “Temukan Sistem Filtrasi Tepat Berdasarkan Ciri-Ciri Fisik & Gejala Air Baku Anda”
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Input your raw water flow rate and water chemistry parameters to estimate membrane vessel requirements, feed pump pressure, recovery rates, and skid dimensions.
       </p>
     </div>
   </section>
 
-  <!-- Wizard Calculator Section -->
-  <section class="py-24 bg-slate-50 relative">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Interactive Calculator Engine -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="bg-gradient-to-br from-noto-navy via-[#0c2f42] to-noto-navy rounded-3xl shadow-2xl p-6 sm:p-10 text-white border border-white/10 relative overflow-hidden">
-        
-        <div class="space-y-8 relative z-10">
+      <div class="bg-noto-slate rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-lg">
+        <div class="mb-8 border-b border-slate-200 pb-5">
+          <h2 class="text-xl font-bold text-noto-navy">Industrial RO Skid Sizing Engine</h2>
+          <p class="text-slate-500 text-xs mt-1">Based on standard 8-inch diameter elements (DuPont FilmTec™ BW30-400 / SW30HR).</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-xs">
           
-          <!-- Step 1: Property -->
           <div>
-            <div class="flex items-center gap-3 mb-3">
-              <span class="w-6 h-6 rounded-full bg-noto-cyan text-white font-bold text-xs flex items-center justify-center">1</span>
-              <label class="text-xs font-bold uppercase tracking-wider text-noto-ice">
-                Pilih Jenis Properti / Usaha Anda
-              </label>
-            </div>
-            
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-slate-800">
-              <button type="button" data-wizard-group="property" data-value="residential" class="wizard-btn border-2 border-noto-cyan bg-sky-50 ring-2 ring-noto-cyan/20 p-3.5 rounded-xl text-left flex flex-col justify-between">
-                <i class="fas fa-home text-noto-cyan text-xl mb-2"></i>
-                <span class="text-xs font-bold block">Rumah / Villa</span>
-                <span class="text-[10px] text-slate-500 block">Hunian Keluarga</span>
-              </button>
-
-              <button type="button" data-wizard-group="property" data-value="hospitality" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3.5 rounded-xl text-left flex flex-col justify-between">
-                <i class="fas fa-hotel text-noto-ocean text-xl mb-2"></i>
-                <span class="text-xs font-bold block">Hotel / F&B</span>
-                <span class="text-[10px] text-slate-500 block">Cafe, Resto, Laundry</span>
-              </button>
-
-              <button type="button" data-wizard-group="property" data-value="industrial" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3.5 rounded-xl text-left flex flex-col justify-between">
-                <i class="fas fa-industry text-noto-ocean text-xl mb-2"></i>
-                <span class="text-xs font-bold block">Pabrik / Industri</span>
-                <span class="text-[10px] text-slate-500 block">Proses & Boiler</span>
-              </button>
-
-              <button type="button" data-wizard-group="property" data-value="medical" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3.5 rounded-xl text-left flex flex-col justify-between">
-                <i class="fas fa-hospital text-noto-ocean text-xl mb-2"></i>
-                <span class="text-xs font-bold block">Rumah Sakit</span>
-                <span class="text-[10px] text-slate-500 block">Klinik & Lab</span>
-              </button>
-            </div>
+            <label class="block font-bold text-noto-navy mb-2">Feed Water Type</label>
+            <select id="calcWaterType" onchange="runSizingCalc()" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-noto-cyan">
+              <option value="tap">Municipal Tap / River (&lt; 500 ppm TDS)</option>
+              <option value="borehole" selected>Deep Well / Borehole (500 - 2,500 ppm)</option>
+              <option value="brackish">High Brackish (2,500 - 10,000 ppm)</option>
+              <option value="seawater">Seawater (&gt; 35,000 ppm TDS)</option>
+            </select>
           </div>
 
-          <!-- Step 2: Issue -->
           <div>
-            <div class="flex items-center gap-3 mb-3">
-              <span class="w-6 h-6 rounded-full bg-noto-cyan text-white font-bold text-xs flex items-center justify-center">2</span>
-              <label class="text-xs font-bold uppercase tracking-wider text-noto-ice">
-                Pilih Kendala Air Baku yang Paling Dominan
-              </label>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 text-slate-800">
-              <button type="button" data-wizard-group="issue" data-value="iron" class="wizard-btn border-2 border-noto-cyan bg-noto-ice/40 ring-2 ring-noto-cyan/20 p-3 rounded-xl text-left">
-                <span class="block text-noto-navy font-bold text-sm mb-1">💧 Bau Besi / Kuning</span>
-                <span class="text-[11px] text-slate-600 block">Air karat, flek cokelat</span>
-              </button>
-
-              <button type="button" data-wizard-group="issue" data-value="hard" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3 rounded-xl text-left">
-                <span class="block text-noto-ocean font-bold text-sm mb-1">⚪ Air Berkapur</span>
-                <span class="text-[11px] text-slate-600 block">Bercak putih, kerak pipa</span>
-              </button>
-
-              <button type="button" data-wizard-group="issue" data-value="cloudy" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3 rounded-xl text-left">
-                <span class="block text-slate-700 font-bold text-sm mb-1">🔘 Keruh / Lumpur</span>
-                <span class="text-[11px] text-slate-600 block">Endapan kotoran lumut</span>
-              </button>
-
-              <button type="button" data-wizard-group="issue" data-value="drinking" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3 rounded-xl text-left">
-                <span class="block text-noto-cyan font-bold text-sm mb-1">💧 Siap Minum (RO)</span>
-                <span class="text-[11px] text-slate-600 block">Air murni steril TDS &lt;15</span>
-              </button>
-
-              <button type="button" data-wizard-group="issue" data-value="wwtp" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3 rounded-xl text-left">
-                <span class="block text-noto-ocean font-bold text-sm mb-1">♻️ IPAL / Limbah</span>
-                <span class="text-[11px] text-slate-600 block">Pengolahan limbah cair</span>
-              </button>
-            </div>
+            <label class="block font-bold text-noto-navy mb-2">Target Permeate Output (m³/day)</label>
+            <input type="number" id="calcFlowRate" value="250" min="10" max="10000" oninput="runSizingCalc()" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-noto-cyan font-mono text-sm">
           </div>
 
-          <!-- Step 3: Capacity -->
           <div>
-            <div class="flex items-center gap-3 mb-3">
-              <span class="w-6 h-6 rounded-full bg-noto-cyan text-white font-bold text-xs flex items-center justify-center">3</span>
-              <label class="text-xs font-bold uppercase tracking-wider text-noto-ice">
-                Perkiraan Volume Debit Pemakaian Harian
-              </label>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-slate-800">
-              <button type="button" data-wizard-group="capacity" data-value="small" class="wizard-btn border-2 border-noto-cyan bg-sky-50 ring-2 ring-noto-cyan/20 p-3.5 rounded-xl text-left">
-                <span class="block font-bold text-xs text-noto-navy">Kecil (Residensial)</span>
-                <span class="text-[11px] text-slate-500">1.000 - 3.000 Liter / hari</span>
-              </button>
-
-              <button type="button" data-wizard-group="capacity" data-value="medium" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3.5 rounded-xl text-left">
-                <span class="block font-bold text-xs text-noto-navy">Menengah (Komersial)</span>
-                <span class="text-[11px] text-slate-500">5.000 - 20.000 Liter / hari</span>
-              </button>
-
-              <button type="button" data-wizard-group="capacity" data-value="large" class="wizard-btn border-2 border-slate-200 bg-white hover:border-noto-cyan/60 p-3.5 rounded-xl text-left">
-                <span class="block font-bold text-xs text-noto-navy">Besar (Pabrik Industri)</span>
-                <span class="text-[11px] text-slate-500">> 50.000 Liter / hari</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Recommendation Result Card -->
-          <div class="p-6 sm:p-8 rounded-2xl bg-white text-slate-800 shadow-2xl border border-noto-cyan/30 mt-8">
-            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100">
-              <div>
-                <span class="text-[11px] uppercase font-bold text-noto-cyan tracking-wider">Hasil Rekomendasi Solusi NOTO</span>
-                <h3 id="diag-result-title" class="text-xl font-bold text-noto-navy mt-1">Sistem Demangan & Deironizer Manganese Greensand</h3>
-                <p id="diag-result-tech" class="text-xs text-noto-ocean font-semibold">Multimedia FRP Tank + Manganese Greensand + Activated Carbon Plus</p>
-              </div>
-              <span class="inline-flex items-center gap-1.5 text-xs font-bold text-noto-ocean uppercase tracking-wider self-start md:self-center">
-                <i class="fas fa-check-circle text-noto-cyan"></i> Rekomendasi Presisi
-              </span>
-            </div>
-
-            <p id="diag-result-desc" class="text-xs sm:text-sm text-slate-600 mt-4 leading-relaxed"></p>
-
-            <ul id="diag-result-specs" class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4"></ul>
-
-            <div class="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span class="text-xs text-slate-500">
-                <i class="fas fa-info-circle text-noto-cyan mr-1"></i> Data teknis final dikonfirmasi berdasarkan hasil uji sampel air lapangan.
-              </span>
-              <a id="diag-wa-btn" href="#" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-7 py-3 rounded-xl text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all">
-                <i class="fab fa-whatsapp text-lg"></i>
-                <span>Kirim Hasil Diagnosa ke WhatsApp NOTO</span>
-              </a>
-            </div>
+            <label class="block font-bold text-noto-navy mb-2">Operating Hours / Day</label>
+            <select id="calcHours" onchange="runSizingCalc()" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-noto-cyan">
+              <option value="24" selected>24 Hours (Continuous Industrial)</option>
+              <option value="20">20 Hours (Intermittent)</option>
+              <option value="16">16 Hours (Two Shifts)</option>
+            </select>
           </div>
 
         </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Interactive Slider Section -->
-  <section class="py-20 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <h2 class="text-3xl font-extrabold text-noto-navy">
-          Visualisasi Kualitas: Sebelum vs Sesudah
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-600 mt-2">
-          Geser slider di bawah ini untuk melihat bagaimana sistem NOTO mengubah air bermasalah menjadi jernih kristal.
-        </p>
-      </div>
-
-      <div class="max-w-4xl mx-auto bg-slate-50 p-3 rounded-2xl shadow-lg border border-slate-200">
-        <div id="ba-container" class="ba-container aspect-[16/10] w-full relative rounded-xl overflow-hidden bg-slate-900">
-          <img src="assets/img/brand-purity.jpg" alt="Air Bersih Murni NOTO" class="ba-after-img w-full h-full object-cover">
-          <div class="absolute top-4 right-4 z-10 bg-noto-navy/90 text-white text-xs font-bold px-3 py-1.5 border-l-2 border-noto-cyan shadow-md flex items-center gap-1.5">
-            <i class="fas fa-check-circle text-noto-cyan"></i> SESUDAH (Air Purifikasi NOTO)
+        <!-- Calculated Results Card -->
+        <div class="bg-noto-navy rounded-2xl p-6 sm:p-8 text-white space-y-6">
+          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <div>
+              <span class="text-xs font-mono font-bold text-noto-cyan uppercase">ESTIMATED CONFIGURATION MATRIX</span>
+              <h3 class="text-lg font-bold text-white mt-0.5">Projected Engineering Sizing</h3>
+            </div>
+            <span class="px-3 py-1 rounded bg-noto-cyan/20 text-slate-400 font-mono text-xs font-semibold">
+              PRELIMINARY ESTIMATE
+            </span>
           </div>
 
-          <div id="ba-before" class="ba-before">
-            <img src="assets/img/brand-purity.jpg" alt="Air Keruh Sebelum Filtrasi" class="ba-before-img filter sepia contrast-125 brightness-75 hue-rotate-[-30deg]">
-            <div class="absolute top-4 left-4 z-20 bg-noto-navy/90 text-slate-200 text-xs font-bold px-3 py-1.5 border-l-2 border-slate-400 shadow-md flex items-center gap-1.5">
-              <i class="fas fa-exclamation-triangle text-noto-cyan"></i> SEBELUM (Air Baku Keruh/Besi)
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono">
+            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
+              <span class="text-slate-400 block text-[10px]">RECOVERY RATE</span>
+              <strong class="text-xl text-white" id="resRecovery">75 %</strong>
+              <span class="text-[10px] text-slate-400 block">Typical system recovery</span>
+            </div>
+
+            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
+              <span class="text-slate-400 block text-[10px]">8-INCH MEMBRANES</span>
+              <strong class="text-xl text-noto-cyan" id="resMembranes">12 Elements</strong>
+              <span class="text-[10px] text-slate-400 block">FilmTec 400 sq.ft</span>
+            </div>
+
+            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
+              <span class="text-slate-400 block text-[10px]">FEED FLOW REQ.</span>
+              <strong class="text-xl text-white" id="resFeedFlow">13.9 m³/h</strong>
+              <span class="text-[10px] text-slate-400 block">Raw water intake needed</span>
+            </div>
+
+            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
+              <span class="text-slate-400 block text-[10px]">PUMP PRESSURE</span>
+              <strong class="text-xl text-emerald-400" id="resPressure">14.5 Bar</strong>
+              <span class="text-[10px] text-slate-400 block">High-pressure booster</span>
             </div>
           </div>
 
-          <div id="ba-handle" class="ba-handle">
-            <i class="fas fa-arrows-left-right text-sm"></i>
+          <div class="p-4 bg-white/5 rounded-xl border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+            <div class="space-y-0.5 text-slate-300">
+              <strong class="text-white block">Suggested Skid Series: <span id="resSkidModel" class="text-slate-400 font-mono">Noto-RO-250-BW</span></strong>
+              <span>Footprint: Approx. 4.2m (L) x 1.6m (W) x 2.2m (H) • Frame: Sandblasted SS304/SS316</span>
+            </div>
+            <button onclick="transferToRfq()" class="px-5 py-3 rounded-xl bg-noto-ocean hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition-all whitespace-nowrap shadow-md">
+              Send Sizing to RFQ Form &rarr;
+            </button>
           </div>
-
-          <input type="range" min="0" max="100" value="50" id="ba-slider" class="ba-slider" aria-label="Geser untuk membandingkan air">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Lab Water Sampling Guide -->
-  <section class="py-20 bg-slate-50 relative">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center mb-12">
-        <div class="text-xs uppercase font-bold tracking-widest text-noto-ocean mb-3">
-          Panduan Praktis
-        </div>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-noto-navy">
-          Cara Mengambil Sampel Air untuk Pengujian Laboratorium
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <div class="bg-white p-6 rounded-2xl border border-slate-200">
-          <div class="w-10 h-10 rounded-full bg-noto-ocean text-white font-bold flex items-center justify-center mb-3">
-            1
-          </div>
-          <h4 class="font-bold text-noto-navy text-sm mb-1">Gunakan Botol Bersih</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Gunakan botol air mineral ukuran 600 ml yang baru dan bersih. Bilas botol dengan air sampel sebanyak 2-3 kali sebelum diisi penuh.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-slate-200">
-          <div class="w-10 h-10 rounded-full bg-noto-cyan text-white font-bold flex items-center justify-center mb-3">
-            2
-          </div>
-          <h4 class="font-bold text-noto-navy text-sm mb-1">Alirkan Kran 2 Menit</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Buka kran air dan biarkan mengalir deras selama 1-2 menit sebelum ditampung agar endapan dalam pipa tidak mempengaruhi sampel air baku asli.
-          </p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl border border-slate-200">
-          <div class="w-10 h-10 rounded-full bg-noto-navy text-white font-bold flex items-center justify-center mb-3">
-            3
-          </div>
-          <h4 class="font-bold text-noto-navy text-sm mb-1">Tutup Rapat & Kirimkan</h4>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            Isi hingga leher botol penuh tanpa ruang udara berlebih, tutup rapat, dan kirimkan ke workshop NOTO di Bandung dalam kurun waktu 24 jam.
-          </p>
         </div>
 
       </div>
@@ -353,65 +232,76 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-noto-dark border-t border-white/10 text-slate-400 text-xs py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
-        <div class="md:col-span-5 space-y-4">
-          <img src="assets/logo/logo-noto.png" alt="NOTO Water Logo" class="h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
-          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
-            <strong>PT Noto Water Envirotech</strong> — Berdiri di Bandung sejak 1995. Spesialis rekayasa teknologi purifikasi air murni, Reverse Osmosis, Water Softener, dan Wastewater Treatment Plant.
-          </p>
-          <p class="text-noto-cyan italic text-xs font-heading">
-            “Every Drop Counts — drink pure, live well.”
-          </p>
-        </div>
-        <div class="md:col-span-3 space-y-2">
-          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Navigasi Halaman</h4>
-          <ul class="space-y-1.5">
-            <li><a href="index.html" class="hover:text-noto-cyan transition-colors">Beranda</a></li>
-            <li><a href="about.html" class="hover:text-noto-cyan transition-colors">Tentang Perusahaan</a></li>
-            <li><a href="solutions.html" class="hover:text-noto-cyan transition-colors">Solusi & Layanan</a></li>
-            <li><a href="technology.html" class="hover:text-noto-cyan transition-colors">Teknologi Purifikasi</a></li>
-            <li><a href="diagnostic.html" class="text-noto-cyan font-bold">Diagnosa Air Interaktif</a></li>
-            <li><a href="portfolio.html" class="hover:text-noto-cyan transition-colors">Portofolio & Klien</a>
-      <a href="news.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Berita & Edukasi</a></li>
-            <li><a href="careers.html" class="hover:text-noto-cyan transition-colors">Karir & Rekrutmen</a></li>
-            <li><a href="contact.html" class="hover:text-noto-cyan transition-colors">Kontak & Lokasi</a></li>
-          </ul>
-        </div>
-        <div class="md:col-span-4 space-y-2">
-          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Kontak Bandung HQ</h4>
-          <p class="text-slate-300">Jl Permai 33 no 34, Kabupaten Bandung, Jawa Barat, Indonesia, 40218</p>
-          <p class="text-slate-300">WhatsApp: +62 821-2098-8201</p>
-          <p class="text-slate-300">Email: sales@noto.asia</p>
-        </div>
+  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
+        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
       </div>
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-        <p>© 2026 PT Noto Water Envirotech. Seluruh Hak Cipta Dilindungi.</p>
-        <p>Bandung, Jawa Barat, Indonesia • Est. 1995</p>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
+        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-    <div id="wa-teaser" class="mb-3 max-w-xs bg-white text-slate-800 p-3.5 rounded-2xl shadow-2xl border border-slate-200 opacity-0 pointer-events-none translate-y-4 transition-all duration-300 flex items-start gap-3">
-      <i class="fas fa-headset text-xl text-noto-ocean flex-shrink-0 mt-0.5"></i>
-      <div class="text-xs">
-        <div class="flex items-center justify-between mb-0.5">
-          <span class="font-bold text-noto-navy">Konsultan Air NOTO</span>
-          <button type="button" id="wa-teaser-close" class="text-slate-400 hover:text-slate-600 text-xs ml-2" aria-label="Tutup"><i class="fas fa-times"></i></button>
-        </div>
-        <p class="text-slate-600 leading-snug">Butuh bantuan konsultasi hasil uji air? Hubungi kami langsung!</p>
-      </div>
-    </div>
-    <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi%20analisis%20air." target="_blank" class="w-14 h-14 rounded-full bg-noto-cyan hover:bg-[#0ea5b8] text-white flex items-center justify-center text-2xl shadow-xl shadow-noto-cyan/35 hover:scale-110 transition-all duration-200 relative" aria-label="Hubungi via WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-      <span class="absolute top-0 right-0 w-3.5 h-3.5 bg-noto-ocean rounded-full border-2 border-white"></span>
-    </a>
-  </div>
+  <script>
+    function runSizingCalc() {
+      const type = document.getElementById('calcWaterType').value;
+      const flowDay = parseFloat(document.getElementById('calcFlowRate').value) || 250;
+      const hours = parseFloat(document.getElementById('calcHours').value) || 24;
 
-  <script src="js/main.js"></script>
-  <script src="js/diagnostic.js"></script>
+      const hourlyPermeate = flowDay / hours;
+
+      let recovery = 0.75;
+      let fluxGfd = 15; // gfd
+      let pressureBar = 14;
+
+      if (type === 'tap') {
+        recovery = 0.80;
+        fluxGfd = 17;
+        pressureBar = 11;
+      } else if (type === 'borehole') {
+        recovery = 0.75;
+        fluxGfd = 14;
+        pressureBar = 15;
+      } else if (type === 'brackish') {
+        recovery = 0.70;
+        fluxGfd = 12;
+        pressureBar = 22;
+      } else if (type === 'seawater') {
+        recovery = 0.42;
+        fluxGfd = 9;
+        pressureBar = 62;
+      }
+
+      const feedFlow = hourlyPermeate / recovery;
+      
+      // Calculate membrane elements (1 element 400 sq.ft at flux)
+      // 1 m3/h = 264.172 GPH
+      const gph = hourlyPermeate * 264.172;
+      const totalAreaNeeded = (gph * 24) / fluxGfd;
+      const membranes = Math.max(2, Math.ceil(totalAreaNeeded / 400));
+
+      document.getElementById('resRecovery').innerText = (recovery * 100).toFixed(0) + ' %';
+      document.getElementById('resMembranes').innerText = membranes + ' Elements';
+      document.getElementById('resFeedFlow').innerText = feedFlow.toFixed(1) + ' m³/h';
+      document.getElementById('resPressure').innerText = pressureBar.toFixed(1) + ' Bar';
+      document.getElementById('resSkidModel').innerText = `Noto-RO-${Math.round(flowDay)}-${type.toUpperCase()}`;
+    }
+
+    function transferToRfq() {
+      const model = document.getElementById('resSkidModel').innerText;
+      const flow = document.getElementById('calcFlowRate').value;
+      window.location.href = `contact.html?system=${encodeURIComponent(model)}&capacity=${encodeURIComponent(flow + ' m3/day')}`;
+    }
+
+    // Run on load
+    runSizingCalc();
+  </script>
+
 </body>
 </html>

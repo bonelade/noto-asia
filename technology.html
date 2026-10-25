@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teknologi & Produk | PT Noto Water Envirotech</title>
-  <meta name="description" content="Eksplorasi teknologi purifikasi air canggih PT Noto Water Envirotech: Reverse Osmosis (RO), Ultrafiltration, Demineralizer, Multi-media, dan UV Sterilizer.">
+  <title>R&D & Engineering Division | PT Noto Water Envirotech</title>
+  <meta name="description" content="Explore PT Noto Water Envirotech's advanced R&D laboratory: water spectrometry, treatability trials, pilot simulation, custom chemical formulations, and IoT telemetry.">
   <link rel="canonical" href="https://noto.asia/technology.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,13 +26,14 @@
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822'
+              dark: '#051822',
+              border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
-            heading: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
-            body: ['"Alte Haas Grotesk"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace'],
           }
         }
       }
@@ -37,311 +43,258 @@
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Stylesheets: Common + Technology -->
+  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/technology.css">
+  <link rel="stylesheet" href="css/waterplus-theme.css">
+
+  <style>
+    /* Clean Industrial Architectural Design (Non-Neon) */
+    .pillar-card {
+      transition: all 0.25s ease;
+    }
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
+    }
+    .rfq-modal-enter {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    .rfq-modal-leave {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
 </head>
+
 <body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
 
-  <!-- Navigation -->
-  <header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 navbar-headless">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between">
-        
-        <a href="index.html" class="flex items-center gap-3 group">
-          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-11 sm:h-12 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
-          <div class="hidden sm:block border-l border-white/20 pl-3">
-            <span class="block text-xs sm:text-sm font-bold tracking-wider text-white uppercase group-hover:text-noto-cyan transition-colors">Noto Water Envirotech</span>
-            </div>
+  <!-- Top Announcement Bar -->
+  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
+          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
+          R&D Laboratory
+        </span>
+        <span class="text-slate-300 font-medium">Bandung Testing Bay & Chemical Formulation Lab • ISO/IEC 17025 Compliant Testing</span>
+      </div>
+      <div class="flex items-center gap-5 text-slate-400">
+        <a href="mailto:rnd@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
+          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
+          <span>rnd@noto.asia</span>
         </a>
-
-        <nav class="hidden lg:flex items-center space-x-5 text-[13px] xl:text-sm font-medium text-slate-200">
-          <a href="index.html" class="nav-link hover:text-noto-cyan transition-colors">Beranda</a>
-          <a href="about.html" class="nav-link hover:text-noto-cyan transition-colors">Tentang Kami</a>
-          <a href="solutions.html" class="nav-link hover:text-noto-cyan transition-colors">Solusi & Layanan</a>
-          <a href="technology.html" class="nav-link active">Teknologi</a>
-          <a href="diagnostic.html" class="nav-link flex items-center gap-1.5 text-noto-cyan hover:text-white transition-colors">
-            <span>Diagnosa Air</span>
-          </a>
-          <a href="portfolio.html" class="nav-link hover:text-noto-cyan transition-colors">Portofolio</a>
-          <a href="news.html" class="nav-link hover:text-noto-cyan transition-colors">Berita</a>
-          <a href="careers.html" class="nav-link hover:text-noto-cyan transition-colors">Karir</a>
-          <a href="contact.html" class="nav-link hover:text-noto-cyan transition-colors">Kontak</a>
-        </nav>
-
-        <div class="hidden lg:flex items-center space-x-4">
-          <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20tanya%20spesifikasi%20teknologi%20filtrasi." target="_blank" class="inline-flex items-center gap-2 bg-noto-cyan hover:bg-[#0ea5b8] text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 shadow-lg shadow-noto-cyan/30 hover:scale-105">
-            <i class="fab fa-whatsapp text-lg"></i>
-            <span>Konsultasi Gratis</span>
-          </a>
-        </div>
-
-        <div class="lg:hidden flex items-center">
-          <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg text-white hover:bg-white/10 focus:outline-none" aria-label="Buka Menu">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-
+        <span class="hidden sm:inline text-slate-700">•</span>
+        <a href="tel:+622220568900" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5 font-mono">
+          <i class="fas fa-phone-alt text-noto-cyan text-xs"></i>
+          <span>+62 22 2056 8900</span>
+        </a>
       </div>
     </div>
+  </div>
 
-    <!-- Mobile Dropdown -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-noto-navy border-b border-white/10 px-4 pt-3 pb-6 space-y-3">
-      <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Beranda</a>
-      <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Tentang Kami</a>
-      <a href="solutions.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Solusi & Layanan</a>
-      <a href="technology.html" class="block px-3 py-2 rounded-md text-base font-bold text-noto-cyan bg-white/10">Teknologi</a>
-      <a href="diagnostic.html" class="block px-3 py-2 rounded-md text-base font-medium text-noto-cyan hover:bg-white/10">Diagnosa Kebutuhan Air (Kalkulator)</a>
-      <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Portofolio & Klien</a>
-      <a href="careers.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Karir & Rekrutmen</a>
-      <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Kontak Kami</a>
-      <div class="pt-3">
-        <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi." target="_blank" class="w-full flex items-center justify-center gap-2 bg-noto-cyan text-white py-3 rounded-lg font-semibold shadow-md">
-          <i class="fab fa-whatsapp text-xl"></i>
-          <span>Konsultasi via WhatsApp</span>
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
+        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
+          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
+            PT Noto Water Envirotech
+          </span>
+          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
+            R&D • Manufacturing • Global Trade
+          </span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7">
+        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
+        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
+        <a href="technology.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">R&D & Engineering</a>
+        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Skid Manufacturing</a>
+        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact & RFQ</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
+          <i class="fas fa-file-invoice"></i>
+          <span>Request B2B RFQ</span>
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Page Banner -->
-  <section class="page-banner pt-36 pb-20 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-      <div class="text-xs uppercase font-bold tracking-widest text-noto-cyan mb-3">
-        Sains & Presisi Teknis
-      </div>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-white">
-        Teknologi Purifikasi & Produk NOTO
+  <!-- Hero Banner -->
+  <section class="relative bg-noto-navy text-white py-20 ">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
+        Pillar 01 • Scientific Innovation
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+        Advanced R&D Laboratory & <br>
+        <span class="text-noto-ice font-extrabold">Water Chemistry Engineering</span>
       </h1>
-      <p class="text-slate-300 mt-4 text-base sm:text-lg max-w-2xl mx-auto italic font-heading">
-        “Membran Bersertifikasi Internasional dengan Efisiensi Filtrasi Hingga 99.9%”
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+        Engineering successful water and wastewater solutions begins at the molecular level. Our Bandung laboratory conducts empirical treatability studies, membrane foulant autopsies, and custom chemical synthesis.
       </p>
     </div>
   </section>
 
-  <!-- Membrane Pore Size Scale Visualizer -->
-  <section class="py-20 bg-slate-50 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Core R&D Capabilities -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
       
-      <div class="text-center max-w-3xl mx-auto mb-14">
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-noto-navy">
-          Skala Spektrum Filtrasi Membran Air
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-600 mt-2">
-          Memahami ukuran pori penyaringan dari partikel kasar hingga pemisahan ionik terkecil.
-        </p>
+      <!-- Capability 1: Analytical Water Testing -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-noto-cyan/10 text-noto-cyan flex items-center justify-center text-xl">
+            <i class="fas fa-vial"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-noto-cyan uppercase">LABORATORY TESTING</span>
+          <h2 class="text-2xl font-bold text-noto-navy">Comprehensive Water Spectrometry & Treatability Studies</h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Before any metal is welded or any membrane selected, we run exhaustive ionic profiling on your raw water samples. We evaluate biological oxygen demand (BOD), chemical oxygen demand (COD), total suspended solids (TSS), silica saturation, Langlier Saturation Index (LSI), and heavy metals.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-700">
+            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Heavy metal tracing (Iron, Manganese, Arsenic, Lead, Chromium)</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Silt Density Index (SDI) and organic fouling potential analysis</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Membrane autopsy & elemental SEM/EDX foulant identification</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 bg-noto-slate rounded-2xl p-8 border border-slate-200 space-y-4">
+          <h3 class="font-bold text-sm text-noto-navy uppercase tracking-wider">Sample Treatability Deliverables:</h3>
+          <div class="space-y-3 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Certified Water Analysis Dossier</strong>
+              <span class="text-slate-500">Full ionic balance calculation and projected scaling thresholds.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Pretreatment Matrix Recommendation</strong>
+              <span class="text-slate-500">Exact micron rating, coagulation dosages, and UF flux rates.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">Membrane Projection Projection Software</strong>
+              <span class="text-slate-500">Hydraulic simulations verifying recovery rate up to 85%.</span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
-        
-        <div class="scale-track mb-10 hidden sm:block"></div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 text-center">
-          
-          <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-            <span class="text-xs font-bold text-slate-400 block mb-1">Pori: 1.0 - 50 µm</span>
-            <h4 class="font-bold text-noto-navy text-sm">Media & Micro Filter</h4>
-            <p class="text-[11px] text-slate-500 mt-1">Pasir, lumpur, lumut, karat kasar, dan partikel tersuspensi.</p>
+      <!-- Capability 2: Custom Chemical Synthesis -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-10 border-t border-slate-100">
+        <div class="lg:col-span-6 bg-noto-slate rounded-2xl p-8 border border-slate-200 space-y-4 order-2 lg:order-1">
+          <h3 class="font-bold text-sm text-noto-navy uppercase tracking-wider">Noto-Chem™ Formulation Portfolio:</h3>
+          <div class="space-y-3 text-xs">
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">N-ScaleStop Pro (High-Silica Antiscalant)</strong>
+              <span class="text-slate-500">Inhibits reactive and colloidal silica scaling up to 350 ppm.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">N-BioClean (Non-Oxidizing Biocide)</strong>
+              <span class="text-slate-500">Eliminates bacterial slime and biofilm without degrading polyamide membranes.</span>
+            </div>
+            <div class="p-3 bg-white rounded-xl border border-slate-200">
+              <strong class="text-noto-navy block">N-Flocc Ultra (Polymeric Coagulant)</strong>
+              <span class="text-slate-500">Accelerates floc sedimentation in industrial DAF units with zero aluminum carryover.</span>
+            </div>
           </div>
-
-          <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-            <span class="text-xs font-bold text-noto-ocean block mb-1">Pori: 0.01 - 0.1 µm</span>
-            <h4 class="font-bold text-noto-navy text-sm">Ultrafiltration (UF)</h4>
-            <p class="text-[11px] text-slate-500 mt-1">Bakteri patogen, koloid, makromolekul, dan kekeruhan halus.</p>
-          </div>
-
-          <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
-            <span class="text-xs font-bold text-noto-cyan block mb-1">Pori: 0.001 µm</span>
-            <h4 class="font-bold text-noto-navy text-sm">Nanofiltration (NF)</h4>
-            <p class="text-[11px] text-slate-500 mt-1">Penyisihan ion divalen, kesadahan kalsium, dan zat organik warna.</p>
-          </div>
-
-          <div class="p-4 bg-sky-50 rounded-2xl border border-noto-cyan/30">
-            <span class="text-xs font-bold text-noto-cyan block mb-1">Pori: 0.0001 µm</span>
-            <h4 class="font-bold text-noto-navy text-sm">Reverse Osmosis (RO)</h4>
-            <p class="text-[11px] text-slate-600 mt-1">Garam mineral, logam berat, pestisida, virus, molekul air murni.</p>
-          </div>
-
         </div>
+        <div class="lg:col-span-6 space-y-4 order-1 lg:order-2">
+          <div class="w-12 h-12 rounded-xl bg-noto-ocean/10 text-noto-ocean flex items-center justify-center text-xl">
+            <i class="fas fa-atom"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-noto-ocean uppercase">CHEMICAL FORMULATION</span>
+          <h2 class="text-2xl font-bold text-noto-navy">Custom Reagent Synthesis & Membrane Antiscalants</h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Standard commodity chemicals frequently cause irreversible membrane compaction or chemical precipitation. Our R&D chemists synthesize customized antiscalants and CIP cleaners matched specifically to your raw water mineralogy.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-700">
+            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-ocean"></i> Formulations verified for NSF/ANSI 60 drinking water compliance</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-ocean"></i> Compatible with DuPont FilmTec, Toray, and Hydranautics elements</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-ocean"></i> Supplied in export-ready 25 kg jerrycans, 200 kg drums, or 1,000L IBC tanks</li>
+          </ul>
+        </div>
+      </div>
 
+      <!-- Capability 3: IoT & Cloud Telemetry -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-10 border-t border-slate-100">
+        <div class="lg:col-span-6 space-y-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl">
+            <i class="fas fa-satellite-dish"></i>
+          </div>
+          <span class="text-xs font-mono font-bold text-emerald-600 uppercase">SMART AUTOMATION</span>
+          <h2 class="text-2xl font-bold text-noto-navy">IoT SCADA & Predictive Membrane Fouling Diagnostics</h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Every skid manufactured by PT Noto Water Envirotech can be equipped with our proprietary cloud telemetry module. Industrial operators and our Bandung engineering desk monitor normalized permeate flow, differential pressure, and chemical dosing in real-time.
+          </p>
+          <ul class="space-y-2 text-xs text-slate-700">
+            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Automated early warning for CIP cleaning cycles before membrane damage</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Remote PLC parameter updates and firmware tuning across borders</li>
+            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-600"></i> Encrypted cellular & satellite telemetry for remote mining and island sites</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-6 bg-noto-navy rounded-2xl p-8 text-white space-y-4">
+          <div class="flex items-center justify-between text-xs border-b border-white/10 pb-3">
+            <span class="font-mono text-noto-cyan">NOTO TELEMETRY ENGINE v4.2</span>
+            <span class="text-emerald-400 font-bold">ONLINE</span>
+          </div>
+          <div class="grid grid-cols-2 gap-4 text-xs font-mono">
+            <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+              <span class="text-slate-400 block text-[10px]">FEED TDS</span>
+              <strong class="text-lg text-white">1,840 ppm</strong>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+              <span class="text-slate-400 block text-[10px]">PERMEATE TDS</span>
+              <strong class="text-lg text-noto-cyan">14 ppm</strong>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+              <span class="text-slate-400 block text-[10px]">SYSTEM RECOVERY</span>
+              <strong class="text-lg text-white">82.4 %</strong>
+            </div>
+            <div class="p-3 bg-white/5 rounded-xl border border-white/5">
+              <span class="text-slate-400 block text-[10px]">MEMBRANE HEALTH</span>
+              <strong class="text-lg text-emerald-400">OPTIMAL</strong>
+            </div>
+          </div>
+          <p class="text-[11px] text-slate-400">Available as standard or upgrade on all industrial skids.</p>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Detailed Technology Cards -->
-  <section class="py-24 bg-white relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-      
-      <!-- Tech Item 1: Reverse Osmosis -->
-      <div class="tech-card">
-        <div class="tech-header flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-noto-cyan">Teknologi Membran Presisi</span>
-            <h3 class="text-2xl font-bold font-heading">Reverse Osmosis (RO) Industrial & Commercial</h3>
-          </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-noto-cyan self-start">
-            Pori 0.0001 Mikron
-          </span>
-        </div>
-        <div class="p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Membran semipermeabel Reverse Osmosis bekerja dengan memberi tekanan osmotik buatan pada air baku, memaksa molekul air murni melewati pori mikroskopis 0.0001 mikron sementara menahan 99.8% garam mineral terlarut (TDS), bakteri, virus, pestisida, dan senyawa logam berat.
-            </p>
-            <div class="grid grid-cols-2 gap-3 text-xs text-slate-700 pt-2">
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Membran Toray / Filmtec DOW 4040 & 8040</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Pompa Tekanan Tinggi Stainless 304/316</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Automatic Flush & CIP Cleaning Port</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Dual TDS Meter Online Digital Sensor</div>
-            </div>
-          </div>
-          <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-100">
-            <h4 class="text-xs font-bold uppercase text-noto-navy tracking-wider mb-3">Spesifikasi Operasional</h4>
-            <div class="space-y-2 text-xs text-slate-600">
-              <div class="flex justify-between border-b pb-1"><span>Salt Rejection:</span> <strong class="text-noto-navy">99.2% - 99.8%</strong></div>
-              <div class="flex justify-between border-b pb-1"><span>Operating Pressure:</span> <strong class="text-noto-navy">150 - 225 PSI</strong></div>
-              <div class="flex justify-between border-b pb-1"><span>Recovery Rate:</span> <strong class="text-noto-navy">50% - 75%</strong></div>
-              <div class="flex justify-between"><span>Standar Output:</span> <strong class="text-noto-ocean">Air Minum & Proses Lab</strong></div>
-            </div>
-          </div>
-        </div>
+  <!-- CTA Section -->
+  <section class="py-16 bg-noto-slate border-t border-slate-200 text-center">
+    <div class="max-w-4xl mx-auto px-4 space-y-4">
+      <h3 class="text-2xl font-bold text-noto-navy">Send Your Water Samples to Our Laboratory</h3>
+      <p class="text-xs sm:text-sm text-slate-600">
+        Our engineers will perform complete spectrometry and send you a comprehensive treatability report with projected skid sizing.
+      </p>
+      <div class="pt-2">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider shadow-md">
+          <i class="fas fa-flask"></i>
+          <span>Schedule Sample Testing</span>
+        </a>
       </div>
-
-      <!-- Tech Item 2: Ultrafiltration -->
-      <div class="tech-card">
-        <div class="tech-header flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-noto-cyan">Teknologi Serat Berongga</span>
-            <h3 class="text-2xl font-bold font-heading">Hollow Fiber Ultrafiltration (UF)</h3>
-          </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-noto-cyan self-start">
-            Pori 0.01 Mikron
-          </span>
-        </div>
-        <div class="p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Teknologi serat hollow fiber berongga yang menyaring mikroorganisme, koloid, lumut, dan partikel tersuspensi halus tanpa membutuhkan tekanan tinggi dan tanpa membuang air (*zero recovery waste*). Sangat ideal sebagai pre-treatment sistem RO atau penyedia air bersih seluruh gedung.
-            </p>
-            <div class="grid grid-cols-2 gap-3 text-xs text-slate-700 pt-2">
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Material PVDF Hydrophilic Tahan Klorin</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Aliran Outside-In dengan resistensi fouling tinggi</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Otomatisasi Fast Flush & Air Scouring</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Menjaga mineral alami tetap ada dalam air</div>
-            </div>
-          </div>
-          <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-100">
-            <h4 class="text-xs font-bold uppercase text-noto-navy tracking-wider mb-3">Spesifikasi Operasional</h4>
-            <div class="space-y-2 text-xs text-slate-600">
-              <div class="flex justify-between border-b pb-1"><span>Turbidity Removal:</span> <strong class="text-noto-navy">> 99.5% (&lt; 0.1 NTU)</strong></div>
-              <div class="flex justify-between border-b pb-1"><span>Operating Pressure:</span> <strong class="text-noto-navy">1.5 - 3.0 Bar (Hemat Listrik)</strong></div>
-              <div class="flex justify-between border-b pb-1"><span>Water Recovery:</span> <strong class="text-noto-navy">95% - 98%</strong></div>
-              <div class="flex justify-between"><span>Aplikasi Utama:</span> <strong class="text-noto-ocean">Hotel, Apartemen, Pre-RO</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Item 3: Demineralizer & Softener -->
-      <div class="tech-card">
-        <div class="tech-header flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-noto-cyan">Pertukaran Ion Kimia</span>
-            <h3 class="text-2xl font-bold font-heading">Ion Exchange Softener & Demineralizer</h3>
-          </div>
-          <span class="text-xs font-bold uppercase tracking-wider text-noto-cyan self-start">
-            Resin Kation & Anion
-          </span>
-        </div>
-        <div class="p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div class="lg:col-span-7 space-y-4">
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Menggunakan butiran resin sintetis bermuatan aktif untuk menukar ion kalsium (Ca²⁺) dan magnesium (Mg²⁺) penyebab kerak air dengan ion natrium (Na⁺) pada sistem softener, atau menukar seluruh mineral kation-anion dengan H⁺ dan OH⁻ untuk menghasilkan air murni demineralisasi.
-            </p>
-            <div class="grid grid-cols-2 gap-3 text-xs text-slate-700 pt-2">
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Resin Kation Purolite C100E Food Grade</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Resin Anion Strong Base A400 untuk Silika</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Tangki Garam / Asam Basa Regenerasi Otomatis</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-noto-cyan"></i> Zero Hardness Water (< 5 mg/L CaCO3)</div>
-            </div>
-          </div>
-          <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-100">
-            <h4 class="text-xs font-bold uppercase text-noto-navy tracking-wider mb-3">Spesifikasi Operasional</h4>
-            <div class="space-y-2 text-xs text-slate-600">
-              <div class="flex justify-between border-b pb-1"><span>Hardness Leakage:</span> <strong class="text-noto-navy">&lt; 0.05 ppm CaCO3</strong></div>
-              <div class="flex justify-between border-b pb-1"><span>Demin Conductivity:</span> <strong class="text-noto-navy">0.1 - 2.0 µS/cm</strong></div>
-              <div class="flex justify-between border-b pb-1"><span>Regenerant:</span> <strong class="text-noto-navy">NaCl (Softener) / HCl & NaOH (Demin)</strong></div>
-              <div class="flex justify-between"><span>Perlindungan:</span> <strong class="text-noto-ocean">Boiler, Chiller, Heater</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-noto-dark border-t border-white/10 text-slate-400 text-xs py-14">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
-        <div class="md:col-span-5 space-y-4">
-          <img src="assets/logo/logo-noto.png" alt="NOTO Water Logo" class="h-11 w-auto object-contain drop-shadow-[0_2px_10px_rgba(255,255,255,0.25)]">
-          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
-            <strong>PT Noto Water Envirotech</strong> — Berdiri di Bandung sejak 1995. Spesialis rekayasa teknologi purifikasi air murni, Reverse Osmosis, Water Softener, dan Wastewater Treatment Plant.
-          </p>
-          <p class="text-noto-cyan italic text-xs font-heading">
-            “Every Drop Counts — drink pure, live well.”
-          </p>
-        </div>
-        <div class="md:col-span-3 space-y-2">
-          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Navigasi Halaman</h4>
-          <ul class="space-y-1.5">
-            <li><a href="index.html" class="hover:text-noto-cyan transition-colors">Beranda</a></li>
-            <li><a href="about.html" class="hover:text-noto-cyan transition-colors">Tentang Perusahaan</a></li>
-            <li><a href="solutions.html" class="hover:text-noto-cyan transition-colors">Solusi & Layanan</a></li>
-            <li><a href="technology.html" class="text-noto-cyan font-bold">Teknologi Purifikasi</a></li>
-            <li><a href="diagnostic.html" class="hover:text-noto-cyan transition-colors">Diagnosa Air Interaktif</a></li>
-            <li><a href="portfolio.html" class="hover:text-noto-cyan transition-colors">Portofolio & Klien</a>
-      <a href="news.html" class="block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-white/10 hover:text-noto-cyan">Berita & Edukasi</a></li>
-            <li><a href="careers.html" class="hover:text-noto-cyan transition-colors">Karir & Rekrutmen</a></li>
-            <li><a href="contact.html" class="hover:text-noto-cyan transition-colors">Kontak & Lokasi</a></li>
-          </ul>
-        </div>
-        <div class="md:col-span-4 space-y-2">
-          <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-3">Kontak Bandung HQ</h4>
-          <p class="text-slate-300">Jl Permai 33 no 34, Kabupaten Bandung, Jawa Barat, Indonesia, 40218</p>
-          <p class="text-slate-300">WhatsApp: +62 821-2098-8201</p>
-          <p class="text-slate-300">Email: sales@noto.asia</p>
-        </div>
+  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
+        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
       </div>
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-        <p>© 2026 PT Noto Water Envirotech. Seluruh Hak Cipta Dilindungi.</p>
-        <p>Bandung, Jawa Barat, Indonesia • Est. 1995</p>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
+        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-    <div id="wa-teaser" class="mb-3 max-w-xs bg-white text-slate-800 p-3.5 rounded-2xl shadow-2xl border border-slate-200 opacity-0 pointer-events-none translate-y-4 transition-all duration-300 flex items-start gap-3">
-      <i class="fas fa-headset text-xl text-noto-ocean flex-shrink-0 mt-0.5"></i>
-      <div class="text-xs">
-        <div class="flex items-center justify-between mb-0.5">
-          <span class="font-bold text-noto-navy">Konsultan Air NOTO</span>
-          <button type="button" id="wa-teaser-close" class="text-slate-400 hover:text-slate-600 text-xs ml-2" aria-label="Tutup"><i class="fas fa-times"></i></button>
-        </div>
-        <p class="text-slate-600 leading-snug">Ingin konsultasi teknis membran atau resin? Hubungi kami langsung!</p>
-      </div>
-    </div>
-    <a href="https://wa.me/6282120988201?text=Halo%20Tim%20NOTO%20Water,%20saya%20ingin%20konsultasi%20teknologi." target="_blank" class="w-14 h-14 rounded-full bg-noto-cyan hover:bg-[#0ea5b8] text-white flex items-center justify-center text-2xl shadow-xl shadow-noto-cyan/35 hover:scale-110 transition-all duration-200 relative" aria-label="Hubungi via WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-      <span class="absolute top-0 right-0 w-3.5 h-3.5 bg-noto-ocean rounded-full border-2 border-white"></span>
-    </a>
-  </div>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
