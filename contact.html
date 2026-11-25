@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact & Global RFQ | PT Noto Water Envirotech</title>
+  <title>Contact &amp; Global Technical RFQ | PT Noto Water Envirotech</title>
   <meta name="description" content="Submit technical inquiries, request RFQ proposals, or schedule laboratory treatability studies with PT Noto Water Envirotech. Direct factory contact in Indonesia.">
   <link rel="canonical" href="https://noto.asia/contact.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,16 +20,16 @@
           colors: {
             noto: {
               navy: '#092534',
+              dark: '#051822',
               ocean: '#2B6F8B',
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822',
               border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
             mono: ['"Space Grotesk"', 'monospace'],
           }
@@ -40,275 +38,276 @@
     }
   </script>
 
-  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/waterplus-theme.css">
-
   <style>
-    /* Clean Industrial Architectural Design (Non-Neon) */
-    .pillar-card {
-      transition: all 0.25s ease;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
-    }
-    .rfq-modal-enter {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    .rfq-modal-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
   </style>
 </head>
 
-<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-navy selection:text-white">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
-          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
-          Direct Factory Intake
+  <!-- Top Status Bar -->
+  <div class="bg-noto-dark text-slate-400 text-[11px] py-2.5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-slate-300">
+          <span class="w-1.5 h-1.5 bg-emerald-500"></span>
+          Direct Factory Engineering Intake &middot; 24&ndash;48h Response SLA
         </span>
-        <span class="text-slate-300 font-medium">Global Sales & Engineering Response within 24-48 Hours</span>
       </div>
-      <div class="flex items-center gap-5 text-slate-400">
-        <a href="mailto:global@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
-          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
-          <span>global@noto.asia</span>
-        </a>
-        <span class="hidden sm:inline text-slate-700">•</span>
-        <a href="tel:+622220568900" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5 font-mono">
-          <i class="fas fa-phone-alt text-noto-cyan text-xs"></i>
-          <span>+62 22 2056 8900</span>
-        </a>
+      <div class="flex items-center gap-6 font-mono">
+        <a href="mailto:global@noto.asia" class="hover:text-white transition-colors hidden sm:inline">global@noto.asia</a>
+        <a href="tel:+622220568900" class="hover:text-white transition-colors">+62 22 2056 8900</a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+  <!-- Unified Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
-        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
-          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
-            PT Noto Water Envirotech
-          </span>
-          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
-            R&D • Manufacturing • Global Trade
-          </span>
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-10 sm:h-11 w-auto transition-opacity group-hover:opacity-85">
+        <div class="border-l border-slate-300 pl-3.5 hidden sm:flex flex-col justify-center">
+          <span class="font-heading font-bold text-xs tracking-wider uppercase text-noto-navy">PT Noto Water Envirotech</span>
+          <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase mt-0.5">R&amp;D &middot; Manufacturing &middot; Global Trade</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-7">
-        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
-        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Skid Manufacturing</a>
-        <a href="contact.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Contact & RFQ</a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Home</a>
+        <a href="solutions.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Systems &amp; Skids</a>
+        <a href="technology.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">R&amp;D Lab</a>
+        <a href="export-import.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Case Studies</a>
+        <a href="about.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">About</a>
       </nav>
 
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="#rfq-form" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
-          <i class="fas fa-file-invoice"></i>
-          <span>Direct RFQ Form</span>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="https://wa.me/628122000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-noto-navy transition-colors">
+          <i class="fab fa-whatsapp text-emerald-600 text-sm"></i>
+          <span>WhatsApp Desk</span>
         </a>
+        <a href="#rfq-form" class="inline-flex items-center gap-2 px-5 py-3 bg-noto-navy hover:bg-noto-ocean text-white font-semibold text-xs tracking-wider uppercase transition-colors">
+          <span>Direct RFQ</span>
+          <i class="fas fa-arrow-down text-[10px]"></i>
+        </a>
+      </div>
+
+      <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle Navigation" class="lg:hidden p-2 text-noto-navy hover:bg-slate-100">
+        <i class="fas fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl">
+      <div class="flex flex-col divide-y divide-slate-100 text-xs font-semibold uppercase tracking-wider">
+        <a href="index.html" class="py-3 text-slate-700 hover:text-noto-navy">Home</a>
+        <a href="solutions.html" class="py-3 text-slate-700 hover:text-noto-navy">Systems &amp; Skids</a>
+        <a href="technology.html" class="py-3 text-slate-700 hover:text-noto-navy">R&amp;D Lab</a>
+        <a href="export-import.html" class="py-3 text-slate-700 hover:text-noto-navy">Global Trade</a>
+        <a href="portfolio.html" class="py-3 text-slate-700 hover:text-noto-navy">Case Studies</a>
+        <a href="diagnostic.html" class="py-3 text-slate-700 hover:text-noto-navy">Sizing Calculator</a>
+        <a href="about.html" class="py-3 text-slate-700 hover:text-noto-navy">About Us</a>
+        <a href="contact.html" class="py-3 text-noto-navy font-bold">Contact &amp; RFQ</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="relative bg-noto-navy text-white py-20 ">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
+  <!-- Page Hero -->
+  <section class="bg-noto-navy text-white py-20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-noto-ice/80 flex items-center gap-3">
+        <span class="w-8 h-px bg-noto-cyan inline-block"></span>
         Global Inquiry Portal
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Connect with Our Engineering & <br>
-        <span class="text-noto-ice font-extrabold">Global Logistics Division</span>
+      </p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] max-w-4xl">
+        Connect with Our Engineering &amp;<br>
+        <span class="text-noto-ice font-normal">Global Logistics Division</span>
       </h1>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-        Whether you require customized water treatability analysis, Skid OEM fabrication quotation, or turnkey export logistics, our senior engineers are ready to assist.
+      <p class="text-slate-300 text-sm sm:text-base font-light max-w-2xl leading-relaxed">
+        Whether you need raw water treatability spectrometry, OEM skid manufacturing quotes, or Incoterms 2020 freight schedules, our senior engineers respond directly from Bandung.
       </p>
     </div>
   </section>
 
-  <!-- Contact Grid & RFQ Form -->
-  <section class="py-20 bg-white" id="rfq-form">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-        
-        <!-- Left Column: Contact Channels & Locations -->
-        <div class="lg:col-span-5 space-y-8">
-          <div>
-            <h2 class="text-2xl font-bold text-noto-navy">Corporate Contacts & Facilities</h2>
-            <p class="text-slate-600 text-xs sm:text-sm mt-2 leading-relaxed">
-              Reach out directly through our specialized divisional desks for technical consulting, laboratory test scheduling, or international logistics coordination.
-            </p>
-          </div>
+  <!-- Pola B: Editorial Split Contact & Flat RFQ Form (Replaces 4 Stacked Cards + Form Card) -->
+  <section class="py-20 lg:py-28 bg-white" id="rfq-form">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
-          <div class="space-y-4 text-xs">
-            
-            <div class="p-5 rounded-2xl bg-noto-slate border border-slate-200 space-y-2">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-noto-cyan/10 text-noto-cyan flex items-center justify-center text-sm">
-                  <i class="fas fa-building"></i>
-                </div>
-                <strong class="text-sm text-noto-navy">Global Headquarters & R&D Laboratory</strong>
-              </div>
-              <p class="text-slate-600 pl-11">
-                Jl. Noto Water No. 8, Bandung 40154, West Java, Indonesia.<br>
-                <span class="text-slate-400">Hours: Mon - Fri, 08:00 - 17:00 (GMT+7)</span>
-              </p>
-            </div>
-
-            <div class="p-5 rounded-2xl bg-noto-slate border border-slate-200 space-y-2">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-noto-ocean/10 text-noto-ocean flex items-center justify-center text-sm">
-                  <i class="fas fa-industry"></i>
-                </div>
-                <strong class="text-sm text-noto-navy">Heavy Skid Fabrication Plant</strong>
-              </div>
-              <p class="text-slate-600 pl-11">
-                West Java Industrial Corridor, Indonesia.<br>
-                <span class="text-slate-400">Factory inspection visits available by advance appointment.</span>
-              </p>
-            </div>
-
-            <div class="p-5 rounded-2xl bg-noto-slate border border-slate-200 space-y-2">
-              <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-sm">
-                  <i class="fas fa-ship"></i>
-                </div>
-                <strong class="text-sm text-noto-navy">Export Logistics Desk (Port Tanjung Priok)</strong>
-              </div>
-              <p class="text-slate-600 pl-11">
-                Incoterms: FOB Tanjung Priok (IDTPP), CIF, CFR, DDP.<br>
-                <a href="mailto:export@noto.asia" class="text-noto-cyan font-bold hover:underline">export@noto.asia</a>
-              </p>
-            </div>
-
-            <div class="p-5 rounded-2xl bg-noto-navy text-white space-y-3">
-              <div class="flex items-center gap-3">
-                <i class="fab fa-whatsapp text-emerald-400 text-xl"></i>
-                <strong class="text-sm">Instant Engineering WhatsApp Desk</strong>
-              </div>
-              <p class="text-xs text-slate-300">
-                For urgent technical inquiries, specification documents, or raw water analysis reports:
-              </p>
-              <a href="https://wa.me/628122000000" target="_blank" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider transition-all">
-                <i class="fab fa-whatsapp text-sm"></i>
-                <span>Open WhatsApp Chat</span>
-              </a>
-            </div>
-
-          </div>
+      <!-- Left: Divisional Facilities Directory (Ruled Hairline List, Zero Cards) -->
+      <div class="lg:col-span-5 space-y-8">
+        <div class="space-y-2">
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">Direct Desks</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy">Corporate Facilities &amp; Contacts</h2>
         </div>
 
-        <!-- Right Column: Interactive RFQ Form -->
-        <div class="lg:col-span-7 bg-noto-slate p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="mb-6 space-y-1">
-            <span class="text-xs font-mono font-bold text-noto-cyan uppercase tracking-wider">ONLINE TECHNICAL INTAKE</span>
-            <h3 class="text-2xl font-bold text-noto-navy">Submit Fast-Track RFQ</h3>
-            <p class="text-slate-500 text-xs">Fill out the parameters below and our engineering desk will prepare a technical recommendation and commercial estimate.</p>
+        <div class="border-t border-slate-300 divide-y divide-slate-200 text-sm">
+          <div class="py-6 space-y-1.5">
+            <span class="font-mono text-[11px] text-slate-400 uppercase block">01 &middot; Headquarters &amp; Lab</span>
+            <h3 class="font-bold text-noto-navy">Bandung HQ &amp; Analytical Laboratory</h3>
+            <p class="text-slate-600 leading-relaxed">Jl. Noto Water No. 8, Bandung 40154, West Java, Indonesia.</p>
+            <p class="font-mono text-xs text-slate-500">Mon &ndash; Fri, 08:00 &ndash; 17:00 (GMT+7) &middot; +62 22 2056 8900</p>
           </div>
 
-          <form onsubmit="handleContactRfq(event)" class="space-y-4 text-xs">
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block font-bold text-noto-navy mb-1">Project Category *</label>
-                <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white">
-                  <option value="Skid Manufacturing">Skid Manufacturing (RO / SWRO / UF)</option>
-                  <option value="Containerized WWTP">Containerized Modular WWTP / MBR</option>
-                  <option value="R&D Lab Testing">R&D Lab Testing & Water Analysis</option>
-                  <option value="Global Export Logistics">Global Export & Turnkey Supply</option>
-                  <option value="Noto-Chem Reagents">Specialty Formulations & Antiscalants</option>
-                </select>
-              </div>
+          <div class="py-6 space-y-1.5">
+            <span class="font-mono text-[11px] text-slate-400 uppercase block">02 &middot; Manufacturing Works</span>
+            <h3 class="font-bold text-noto-navy">Heavy Skid Fabrication Bay</h3>
+            <p class="text-slate-600 leading-relaxed">West Java Industrial Corridor, Indonesia. Witnessed FAT &amp; plant inspection visits available by appointment.</p>
+            <a href="mailto:mfg@noto.asia" class="font-mono text-xs font-bold text-noto-ocean hover:text-noto-navy">mfg@noto.asia</a>
+          </div>
 
-              <div>
-                <label class="block font-bold text-noto-navy mb-1">Destination Country / Port *</label>
-                <input type="text" required placeholder="e.g. Singapore / Manila / Australia" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white">
-              </div>
-            </div>
+          <div class="py-6 space-y-1.5">
+            <span class="font-mono text-[11px] text-slate-400 uppercase block">03 &middot; Global Logistics</span>
+            <h3 class="font-bold text-noto-navy">Export Operations Desk (IDTPP)</h3>
+            <p class="text-slate-600 leading-relaxed">Port of Tanjung Priok maritime dispatch under FOB, CFR, CIF, and DDP terms.</p>
+            <a href="mailto:export@noto.asia" class="font-mono text-xs font-bold text-noto-ocean hover:text-noto-navy">export@noto.asia</a>
+          </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block font-bold text-noto-navy mb-1">Your Full Name *</label>
-                <input type="text" required placeholder="Name & Position" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white">
-              </div>
-              <div>
-                <label class="block font-bold text-noto-navy mb-1">Company / EPC Firm *</label>
-                <input type="text" required placeholder="Company Name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block font-bold text-noto-navy mb-1">Corporate Email *</label>
-                <input type="email" required placeholder="name@company.com" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white">
-              </div>
-              <div>
-                <label class="block font-bold text-noto-navy mb-1">Phone / WhatsApp *</label>
-                <input type="tel" required placeholder="+CountryCode Number" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white">
-              </div>
-            </div>
-
-            <div>
-              <label class="block font-bold text-noto-navy mb-1">Water Parameters or Project Sizing</label>
-              <textarea rows="4" placeholder="Detail raw water source, required flow rate (m³/day or GPM), feed TDS, target effluent discharge standards, or preferred skid metallurgy (SS304/SS316)." class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-noto-cyan bg-white"></textarea>
-            </div>
-
-            <div class="pt-2">
-              <button type="submit" class="w-full py-3.5 rounded-xl bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md ">
-                Transmit RFQ to Engineering & Logistics Desk
-              </button>
-            </div>
-
-          </form>
-
-          <div id="contactSuccessMsg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
-            <strong class="block font-bold">Inquiry Sent Successfully!</strong>
-            <span>Our international technical team will review your specifications and contact you shortly.</span>
+          <div class="py-6 space-y-3">
+            <span class="font-mono text-[11px] text-emerald-700 uppercase block">04 &middot; Urgent Engineering Desk</span>
+            <h3 class="font-bold text-noto-navy">Direct WhatsApp Technical Line</h3>
+            <p class="text-slate-600 leading-relaxed">Share raw water lab sheets or urgent P&amp;ID inquiries directly with a process engineer.</p>
+            <a href="https://wa.me/628122000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider transition-colors">
+              <i class="fab fa-whatsapp text-sm"></i>
+              <span>Open WhatsApp Chat</span>
+            </a>
           </div>
         </div>
-
       </div>
+
+      <!-- Right: Flat Precision RFQ Form -->
+      <div class="lg:col-span-7 lg:pl-12 lg:border-l border-slate-200">
+        <div class="pb-6 mb-8 border-b border-slate-300 space-y-1">
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">Online Technical Intake</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy">Submit Fast-Track RFQ</h2>
+          <p class="text-slate-600 text-sm">Provide your raw water parameters and destination port to receive a preliminary P&amp;ID and commercial quotation.</p>
+        </div>
+
+        <form onsubmit="handleInlineRfqSubmit(event, 'contactSuccessMsg')" class="space-y-5 text-sm">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="contactCategory" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Project Category *</label>
+              <select id="contactCategory" required class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy">
+                <option value="Skid Manufacturing">Skid Manufacturing (RO / SWRO / UF)</option>
+                <option value="Containerized WWTP">Containerized Modular WWTP / MBR</option>
+                <option value="R&amp;D Lab Testing">R&amp;D Lab Testing &amp; Water Analysis</option>
+                <option value="Global Export Logistics">Global Export &amp; Turnkey Supply</option>
+                <option value="Noto-Chem Reagents">Specialty Formulations &amp; Antiscalants</option>
+              </select>
+            </div>
+            <div>
+              <label for="contactDestination" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Destination Country / Port *</label>
+              <input type="text" id="contactDestination" required placeholder="e.g. Singapore / Manila / Fremantle" class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="contactName" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Your Full Name *</label>
+              <input type="text" id="contactName" required placeholder="Name &amp; Position" class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy">
+            </div>
+            <div>
+              <label for="contactCompany" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Company / EPC Firm *</label>
+              <input type="text" id="contactCompany" required placeholder="Company Name" class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label for="contactEmail" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Corporate Email *</label>
+              <input type="email" id="contactEmail" required placeholder="name@company.com" class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy">
+            </div>
+            <div>
+              <label for="contactPhone" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Phone / WhatsApp *</label>
+              <input type="tel" id="contactPhone" required placeholder="+CountryCode Number" class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy">
+            </div>
+          </div>
+
+          <div>
+            <label for="contactNotes" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Water Parameters &amp; Project Sizing</label>
+            <textarea id="contactNotes" rows="5" placeholder="Detail raw water source, required flow rate (m3/day or GPM), feed TDS, effluent limits, or preferred skid metallurgy (SS304 / SS316L / Super Duplex)." class="w-full px-4 py-3 border border-slate-300 bg-slate-50 focus:outline-none focus:border-noto-navy"></textarea>
+          </div>
+
+          <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <span class="text-xs text-slate-500">All client drawings &amp; water dossiers handled under strict NDA.</span>
+            <button type="submit" class="px-8 py-4 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+              Transmit RFQ to Engineering Desk
+            </button>
+          </div>
+        </form>
+
+        <div id="contactSuccessMsg" class="hidden mt-6 p-4 bg-emerald-50 border-l-2 border-emerald-600 text-emerald-900 text-sm">
+          <strong class="font-bold">Inquiry Transmitted.</strong> Our engineering and logistics desk will review your specifications and respond within 24&ndash;48 hours.
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
-        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+  <!-- Unified Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-9 w-auto brightness-200 grayscale contrast-200">
+          <p class="text-slate-400 text-sm leading-relaxed font-light">PT Noto Water Envirotech engineers, fabricates, and exports industrial water and wastewater treatment systems worldwide.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Core Solutions</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="solutions.html#ro" class="hover:text-white transition-colors">Industrial RO Skids</a></li>
+            <li><a href="solutions.html#contbox" class="hover:text-white transition-colors">Containerized WWTP / MBR</a></li>
+            <li><a href="solutions.html#oem" class="hover:text-white transition-colors">OEM Skid Fabrication</a></li>
+            <li><a href="diagnostic.html" class="hover:text-white transition-colors">RO Sizing Calculator</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Company</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="technology.html" class="hover:text-white transition-colors">R&amp;D Analytical Lab</a></li>
+            <li><a href="export-import.html" class="hover:text-white transition-colors">Global Export Logistics</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">Technical Insights</a></li>
+            <li><a href="careers.html" class="hover:text-white transition-colors">Engineering Careers</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Contact &amp; Bay</h4>
+          <div class="space-y-2 text-sm font-light">
+            <p><strong class="text-white font-medium">HQ &amp; Lab:</strong> Bandung, West Java, Indonesia</p>
+            <p><strong class="text-white font-medium">Export Port:</strong> Tanjung Priok (IDTPP)</p>
+            <p><strong class="text-white font-medium">Email:</strong> <a href="mailto:global@noto.asia" class="hover:text-white">global@noto.asia</a></p>
+            <p><strong class="text-white font-medium">Phone:</strong> <a href="tel:+622220568900" class="hover:text-white font-mono">+62 22 2056 8900</a></p>
+          </div>
+        </div>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>&copy; 1995 &ndash; 2026 PT Noto Water Envirotech. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Contact &amp; RFQ</a>
+          <a href="export-import.html" class="hover:text-slate-300 transition-colors">Export Compliance</a>
+          <a href="about.html" class="hover:text-slate-300 transition-colors">ISO 9001:2015</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="js/noto-ui.js"></script>
   <script>
-    function handleContactRfq(e) {
-      e.preventDefault();
-      document.getElementById('contactSuccessMsg').classList.remove('hidden');
-      e.target.reset();
-    }
+    // Pre-populate notes if redirected from diagnostic.html or news.html
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const sys = params.get('system');
+      const cap = params.get('capacity');
+      const notesEl = document.getElementById('contactNotes');
+      if (notesEl && (sys || cap)) {
+        const parts = [];
+        if (sys) parts.push('Reference System / Document: ' + sys);
+        if (cap) parts.push('Target Capacity: ' + cap);
+        notesEl.value = parts.join('\n') + '\n';
+      }
+    })();
   </script>
-
 </body>
 </html>

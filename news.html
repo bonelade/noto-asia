@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Insights & Global Trade News | PT Noto Water Envirotech</title>
-  <meta name="description" content="Technical whitepapers, water chemistry research, and international trade insights from the engineering desk at PT Noto Water Envirotech.">
+  <title>Technical Insights &amp; Whitepapers | PT Noto Water Envirotech</title>
+  <meta name="description" content="Technical whitepapers, water chemistry research, and international trade briefings published by the engineering desk at PT Noto Water Envirotech.">
   <link rel="canonical" href="https://noto.asia/news.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,16 +20,16 @@
           colors: {
             noto: {
               navy: '#092534',
+              dark: '#051822',
               ocean: '#2B6F8B',
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822',
               border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
             mono: ['"Space Grotesk"', 'monospace'],
           }
@@ -40,175 +38,257 @@
     }
   </script>
 
-  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/waterplus-theme.css">
-
   <style>
-    /* Clean Industrial Architectural Design (Non-Neon) */
-    .pillar-card {
-      transition: all 0.25s ease;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
-    }
-    .rfq-modal-enter {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    .rfq-modal-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
   </style>
 </head>
 
-<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-navy selection:text-white">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
-          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
-          Knowledge Hub
+  <!-- Top Status Bar -->
+  <div class="bg-noto-dark text-slate-400 text-[11px] py-2.5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-slate-300">
+          <span class="w-1.5 h-1.5 bg-emerald-500"></span>
+          Technical Knowledge Hub &middot; Engineering Research
         </span>
-        <span class="text-slate-300 font-medium">Technical Papers & Industrial Water Engineering Research</span>
       </div>
-      <div class="flex items-center gap-5 text-slate-400">
-        <a href="mailto:editor@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
-          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
-          <span>editor@noto.asia</span>
-        </a>
+      <div class="flex items-center gap-6 font-mono">
+        <a href="mailto:editor@noto.asia" class="hover:text-white transition-colors hidden sm:inline">editor@noto.asia</a>
+        <a href="tel:+622220568900" class="hover:text-white transition-colors">+62 22 2056 8900</a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+  <!-- Unified Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
-        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
-          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
-            PT Noto Water Envirotech
-          </span>
-          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
-            R&D • Manufacturing • Global Trade
-          </span>
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-10 sm:h-11 w-auto transition-opacity group-hover:opacity-85">
+        <div class="border-l border-slate-300 pl-3.5 hidden sm:flex flex-col justify-center">
+          <span class="font-heading font-bold text-xs tracking-wider uppercase text-noto-navy">PT Noto Water Envirotech</span>
+          <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase mt-0.5">R&amp;D &middot; Manufacturing &middot; Global Trade</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-6">
-        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
-        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Lab</a>
-        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Manufacturing</a>
-        <a href="export-import.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Global Trade</a>
-        <a href="portfolio.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Case Studies</a>
-        <a href="news.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Insights</a>
-        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact</a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Home</a>
+        <a href="solutions.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Systems &amp; Skids</a>
+        <a href="technology.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">R&amp;D Lab</a>
+        <a href="export-import.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Case Studies</a>
+        <a href="about.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">About</a>
       </nav>
 
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
-          <i class="fas fa-file-invoice"></i>
-          <span>Request B2B RFQ</span>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 bg-noto-navy hover:bg-noto-ocean text-white font-semibold text-xs tracking-wider uppercase transition-colors">
+          <span>Contact &amp; RFQ</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
         </a>
+      </div>
+
+      <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle Navigation" class="lg:hidden p-2 text-noto-navy hover:bg-slate-100">
+        <i class="fas fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl">
+      <div class="flex flex-col divide-y divide-slate-100 text-xs font-semibold uppercase tracking-wider">
+        <a href="index.html" class="py-3 text-slate-700 hover:text-noto-navy">Home</a>
+        <a href="solutions.html" class="py-3 text-slate-700 hover:text-noto-navy">Systems &amp; Skids</a>
+        <a href="technology.html" class="py-3 text-slate-700 hover:text-noto-navy">R&amp;D Lab</a>
+        <a href="export-import.html" class="py-3 text-slate-700 hover:text-noto-navy">Global Trade</a>
+        <a href="portfolio.html" class="py-3 text-slate-700 hover:text-noto-navy">Case Studies</a>
+        <a href="news.html" class="py-3 text-noto-navy font-bold">Technical Insights</a>
+        <a href="about.html" class="py-3 text-slate-700 hover:text-noto-navy">About Us</a>
+        <a href="contact.html" class="py-3 text-slate-700 hover:text-noto-navy">Contact &amp; RFQ</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="relative bg-noto-navy text-white py-20 ">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
+  <!-- Page Hero -->
+  <section class="bg-noto-navy text-white py-20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-noto-ice/80 flex items-center gap-3">
+        <span class="w-8 h-px bg-noto-cyan inline-block"></span>
         Technical Knowledge Hub
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Engineering Insights & <br>
-        <span class="text-noto-ice font-extrabold">Global Industry Perspectives</span>
+      </p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] max-w-4xl">
+        Engineering Insights &amp;<br>
+        <span class="text-noto-ice font-normal">Global Water Research Briefings</span>
       </h1>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-        Technical guides, research updates, and global supply chain briefings published by our senior water chemists and manufacturing engineers.
+      <p class="text-slate-300 text-sm sm:text-base font-light max-w-2xl leading-relaxed">
+        Whitepapers, regulatory analyses, and field engineering guides authored by our water chemists, fabrication leads, and export operations desk.
       </p>
     </div>
   </section>
 
-  <!-- Articles Grid -->
-  <section class="py-20 bg-white">
+  <!-- Pola A: Engineering Whitepapers Index (Replaces 3 Text Cards) -->
+  <section class="py-20 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Article 1 -->
-        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-noto-cyan/10 text-slate-400 font-mono text-[10px] font-bold uppercase">R&D WHITE PAPER</span>
-            <h3 class="text-lg font-bold text-noto-navy">Mitigating Colloidal Silica Scaling in High-Recovery RO</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              An empirical analysis of polymeric phosphonocarboxylate antiscalants in maintaining up to 350 ppm reactive SiO₂ in solution at 85% system recovery.
+      <div class="pb-6 border-b border-slate-300 flex items-end justify-between">
+        <div>
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">International Briefings</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy mt-1">Engineering Whitepapers</h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500">English Edition</span>
+      </div>
+
+      <div class="divide-y divide-slate-200 border-b border-slate-200">
+        <article class="py-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 font-mono text-xs space-y-1">
+            <span class="text-slate-400 block">WP-01</span>
+            <span class="text-noto-ocean font-bold uppercase block">R&amp;D Whitepaper</span>
+          </div>
+          <div class="lg:col-span-7 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy">Mitigating Colloidal Silica Scaling in High-Recovery RO</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Empirical performance study of polymeric phosphonocarboxylate antiscalants maintaining up to 350 ppm reactive SiO&#8322; in solution at 85% brackish recovery without irreversible flux decline.
             </p>
           </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 font-mono">By Dr. M. Arifin, R&D Lead</span>
-            <span class="text-noto-cyan font-bold">Read Whitepaper &rarr;</span>
+          <div class="lg:col-span-3 lg:text-right font-mono text-xs space-y-2">
+            <span class="text-slate-500 block">Dr. M. Arifin, R&amp;D Lead</span>
+            <a href="contact.html?system=Whitepaper%20WP-01%20Silica%20Scaling" class="inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-noto-navy hover:text-noto-ocean">
+              <span>Request PDF</span><i class="fas fa-arrow-right text-[10px]"></i>
+            </a>
           </div>
         </article>
 
-        <!-- Article 2 -->
-        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-noto-ocean/10 text-noto-ocean font-mono text-[10px] font-bold uppercase">ENGINEERING COMPARISON</span>
-            <h3 class="text-lg font-bold text-noto-navy">Containerized MBR vs In-Situ Concrete WWTPs</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Comparative analysis of capital expenditures, civil construction timelines, and footprint savings using 40ft ISO modular biological wastewater treatment containers.
+        <article class="py-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 font-mono text-xs space-y-1">
+            <span class="text-slate-400 block">EG-02</span>
+            <span class="text-noto-ocean font-bold uppercase block">Engineering Guide</span>
+          </div>
+          <div class="lg:col-span-7 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy">Containerized MBR vs. In-Situ Concrete WWTPs</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Lifecycle CAPEX comparison, civil engineering timeline reduction, and site footprint savings achieved by deploying plug-and-play 40ft ISO containerized biological treatment modules.
             </p>
           </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 font-mono">Fabrication Engineering Desk</span>
-            <span class="text-noto-ocean font-bold">Read Guide &rarr;</span>
+          <div class="lg:col-span-3 lg:text-right font-mono text-xs space-y-2">
+            <span class="text-slate-500 block">Fabrication Engineering Desk</span>
+            <a href="contact.html?system=Engineering%20Guide%20EG-02%20MBR%20Comparison" class="inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-noto-navy hover:text-noto-ocean">
+              <span>Request PDF</span><i class="fas fa-arrow-right text-[10px]"></i>
+            </a>
           </div>
         </article>
 
-        <!-- Article 3 -->
-        <article class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-600 font-mono text-[10px] font-bold uppercase">GLOBAL TRADE & LOGISTICS</span>
-            <h3 class="text-lg font-bold text-noto-navy">Incoterms 2020 & Seaworthy Crating for Sensitive Skids</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Standard operating procedures for ISPM-15 heat-treated packing, anti-corrosive desiccants, and marine insurance protocols when exporting water skids worldwide.
+        <article class="py-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 font-mono text-xs space-y-1">
+            <span class="text-slate-400 block">OP-03</span>
+            <span class="text-noto-ocean font-bold uppercase block">Global Logistics</span>
+          </div>
+          <div class="lg:col-span-7 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy">Incoterms&reg; 2020 &amp; Seaworthy Crating for Sensitive Skids</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Standard operating procedures for ISPM-15 heat-treated packing, vapor-barrier desiccants, shock monitors, and marine cargo coverage when exporting instrumented skids worldwide.
             </p>
           </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 font-mono">Export Operations Desk</span>
-            <span class="text-emerald-600 font-bold">Read Protocol &rarr;</span>
+          <div class="lg:col-span-3 lg:text-right font-mono text-xs space-y-2">
+            <span class="text-slate-500 block">Export Operations Desk</span>
+            <a href="contact.html?system=Export%20Protocol%20OP-03%20Crating" class="inline-flex items-center gap-1.5 font-bold uppercase tracking-wider text-noto-navy hover:text-noto-ocean">
+              <span>Request PDF</span><i class="fas fa-arrow-right text-[10px]"></i>
+            </a>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
-        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+  <!-- Pola A: Published Field Technical Articles (Live Local Pages) -->
+  <section class="py-20 bg-noto-slate">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="pb-6 border-b border-slate-300 flex items-end justify-between">
+        <div>
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">Field Library</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy mt-1">Published Technical Articles (ID)</h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500">Full Online Reads</span>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
-        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+
+      <div class="divide-y divide-slate-200 border-b border-slate-200">
+        <a href="article-standar-permenkes-2023.html" class="group py-7 grid grid-cols-1 lg:grid-cols-12 gap-4 items-baseline hover:bg-white transition-colors px-2 -mx-2">
+          <span class="lg:col-span-2 font-mono text-xs text-noto-ocean font-bold uppercase">Regulation</span>
+          <div class="lg:col-span-8">
+            <h3 class="font-heading text-lg font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">Standar Baku Mutu Air Minum &amp; Sanitasi Permenkes No. 2 Tahun 2023</h3>
+            <p class="text-sm text-slate-600 mt-1">Panduan parameter TDS, kekeruhan, logam berat, dan kepatuhan fasilitas industri terhadap regulasi terbaru.</p>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase text-noto-navy">Read Article &rarr;</span>
+        </a>
+
+        <a href="article-water-softener-kapur-boiler.html" class="group py-7 grid grid-cols-1 lg:grid-cols-12 gap-4 items-baseline hover:bg-white transition-colors px-2 -mx-2">
+          <span class="lg:col-span-2 font-mono text-xs text-noto-ocean font-bold uppercase">Boiler &amp; Utility</span>
+          <div class="lg:col-span-8">
+            <h3 class="font-heading text-lg font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">Pencegahan Kerak Kapur Boiler Industri dengan Sistem Water Softener &amp; Ion Exchange</h3>
+            <p class="text-sm text-slate-600 mt-1">Analisis efisiensi termal boiler, regenerasi resin kation, dan penghematan bahan bakar di pabrik.</p>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase text-noto-navy">Read Article &rarr;</span>
+        </a>
+
+        <a href="article-air-sumur-bor-bandung.html" class="group py-7 grid grid-cols-1 lg:grid-cols-12 gap-4 items-baseline hover:bg-white transition-colors px-2 -mx-2">
+          <span class="lg:col-span-2 font-mono text-xs text-noto-ocean font-bold uppercase">Groundwater</span>
+          <div class="lg:col-span-8">
+            <h3 class="font-heading text-lg font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">Penanganan Air Sumur Bor Bandung: Besi (Fe), Mangan (Mn), dan Bau Logam</h3>
+            <p class="text-sm text-slate-600 mt-1">Karakteristik hidrogeologi Cekungan Bandung dan konfigurasi oksidasi &ndash; filtrasi multi-media yang tepat.</p>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase text-noto-navy">Read Article &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-9 w-auto brightness-200 grayscale contrast-200">
+          <p class="text-slate-400 text-sm leading-relaxed font-light">PT Noto Water Envirotech engineers, fabricates, and exports industrial water and wastewater treatment systems worldwide.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Core Solutions</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="solutions.html#ro" class="hover:text-white transition-colors">Industrial RO Skids</a></li>
+            <li><a href="solutions.html#contbox" class="hover:text-white transition-colors">Containerized WWTP / MBR</a></li>
+            <li><a href="solutions.html#oem" class="hover:text-white transition-colors">OEM Skid Fabrication</a></li>
+            <li><a href="diagnostic.html" class="hover:text-white transition-colors">RO Sizing Calculator</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Company</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="technology.html" class="hover:text-white transition-colors">R&amp;D Analytical Lab</a></li>
+            <li><a href="export-import.html" class="hover:text-white transition-colors">Global Export Logistics</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">Technical Insights</a></li>
+            <li><a href="careers.html" class="hover:text-white transition-colors">Engineering Careers</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Contact &amp; Bay</h4>
+          <div class="space-y-2 text-sm font-light">
+            <p><strong class="text-white font-medium">HQ &amp; Lab:</strong> Bandung, West Java, Indonesia</p>
+            <p><strong class="text-white font-medium">Export Port:</strong> Tanjung Priok (IDTPP)</p>
+            <p><strong class="text-white font-medium">Email:</strong> <a href="mailto:editor@noto.asia" class="hover:text-white">editor@noto.asia</a></p>
+            <p><strong class="text-white font-medium">Phone:</strong> <a href="tel:+622220568900" class="hover:text-white font-mono">+62 22 2056 8900</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>&copy; 1995 &ndash; 2026 PT Noto Water Envirotech. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Contact &amp; RFQ</a>
+          <a href="export-import.html" class="hover:text-slate-300 transition-colors">Export Compliance</a>
+          <a href="about.html" class="hover:text-slate-300 transition-colors">ISO 9001:2015</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="js/noto-ui.js"></script>
 </body>
 </html>

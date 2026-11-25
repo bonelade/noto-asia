@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Projects & Engineering Case Studies | PT Noto Water Envirotech</title>
+  <title>Case Studies &amp; Commissioned Projects | PT Noto Water Envirotech</title>
   <meta name="description" content="Explore commissioned industrial water treatment projects, containerized WWTP installations, and seawater desalination skids by PT Noto Water Envirotech worldwide.">
   <link rel="canonical" href="https://noto.asia/portfolio.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,16 +20,16 @@
           colors: {
             noto: {
               navy: '#092534',
+              dark: '#051822',
               ocean: '#2B6F8B',
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822',
               border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
             mono: ['"Space Grotesk"', 'monospace'],
           }
@@ -40,249 +38,403 @@
     }
   </script>
 
-  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/waterplus-theme.css">
-
   <style>
-    /* Clean Industrial Architectural Design (Non-Neon) */
-    .pillar-card {
-      transition: all 0.25s ease;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
-    }
-    .rfq-modal-enter {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    .rfq-modal-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
   </style>
 </head>
 
-<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-navy selection:text-white">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
-          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
-          Engineering Track Record
+  <!-- Top Status Bar -->
+  <div class="bg-noto-dark text-slate-400 text-[11px] py-2.5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-slate-300">
+          <span class="w-1.5 h-1.5 bg-emerald-500"></span>
+          1,200+ Commissioned Systems Across 18+ Markets
         </span>
-        <span class="text-slate-300 font-medium">1,200+ Commissioned Plants & Modular Skids Across Indonesia & Global Markets</span>
       </div>
-      <div class="flex items-center gap-5 text-slate-400">
-        <a href="mailto:projects@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
-          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
-          <span>projects@noto.asia</span>
-        </a>
-        <span class="hidden sm:inline text-slate-700">•</span>
-        <a href="tel:+622220568900" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5 font-mono">
-          <i class="fas fa-phone-alt text-noto-cyan text-xs"></i>
-          <span>+62 22 2056 8900</span>
-        </a>
+      <div class="flex items-center gap-6 font-mono">
+        <a href="mailto:projects@noto.asia" class="hover:text-white transition-colors hidden sm:inline">projects@noto.asia</a>
+        <a href="tel:+622220568900" class="hover:text-white transition-colors">+62 22 2056 8900</a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+  <!-- Unified Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
-        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
-          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
-            PT Noto Water Envirotech
-          </span>
-          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
-            R&D • Manufacturing • Global Trade
-          </span>
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-10 sm:h-11 w-auto transition-opacity group-hover:opacity-85">
+        <div class="border-l border-slate-300 pl-3.5 hidden sm:flex flex-col justify-center">
+          <span class="font-heading font-bold text-xs tracking-wider uppercase text-noto-navy">PT Noto Water Envirotech</span>
+          <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase mt-0.5">R&amp;D &middot; Manufacturing &middot; Global Trade</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-6">
-        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
-        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Lab</a>
-        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Manufacturing</a>
-        <a href="export-import.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Global Trade</a>
-        <a href="portfolio.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Case Studies</a>
-        <a href="diagnostic.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Sizing Tool</a>
-        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact</a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Home</a>
+        <a href="solutions.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Systems &amp; Skids</a>
+        <a href="technology.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">R&amp;D Lab</a>
+        <a href="export-import.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-xs font-bold text-noto-navy tracking-wider uppercase border-b-2 border-noto-navy pb-1">Case Studies</a>
+        <a href="about.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">About</a>
       </nav>
 
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
-          <i class="fas fa-file-invoice"></i>
-          <span>Request B2B RFQ</span>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="https://wa.me/628122000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-noto-navy transition-colors">
+          <i class="fab fa-whatsapp text-emerald-600 text-sm"></i>
+          <span>Consultation</span>
         </a>
+        <button type="button" onclick="openRfqModal('Project Reference & Proposal')" class="inline-flex items-center gap-2 px-5 py-3 bg-noto-navy hover:bg-noto-ocean text-white font-semibold text-xs tracking-wider uppercase transition-colors">
+          <span>Request RFQ</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
+        </button>
+      </div>
+
+      <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle Navigation" class="lg:hidden p-2 text-noto-navy hover:bg-slate-100">
+        <i class="fas fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl">
+      <div class="flex flex-col divide-y divide-slate-100 text-xs font-semibold uppercase tracking-wider">
+        <a href="index.html" class="py-3 text-slate-700 hover:text-noto-navy">Home</a>
+        <a href="solutions.html" class="py-3 text-slate-700 hover:text-noto-navy">Systems &amp; Skids</a>
+        <a href="technology.html" class="py-3 text-slate-700 hover:text-noto-navy">R&amp;D Lab</a>
+        <a href="export-import.html" class="py-3 text-slate-700 hover:text-noto-navy">Global Trade</a>
+        <a href="portfolio.html" class="py-3 text-noto-navy font-bold">Case Studies</a>
+        <a href="diagnostic.html" class="py-3 text-slate-700 hover:text-noto-navy">Sizing Calculator</a>
+        <a href="about.html" class="py-3 text-slate-700 hover:text-noto-navy">About Us</a>
+        <a href="contact.html" class="py-3 text-slate-700 hover:text-noto-navy">Contact &amp; RFQ</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="relative bg-noto-navy text-white py-20 ">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
-        Proven Project Portfolio
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Engineered Installations & <br>
-        <span class="text-noto-ice font-extrabold">Global Field Case Studies</span>
+  <!-- Page Hero -->
+  <section class="bg-noto-navy text-white py-20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-noto-ice/80 flex items-center gap-3">
+        <span class="w-8 h-px bg-noto-cyan inline-block"></span>
+        Commissioned Engineering Dossier
+      </p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] max-w-4xl">
+        Engineered Installations &amp;<br>
+        <span class="text-noto-ice font-normal">Global Field Case Studies</span>
       </h1>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-        Discover how PT Noto Water Envirotech solves critical effluent compliance, high-salinity seawater desalination, and high-recovery recycling challenges for leading industrial enterprises.
+      <p class="text-slate-300 text-sm sm:text-base font-light max-w-2xl leading-relaxed">
+        Verified field performance across high-COD textile recycling, seawater desalination, remote mining modular STP plants, and power generation ultrapure demineralization.
       </p>
     </div>
   </section>
 
-  <!-- Case Studies Grid -->
-  <section class="py-20 bg-white">
+  <!-- Pola A: Hairline Dossier Case Study Index (Replaces 6 Text-Only Cards) -->
+  <section class="py-16 lg:py-24 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Case 1 -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-noto-cyan/10 text-slate-400 font-mono text-[10px] font-bold uppercase">Textile & Dyeing Effluent</span>
-            <h3 class="text-lg font-bold text-noto-navy">2,500 m³/day MBR & Water Recycling Plant</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Engineered for a major textile exporter in West Java. Integrated high-rate DAF, submerged membrane bioreactor (MBR), and polishing RO.
-            </p>
-            <div class="pt-2 border-t border-slate-100 text-xs font-mono space-y-1 text-slate-700">
-              <div class="flex justify-between"><span>Recycling Yield:</span><strong class="text-noto-navy">78% Treated Water Reused</strong></div>
-              <div class="flex justify-between"><span>COD Discharge:</span><strong class="text-emerald-600">&lt; 25 mg/L (From 3,200)</strong></div>
-              <div class="flex justify-between"><span>Annual Savings:</span><strong class="text-noto-navy">$185,000 in Fresh Water</strong></div>
-            </div>
-          </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100">
-            <span class="text-xs text-slate-500 font-mono">Location: Majalaya, Indonesia</span>
-          </div>
-        </div>
 
-        <!-- Case 2 -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-600 font-mono text-[10px] font-bold uppercase">Island Seawater RO</span>
-            <h3 class="text-lg font-bold text-noto-navy">800 m³/day Seawater Desalination (SWRO)</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Turnkey modular SWRO skid with Danfoss isobaric energy recovery device (ERD) supplying 100% of potable and guest water for an eco-luxury island resort.
-            </p>
-            <div class="pt-2 border-t border-slate-100 text-xs font-mono space-y-1 text-slate-700">
-              <div class="flex justify-between"><span>Feed Salinity:</span><strong class="text-noto-navy">36,000 ppm TDS</strong></div>
-              <div class="flex justify-between"><span>Permeate Quality:</span><strong class="text-emerald-600">&lt; 180 ppm TDS (WHO Standard)</strong></div>
-              <div class="flex justify-between"><span>Specific Energy:</span><strong class="text-noto-navy">2.85 kWh / m³</strong></div>
-            </div>
-          </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100">
-            <span class="text-xs text-slate-500 font-mono">Location: Southeast Asia Marine Island</span>
-          </div>
+      <!-- Sharp Rectangular Filter Strip -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-8 border-b border-slate-300">
+        <span class="font-mono text-xs uppercase tracking-widest text-slate-500">Showing <strong id="caseCount" class="text-noto-navy">6</strong> Reference Installations</span>
+        <div class="flex flex-wrap gap-1.5">
+          <button type="button" onclick="filterCases('all', this)" class="case-filter px-4 py-2 bg-noto-navy text-white font-mono text-[11px] font-bold uppercase tracking-wider border border-noto-navy">All</button>
+          <button type="button" onclick="filterCases('ro', this)" class="case-filter px-4 py-2 bg-white text-slate-700 hover:bg-slate-100 font-mono text-[11px] font-semibold uppercase tracking-wider border border-slate-300">RO &amp; Ultrapure</button>
+          <button type="button" onclick="filterCases('wwtp', this)" class="case-filter px-4 py-2 bg-white text-slate-700 hover:bg-slate-100 font-mono text-[11px] font-semibold uppercase tracking-wider border border-slate-300">WWTP &amp; Reuse</button>
+          <button type="button" onclick="filterCases('export', this)" class="case-filter px-4 py-2 bg-white text-slate-700 hover:bg-slate-100 font-mono text-[11px] font-semibold uppercase tracking-wider border border-slate-300">Export &amp; Modular</button>
         </div>
+      </div>
 
-        <!-- Case 3 -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-noto-ocean/10 text-noto-ocean font-mono text-[10px] font-bold uppercase">Modular Mining WWTP</span>
-            <h3 class="text-lg font-bold text-noto-navy">Noto-ContBox™ 500 m³/day Mining Camp STP</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Pre-assembled and hydro-tested inside two 40ft High-Cube ISO containers. Shipped by barge to a remote mineral mining site in East Kalimantan.
-            </p>
-            <div class="pt-2 border-t border-slate-100 text-xs font-mono space-y-1 text-slate-700">
-              <div class="flex justify-between"><span>Deployment Time:</span><strong class="text-emerald-600">Under 48 Hours On-Site</strong></div>
-              <div class="flex justify-between"><span>Civil Work Needed:</span><strong class="text-noto-navy">Flat Concrete Slab Only</strong></div>
-              <div class="flex justify-between"><span>Remote Monitoring:</span><strong class="text-noto-navy">Satellite IoT Telemetry</strong></div>
-            </div>
-          </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100">
-            <span class="text-xs text-slate-500 font-mono">Location: East Kalimantan, Indonesia</span>
-          </div>
-        </div>
+      <!-- Ruled Case Study Rows -->
+      <div class="divide-y divide-slate-200 border-b border-slate-200">
 
-        <!-- Case 4 -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-noto-cyan/10 text-slate-400 font-mono text-[10px] font-bold uppercase">Power Plant Ultrapure</span>
-            <h3 class="text-lg font-bold text-noto-navy">1,200 m³/day Boiler Feed Demineralization</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Two-pass Reverse Osmosis followed by continuous Electrodeionization (CEDI) and UV TOC reduction for a 450 MW combined cycle power generation facility.
+        <article class="case-row wwtp py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 space-y-1 font-mono text-xs">
+            <span class="text-slate-400 block">CS-01</span>
+            <span class="text-noto-ocean font-bold uppercase block">Textile &amp; Dyeing</span>
+            <span class="text-slate-500 block pt-1">Majalaya, Indonesia</span>
+          </div>
+          <div class="lg:col-span-5 space-y-2">
+            <h2 class="font-heading text-xl font-bold text-noto-navy">2,500 m&sup3;/day MBR &amp; Water Recycling Plant</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Engineered for a major textile exporter in West Java. Integrates high-rate DAF pretreatment, submerged membrane bioreactor (MBR), and polishing RO to close the industrial water loop.
             </p>
-            <div class="pt-2 border-t border-slate-100 text-xs font-mono space-y-1 text-slate-700">
-              <div class="flex justify-between"><span>Conductivity:</span><strong class="text-emerald-600">&lt; 0.08 µS/cm</strong></div>
-              <div class="flex justify-between"><span>Reactive Silica:</span><strong class="text-emerald-600">&lt; 5 ppb</strong></div>
-              <div class="flex justify-between"><span>System Uptime:</span><strong class="text-noto-navy">99.8% Continuous Run</strong></div>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-4 lg:pt-0 lg:pl-8 font-mono">
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Reuse Yield</span>
+              <strong class="text-base text-noto-navy tabular-nums mt-1 block">78%</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">COD Output</span>
+              <strong class="text-base text-emerald-700 tabular-nums mt-1 block">&lt; 25 mg/L</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Annual Saving</span>
+              <strong class="text-base text-noto-navy tabular-nums mt-1 block">$185K/yr</strong>
             </div>
           </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100">
-            <span class="text-xs text-slate-500 font-mono">Location: Cilegon Industrial Zone</span>
-          </div>
-        </div>
+        </article>
 
-        <!-- Case 5 -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-600 font-mono text-[10px] font-bold uppercase">F&B Sanitary RO</span>
-            <h3 class="text-lg font-bold text-noto-navy">3,000 m³/day Ingredient Water RO Skid</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Sanitary SS316L orbital-welded RO skid with automated ozone disinfection and hot water sanitization for a multinational beverage manufacturing facility.
+        <article class="case-row ro export py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 space-y-1 font-mono text-xs">
+            <span class="text-slate-400 block">CS-02</span>
+            <span class="text-noto-ocean font-bold uppercase block">Seawater RO</span>
+            <span class="text-slate-500 block pt-1">SE Asia Marine Island</span>
+          </div>
+          <div class="lg:col-span-5 space-y-2">
+            <h2 class="font-heading text-xl font-bold text-noto-navy">800 m&sup3;/day Seawater Desalination (SWRO)</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Turnkey modular SWRO skid built with Danfoss isobaric energy recovery device (ERD) supplying 100% potable WHO-grade guest and utility water for an offshore luxury island resort.
             </p>
-            <div class="pt-2 border-t border-slate-100 text-xs font-mono space-y-1 text-slate-700">
-              <div class="flex justify-between"><span>Sanitization:</span><strong class="text-noto-navy">Hot Water 85°C CIP Loop</strong></div>
-              <div class="flex justify-between"><span>Standard:</span><strong class="text-emerald-600">HACCP / ISO 22000 Ready</strong></div>
-              <div class="flex justify-between"><span>Controls:</span><strong class="text-noto-navy">Rockwell Allen-Bradley PLC</strong></div>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-4 lg:pt-0 lg:pl-8 font-mono">
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Feed TDS</span>
+              <strong class="text-base text-noto-navy tabular-nums mt-1 block">36,000 ppm</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Permeate</span>
+              <strong class="text-base text-emerald-700 tabular-nums mt-1 block">&lt; 180 ppm</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Energy</span>
+              <strong class="text-base text-noto-navy tabular-nums mt-1 block">2.85 kWh/m&sup3;</strong>
             </div>
           </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100">
-            <span class="text-xs text-slate-500 font-mono">Location: Bekasi Industrial Estate</span>
-          </div>
-        </div>
+        </article>
 
-        <!-- Case 6 -->
-        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
-          <div class="p-6 space-y-3">
-            <span class="px-2.5 py-1 rounded bg-noto-ocean/10 text-noto-ocean font-mono text-[10px] font-bold uppercase">International Export EPC</span>
-            <h3 class="text-lg font-bold text-noto-navy">Custom Skid Assembly Export to Australia</h3>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Fabricated under contract for an Australian water treatment contractor. Built to AS/NZS electrical standards, hydro-tested in Bandung, and shipped in sea containers.
+        <article class="case-row wwtp export py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 space-y-1 font-mono text-xs">
+            <span class="text-slate-400 block">CS-03</span>
+            <span class="text-noto-ocean font-bold uppercase block">Modular Mining</span>
+            <span class="text-slate-500 block pt-1">East Kalimantan</span>
+          </div>
+          <div class="lg:col-span-5 space-y-2">
+            <h2 class="font-heading text-xl font-bold text-noto-navy">Noto-ContBox&trade; 500 m&sup3;/day Mining Camp STP</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Pre-assembled and hydro-tested inside two 40ft High-Cube ISO containers. Shipped by barge to a remote mineral site with satellite telemetry and flat concrete slab installation.
             </p>
-            <div class="pt-2 border-t border-slate-100 text-xs font-mono space-y-1 text-slate-700">
-              <div class="flex justify-between"><span>Incoterms:</span><strong class="text-noto-navy">CIF Port of Fremantle</strong></div>
-              <div class="flex justify-between"><span>Electrical Code:</span><strong class="text-noto-navy">AS/NZS 3000:2018</strong></div>
-              <div class="flex justify-between"><span>Customs Cleared:</span><strong class="text-emerald-600">Zero Quarantine Delays</strong></div>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-4 lg:pt-0 lg:pl-8 font-mono">
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Commissioning</span>
+              <strong class="text-base text-emerald-700 tabular-nums mt-1 block">&lt; 48 hrs</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Civil Work</span>
+              <strong class="text-base text-noto-navy mt-1 block">Slab Only</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Telemetry</span>
+              <strong class="text-base text-noto-navy mt-1 block">Satellite IoT</strong>
             </div>
           </div>
-          <div class="px-6 py-4 bg-noto-slate border-t border-slate-100">
-            <span class="text-xs text-slate-500 font-mono">Destination: Western Australia</span>
+        </article>
+
+        <article class="case-row ro py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 space-y-1 font-mono text-xs">
+            <span class="text-slate-400 block">CS-04</span>
+            <span class="text-noto-ocean font-bold uppercase block">Power Ultrapure</span>
+            <span class="text-slate-500 block pt-1">Cilegon Industrial Zone</span>
           </div>
-        </div>
+          <div class="lg:col-span-5 space-y-2">
+            <h2 class="font-heading text-xl font-bold text-noto-navy">1,200 m&sup3;/day Boiler Feed Demineralization</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Double-pass Reverse Osmosis followed by continuous Electrodeionization (CEDI) and UV TOC oxidation engineered for a 450 MW combined-cycle power generation facility.
+            </p>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-4 lg:pt-0 lg:pl-8 font-mono">
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Conductivity</span>
+              <strong class="text-base text-emerald-700 tabular-nums mt-1 block">&lt; 0.08 &mu;S/cm</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Reactive SiO&#8322;</span>
+              <strong class="text-base text-emerald-700 tabular-nums mt-1 block">&lt; 5 ppb</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Plant Uptime</span>
+              <strong class="text-base text-noto-navy tabular-nums mt-1 block">99.8%</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-row ro py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 space-y-1 font-mono text-xs">
+            <span class="text-slate-400 block">CS-05</span>
+            <span class="text-noto-ocean font-bold uppercase block">F&amp;B Sanitary RO</span>
+            <span class="text-slate-500 block pt-1">Bekasi Estate</span>
+          </div>
+          <div class="lg:col-span-5 space-y-2">
+            <h2 class="font-heading text-xl font-bold text-noto-navy">3,000 m&sup3;/day Ingredient Water RO Skid</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Sanitary orbital-welded SS316L RO skid equipped with automated ozone disinfection, 85&deg;C hot-water sanitization CIP loop, and Rockwell Allen-Bradley PLC automation.
+            </p>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-4 lg:pt-0 lg:pl-8 font-mono">
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Sanitization</span>
+              <strong class="text-base text-noto-navy tabular-nums mt-1 block">85&deg;C Loop</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Compliance</span>
+              <strong class="text-base text-emerald-700 mt-1 block">ISO 22000</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">PLC Core</span>
+              <strong class="text-base text-noto-navy mt-1 block">Allen-Bradley</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-row export py-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start hover:bg-slate-50/70 transition-colors px-2 -mx-2">
+          <div class="lg:col-span-2 space-y-1 font-mono text-xs">
+            <span class="text-slate-400 block">CS-06</span>
+            <span class="text-noto-ocean font-bold uppercase block">OEM Export EPC</span>
+            <span class="text-slate-500 block pt-1">Western Australia</span>
+          </div>
+          <div class="lg:col-span-5 space-y-2">
+            <h2 class="font-heading text-xl font-bold text-noto-navy">Custom Skid Assembly Export to Australia</h2>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Contract-fabricated under NDA for an Australian water contractor. Built to AS/NZS 3000:2018 electrical codes, hydro-tested in Bandung, and exported CIF Port of Fremantle with zero quarantine holds.
+            </p>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 border-t lg:border-t-0 lg:border-l border-slate-200 pt-4 lg:pt-0 lg:pl-8 font-mono">
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Incoterm</span>
+              <strong class="text-base text-noto-navy mt-1 block">CIF Fremantle</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Electrical</span>
+              <strong class="text-base text-noto-navy mt-1 block">AS/NZS 3000</strong>
+            </div>
+            <div>
+              <span class="text-[10px] uppercase text-slate-500 block">Customs</span>
+              <strong class="text-base text-emerald-700 mt-1 block">0 Delays</strong>
+            </div>
+          </div>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
-        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+  <!-- Pola G: Editorial Media Split CTA -->
+  <section class="bg-noto-slate">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6 space-y-5">
+        <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest block">Confidential Dossier</span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy">Request Our Full EPC Client Reference List</h2>
+        <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-prose">
+          Many pharmaceutical, mining, and multinational beverage installations operate under strict non-disclosure agreements. Contact our engineering desk to receive sector-matched P&amp;ID references and FAT records.
+        </p>
+        <div class="pt-2">
+          <button type="button" onclick="openRfqModal('Full Client Reference Dossier Request')" class="px-7 py-3.5 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs uppercase tracking-widest transition-colors">
+            Request Reference Dossier
+          </button>
+        </div>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
-        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      <div class="lg:col-span-6">
+        <img src="assets/img/brand-purity.jpg" alt="Water purity engineering standard" class="w-full aspect-[16/10] object-cover grayscale contrast-110">
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-9 w-auto brightness-200 grayscale contrast-200">
+          <p class="text-slate-400 text-sm leading-relaxed font-light">PT Noto Water Envirotech engineers, fabricates, and exports industrial water and wastewater treatment systems worldwide.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Core Solutions</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="solutions.html#ro" class="hover:text-white transition-colors">Industrial RO Skids</a></li>
+            <li><a href="solutions.html#contbox" class="hover:text-white transition-colors">Containerized WWTP / MBR</a></li>
+            <li><a href="solutions.html#oem" class="hover:text-white transition-colors">OEM Skid Fabrication</a></li>
+            <li><a href="diagnostic.html" class="hover:text-white transition-colors">RO Sizing Calculator</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Company</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="technology.html" class="hover:text-white transition-colors">R&amp;D Analytical Lab</a></li>
+            <li><a href="export-import.html" class="hover:text-white transition-colors">Global Export Logistics</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">Technical Insights</a></li>
+            <li><a href="careers.html" class="hover:text-white transition-colors">Engineering Careers</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Contact &amp; Bay</h4>
+          <div class="space-y-2 text-sm font-light">
+            <p><strong class="text-white font-medium">HQ &amp; Lab:</strong> Bandung, West Java, Indonesia</p>
+            <p><strong class="text-white font-medium">Export Port:</strong> Tanjung Priok (IDTPP)</p>
+            <p><strong class="text-white font-medium">Email:</strong> <a href="mailto:projects@noto.asia" class="hover:text-white">projects@noto.asia</a></p>
+            <p><strong class="text-white font-medium">Phone:</strong> <a href="tel:+622220568900" class="hover:text-white font-mono">+62 22 2056 8900</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>&copy; 1995 &ndash; 2026 PT Noto Water Envirotech. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Contact &amp; RFQ</a>
+          <a href="export-import.html" class="hover:text-slate-300 transition-colors">Export Compliance</a>
+          <a href="about.html" class="hover:text-slate-300 transition-colors">ISO 9001:2015</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- RFQ Modal -->
+  <div id="rfqModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="bg-white max-w-lg w-full p-8 max-h-[90vh] overflow-y-auto relative border-t-4 border-noto-navy shadow-2xl">
+      <button type="button" onclick="closeRfqModal()" aria-label="Close modal" class="absolute top-6 right-6 text-slate-400 hover:text-noto-navy text-xl"><i class="fas fa-times"></i></button>
+      <div class="mb-6 space-y-1">
+        <span class="font-mono text-[11px] font-bold text-noto-ocean uppercase tracking-widest">Projects Desk</span>
+        <h3 class="font-heading text-2xl font-bold text-noto-navy">Technical RFQ</h3>
+      </div>
+      <form onsubmit="handleModalRfqSubmit(event)" class="space-y-4 text-sm">
+        <div><label for="modalSystem" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Subject</label><input type="text" id="modalSystem" class="w-full px-4 py-2.5 border border-slate-300 bg-slate-50 font-mono text-xs" readonly></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Your Name *</label><input type="text" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Company / EPC *</label><input type="text" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Corporate Email *</label><input type="email" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Phone / WhatsApp *</label><input type="tel" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs uppercase tracking-widest transition-colors">Submit Request</button>
+        <div id="modalRfqSuccess" class="hidden p-3 bg-emerald-50 border-l-2 border-emerald-600 text-emerald-900 text-xs"><strong>Submitted.</strong> Our project engineers will respond shortly.</div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/noto-ui.js"></script>
+  <script>
+    function filterCases(cat, activeBtn) {
+      document.querySelectorAll('.case-filter').forEach((btn) => {
+        btn.classList.remove('bg-noto-navy', 'text-white', 'border-noto-navy', 'font-bold');
+        btn.classList.add('bg-white', 'text-slate-700', 'border-slate-300', 'font-semibold');
+      });
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'text-slate-700', 'border-slate-300', 'font-semibold');
+        activeBtn.classList.add('bg-noto-navy', 'text-white', 'border-noto-navy', 'font-bold');
+      }
+
+      let visible = 0;
+      document.querySelectorAll('.case-row').forEach((row) => {
+        const show = cat === 'all' || row.classList.contains(cat);
+        row.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      document.getElementById('caseCount').textContent = String(visible);
+    }
+  </script>
 </body>
 </html>

@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industrial Water Sizing Calculator & Configurator | PT Noto Water Envirotech</title>
-  <meta name="description" content="Calculate industrial RO membrane requirements, high-pressure pump sizing, and containerized WWTP footprint with PT Noto Water Envirotech's engineering calculator.">
+  <title>Industrial RO Sizing Calculator | PT Noto Water Envirotech</title>
+  <meta name="description" content="Calculate industrial RO membrane requirements, high-pressure pump sizing, and feed water intake with PT Noto Water Envirotech's engineering calculator.">
   <link rel="canonical" href="https://noto.asia/diagnostic.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,16 +20,16 @@
           colors: {
             noto: {
               navy: '#092534',
+              dark: '#051822',
               ocean: '#2B6F8B',
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822',
               border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
             mono: ['"Space Grotesk"', 'monospace'],
           }
@@ -40,268 +38,306 @@
     }
   </script>
 
-  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/waterplus-theme.css">
-
   <style>
-    /* Clean Industrial Architectural Design (Non-Neon) */
-    .pillar-card {
-      transition: all 0.25s ease;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
-    }
-    .rfq-modal-enter {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    .rfq-modal-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
   </style>
 </head>
 
-<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-navy selection:text-white">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
-          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
-          Engineering Utilities
+  <!-- Top Status Bar -->
+  <div class="bg-noto-dark text-slate-400 text-[11px] py-2.5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-slate-300">
+          <span class="w-1.5 h-1.5 bg-emerald-500"></span>
+          Engineering Sizing Utility &middot; 8-Inch Element Basis
         </span>
-        <span class="text-slate-300 font-medium">Preliminary System Sizing & Hydraulic Calculations for Industrial EPCs</span>
       </div>
-      <div class="flex items-center gap-5 text-slate-400">
-        <a href="mailto:engineering@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
-          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
-          <span>engineering@noto.asia</span>
-        </a>
+      <div class="flex items-center gap-6 font-mono">
+        <a href="mailto:engineering@noto.asia" class="hover:text-white transition-colors hidden sm:inline">engineering@noto.asia</a>
+        <a href="tel:+622220568900" class="hover:text-white transition-colors">+62 22 2056 8900</a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+  <!-- Unified Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
-        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
-          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
-            PT Noto Water Envirotech
-          </span>
-          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
-            R&D • Manufacturing • Global Trade
-          </span>
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-10 sm:h-11 w-auto transition-opacity group-hover:opacity-85">
+        <div class="border-l border-slate-300 pl-3.5 hidden sm:flex flex-col justify-center">
+          <span class="font-heading font-bold text-xs tracking-wider uppercase text-noto-navy">PT Noto Water Envirotech</span>
+          <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase mt-0.5">R&amp;D &middot; Manufacturing &middot; Global Trade</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-6">
-        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
-        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Lab</a>
-        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Manufacturing</a>
-        <a href="export-import.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Global Trade</a>
-        <a href="portfolio.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Case Studies</a>
-        <a href="diagnostic.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Sizing Tool</a>
-        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact</a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Home</a>
+        <a href="solutions.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Systems &amp; Skids</a>
+        <a href="technology.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">R&amp;D Lab</a>
+        <a href="export-import.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Case Studies</a>
+        <a href="about.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">About</a>
       </nav>
 
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
-          <i class="fas fa-file-invoice"></i>
-          <span>Request B2B RFQ</span>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="https://wa.me/628122000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-noto-navy transition-colors">
+          <i class="fab fa-whatsapp text-emerald-600 text-sm"></i>
+          <span>Consultation</span>
         </a>
+        <button type="button" onclick="openRfqModal('Preliminary Sizing Verification')" class="inline-flex items-center gap-2 px-5 py-3 bg-noto-navy hover:bg-noto-ocean text-white font-semibold text-xs tracking-wider uppercase transition-colors">
+          <span>Request RFQ</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
+        </button>
+      </div>
+
+      <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle Navigation" class="lg:hidden p-2 text-noto-navy hover:bg-slate-100">
+        <i class="fas fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl">
+      <div class="flex flex-col divide-y divide-slate-100 text-xs font-semibold uppercase tracking-wider">
+        <a href="index.html" class="py-3 text-slate-700 hover:text-noto-navy">Home</a>
+        <a href="solutions.html" class="py-3 text-slate-700 hover:text-noto-navy">Systems &amp; Skids</a>
+        <a href="technology.html" class="py-3 text-slate-700 hover:text-noto-navy">R&amp;D Lab</a>
+        <a href="export-import.html" class="py-3 text-slate-700 hover:text-noto-navy">Global Trade</a>
+        <a href="portfolio.html" class="py-3 text-slate-700 hover:text-noto-navy">Case Studies</a>
+        <a href="diagnostic.html" class="py-3 text-noto-navy font-bold">Sizing Calculator</a>
+        <a href="about.html" class="py-3 text-slate-700 hover:text-noto-navy">About Us</a>
+        <a href="contact.html" class="py-3 text-slate-700 hover:text-noto-navy">Contact &amp; RFQ</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="relative bg-noto-navy text-white py-20 ">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
+  <!-- Page Hero -->
+  <section class="bg-noto-navy text-white py-20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-noto-ice/80 flex items-center gap-3">
+        <span class="w-8 h-px bg-noto-cyan inline-block"></span>
         System Configurator
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Industrial Water & Wastewater <br>
-        <span class="text-noto-ice font-extrabold">System Sizing Calculator</span>
+      </p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] max-w-4xl">
+        Industrial Reverse Osmosis<br>
+        <span class="text-noto-ice font-normal">Preliminary Sizing Workbench</span>
       </h1>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-        Input your raw water flow rate and water chemistry parameters to estimate membrane vessel requirements, feed pump pressure, recovery rates, and skid dimensions.
+      <p class="text-slate-300 text-sm sm:text-base font-light max-w-2xl leading-relaxed">
+        Estimate membrane element counts, feed flow demand, operating pump pressure, and reference skid series based on standard 8-inch (400 sq.ft) DuPont FilmTec&trade; BW30 / SW30HR elements.
       </p>
     </div>
   </section>
 
-  <!-- Interactive Calculator Engine -->
-  <section class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="bg-noto-slate rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-lg">
-        <div class="mb-8 border-b border-slate-200 pb-5">
-          <h2 class="text-xl font-bold text-noto-navy">Industrial RO Skid Sizing Engine</h2>
-          <p class="text-slate-500 text-xs mt-1">Based on standard 8-inch diameter elements (DuPont FilmTec™ BW30-400 / SW30HR).</p>
-        </div>
+  <!-- Single Flat Split Workbench (Replaces 3-Layer Nested Cards) -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 border border-slate-200">
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 text-xs">
-          
-          <div>
-            <label class="block font-bold text-noto-navy mb-2">Feed Water Type</label>
-            <select id="calcWaterType" onchange="runSizingCalc()" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-noto-cyan">
-              <option value="tap">Municipal Tap / River (&lt; 500 ppm TDS)</option>
-              <option value="borehole" selected>Deep Well / Borehole (500 - 2,500 ppm)</option>
-              <option value="brackish">High Brackish (2,500 - 10,000 ppm)</option>
-              <option value="seawater">Seawater (&gt; 35,000 ppm TDS)</option>
-            </select>
+        <!-- Left Input Panel -->
+        <div class="lg:col-span-5 bg-noto-slate p-8 sm:p-10 space-y-7 border-b lg:border-b-0 lg:border-r border-slate-200">
+          <div class="pb-4 border-b border-slate-200">
+            <span class="font-mono text-[11px] font-bold uppercase tracking-widest text-noto-ocean">01 &middot; Operating Inputs</span>
+            <h2 class="font-heading text-xl font-bold text-noto-navy mt-1">Raw Water &amp; Demand</h2>
           </div>
 
-          <div>
-            <label class="block font-bold text-noto-navy mb-2">Target Permeate Output (m³/day)</label>
-            <input type="number" id="calcFlowRate" value="250" min="10" max="10000" oninput="runSizingCalc()" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-noto-cyan font-mono text-sm">
-          </div>
-
-          <div>
-            <label class="block font-bold text-noto-navy mb-2">Operating Hours / Day</label>
-            <select id="calcHours" onchange="runSizingCalc()" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white focus:outline-none focus:border-noto-cyan">
-              <option value="24" selected>24 Hours (Continuous Industrial)</option>
-              <option value="20">20 Hours (Intermittent)</option>
-              <option value="16">16 Hours (Two Shifts)</option>
-            </select>
-          </div>
-
-        </div>
-
-        <!-- Calculated Results Card -->
-        <div class="bg-noto-navy rounded-2xl p-6 sm:p-8 text-white space-y-6">
-          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+          <div class="space-y-5">
             <div>
-              <span class="text-xs font-mono font-bold text-noto-cyan uppercase">ESTIMATED CONFIGURATION MATRIX</span>
-              <h3 class="text-lg font-bold text-white mt-0.5">Projected Engineering Sizing</h3>
-            </div>
-            <span class="px-3 py-1 rounded bg-noto-cyan/20 text-slate-400 font-mono text-xs font-semibold">
-              PRELIMINARY ESTIMATE
-            </span>
-          </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-mono">
-            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
-              <span class="text-slate-400 block text-[10px]">RECOVERY RATE</span>
-              <strong class="text-xl text-white" id="resRecovery">75 %</strong>
-              <span class="text-[10px] text-slate-400 block">Typical system recovery</span>
+              <label for="calcWaterType" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Feed Water Classification</label>
+              <select id="calcWaterType" onchange="runSizingCalc()" class="w-full px-4 py-3 border border-slate-300 bg-white text-sm text-slate-800 focus:outline-none focus:border-noto-navy">
+                <option value="tap">Municipal Tap / River (&lt; 500 ppm TDS)</option>
+                <option value="borehole" selected>Deep Well / Borehole (500 &ndash; 2,500 ppm)</option>
+                <option value="brackish">High Brackish (2,500 &ndash; 10,000 ppm)</option>
+                <option value="seawater">Seawater (&gt; 35,000 ppm TDS)</option>
+              </select>
             </div>
 
-            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
-              <span class="text-slate-400 block text-[10px]">8-INCH MEMBRANES</span>
-              <strong class="text-xl text-noto-cyan" id="resMembranes">12 Elements</strong>
-              <span class="text-[10px] text-slate-400 block">FilmTec 400 sq.ft</span>
+            <div>
+              <label for="calcFlowRate" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Target Permeate Output (m&sup3;/day)</label>
+              <input type="number" id="calcFlowRate" value="250" min="10" max="10000" oninput="runSizingCalc()" class="w-full px-4 py-3 border border-slate-300 bg-white text-base font-mono font-bold text-noto-navy tabular-nums focus:outline-none focus:border-noto-navy">
             </div>
 
-            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
-              <span class="text-slate-400 block text-[10px]">FEED FLOW REQ.</span>
-              <strong class="text-xl text-white" id="resFeedFlow">13.9 m³/h</strong>
-              <span class="text-[10px] text-slate-400 block">Raw water intake needed</span>
-            </div>
-
-            <div class="p-4 bg-white/5 rounded-xl border border-white/5 space-y-1">
-              <span class="text-slate-400 block text-[10px]">PUMP PRESSURE</span>
-              <strong class="text-xl text-emerald-400" id="resPressure">14.5 Bar</strong>
-              <span class="text-[10px] text-slate-400 block">High-pressure booster</span>
+            <div>
+              <label for="calcHours" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-2">Operating Duty Cycle</label>
+              <select id="calcHours" onchange="runSizingCalc()" class="w-full px-4 py-3 border border-slate-300 bg-white text-sm text-slate-800 focus:outline-none focus:border-noto-navy">
+                <option value="24" selected>24 Hours / Day (Continuous Industrial)</option>
+                <option value="20">20 Hours / Day (Intermittent)</option>
+                <option value="16">16 Hours / Day (Two Shifts)</option>
+              </select>
             </div>
           </div>
 
-          <div class="p-4 bg-white/5 rounded-xl border border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-            <div class="space-y-0.5 text-slate-300">
-              <strong class="text-white block">Suggested Skid Series: <span id="resSkidModel" class="text-slate-400 font-mono">Noto-RO-250-BW</span></strong>
-              <span>Footprint: Approx. 4.2m (L) x 1.6m (W) x 2.2m (H) • Frame: Sandblasted SS304/SS316</span>
+          <p class="text-xs text-slate-500 leading-relaxed pt-4 border-t border-slate-200">
+            Note: Estimates assume 25&deg;C water temperature and SDI &lt; 3 pretreatment. Final P&amp;ID projections require full ionic lab spectrometry.
+          </p>
+        </div>
+
+        <!-- Right Flat Engineering Readout (Hairline Grid, Zero Nested Boxes) -->
+        <div class="lg:col-span-7 bg-noto-navy text-white p-8 sm:p-10 flex flex-col justify-between">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-5 border-b border-white/15">
+              <div>
+                <span class="font-mono text-[11px] font-bold uppercase tracking-widest text-noto-cyan">02 &middot; Projected Configuration</span>
+                <h2 class="font-heading text-xl font-bold text-white mt-1">Preliminary Hydraulic Output</h2>
+              </div>
+              <span class="font-mono text-[11px] uppercase tracking-wider text-slate-400">8&quot; &times; 400 sq.ft Basis</span>
             </div>
-            <button onclick="transferToRfq()" class="px-5 py-3 rounded-xl bg-noto-ocean hover:bg-slate-800 text-white font-bold text-xs uppercase tracking-wider transition-all whitespace-nowrap shadow-md">
-              Send Sizing to RFQ Form &rarr;
+
+            <div class="grid grid-cols-2 border-b border-white/15 divide-x divide-white/15 font-mono">
+              <div class="py-7 pr-6 border-b border-white/15">
+                <span class="text-[11px] uppercase tracking-wider text-slate-400 block">Design Recovery</span>
+                <strong class="text-3xl sm:text-4xl text-white mt-2 block tabular-nums" id="resRecovery">75 %</strong>
+                <span class="text-xs text-slate-400 mt-1 block">Typical recovery ceiling</span>
+              </div>
+
+              <div class="py-7 pl-6 border-b border-white/15">
+                <span class="text-[11px] uppercase tracking-wider text-slate-400 block">8-Inch Membranes</span>
+                <strong class="text-3xl sm:text-4xl text-noto-cyan mt-2 block tabular-nums" id="resMembranes">12 Elements</strong>
+                <span class="text-xs text-slate-400 mt-1 block">FilmTec&trade; 400 sq.ft</span>
+              </div>
+
+              <div class="py-7 pr-6">
+                <span class="text-[11px] uppercase tracking-wider text-slate-400 block">Raw Feed Flow Req.</span>
+                <strong class="text-3xl sm:text-4xl text-white mt-2 block tabular-nums" id="resFeedFlow">13.9 m&sup3;/h</strong>
+                <span class="text-xs text-slate-400 mt-1 block">Intake pump sizing</span>
+              </div>
+
+              <div class="py-7 pl-6">
+                <span class="text-[11px] uppercase tracking-wider text-slate-400 block">Operating Pressure</span>
+                <strong class="text-3xl sm:text-4xl text-emerald-400 mt-2 block tabular-nums" id="resPressure">15.0 Bar</strong>
+                <span class="text-xs text-slate-400 mt-1 block">High-pressure booster</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-7 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+            <div class="space-y-1">
+              <span class="font-mono text-[11px] uppercase tracking-wider text-slate-400 block">Recommended Reference Series</span>
+              <strong class="font-mono text-lg text-white block" id="resSkidModel">Noto-RO-250-BOREHOLE</strong>
+              <span class="text-xs text-slate-400 block" id="resFootprint">Approx. 4.2m (L) &times; 1.6m (W) &times; 2.2m (H) &middot; SS304/SS316L</span>
+            </div>
+            <button type="button" onclick="transferToRfq()" class="px-6 py-4 bg-white hover:bg-noto-ice text-noto-navy font-bold text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+              Send Sizing to RFQ &rarr;
             </button>
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
-        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+  <!-- Unified Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-9 w-auto brightness-200 grayscale contrast-200">
+          <p class="text-slate-400 text-sm leading-relaxed font-light">PT Noto Water Envirotech engineers, fabricates, and exports industrial water and wastewater treatment systems worldwide.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Core Solutions</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="solutions.html#ro" class="hover:text-white transition-colors">Industrial RO Skids</a></li>
+            <li><a href="solutions.html#contbox" class="hover:text-white transition-colors">Containerized WWTP / MBR</a></li>
+            <li><a href="solutions.html#oem" class="hover:text-white transition-colors">OEM Skid Fabrication</a></li>
+            <li><a href="diagnostic.html" class="hover:text-white transition-colors">RO Sizing Calculator</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Company</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="technology.html" class="hover:text-white transition-colors">R&amp;D Analytical Lab</a></li>
+            <li><a href="export-import.html" class="hover:text-white transition-colors">Global Export Logistics</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">Technical Insights</a></li>
+            <li><a href="careers.html" class="hover:text-white transition-colors">Engineering Careers</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Contact &amp; Bay</h4>
+          <div class="space-y-2 text-sm font-light">
+            <p><strong class="text-white font-medium">HQ &amp; Lab:</strong> Bandung, West Java, Indonesia</p>
+            <p><strong class="text-white font-medium">Export Port:</strong> Tanjung Priok (IDTPP)</p>
+            <p><strong class="text-white font-medium">Email:</strong> <a href="mailto:engineering@noto.asia" class="hover:text-white">engineering@noto.asia</a></p>
+            <p><strong class="text-white font-medium">Phone:</strong> <a href="tel:+622220568900" class="hover:text-white font-mono">+62 22 2056 8900</a></p>
+          </div>
+        </div>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
-        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>&copy; 1995 &ndash; 2026 PT Noto Water Envirotech. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Contact &amp; RFQ</a>
+          <a href="export-import.html" class="hover:text-slate-300 transition-colors">Export Compliance</a>
+          <a href="about.html" class="hover:text-slate-300 transition-colors">ISO 9001:2015</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- RFQ Modal -->
+  <div id="rfqModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="bg-white max-w-lg w-full p-8 max-h-[90vh] overflow-y-auto relative border-t-4 border-noto-navy shadow-2xl">
+      <button type="button" onclick="closeRfqModal()" aria-label="Close modal" class="absolute top-6 right-6 text-slate-400 hover:text-noto-navy text-xl"><i class="fas fa-times"></i></button>
+      <div class="mb-6 space-y-1">
+        <span class="font-mono text-[11px] font-bold text-noto-ocean uppercase tracking-widest">Engineering Desk</span>
+        <h3 class="font-heading text-2xl font-bold text-noto-navy">Technical RFQ</h3>
+      </div>
+      <form onsubmit="handleModalRfqSubmit(event)" class="space-y-4 text-sm">
+        <div><label for="modalSystem" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">System</label><input type="text" id="modalSystem" class="w-full px-4 py-2.5 border border-slate-300 bg-slate-50 font-mono text-xs" readonly></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Your Name *</label><input type="text" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Company *</label><input type="text" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Email *</label><input type="email" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Phone *</label><input type="tel" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+        </div>
+        <button type="submit" class="w-full py-3.5 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs uppercase tracking-widest transition-colors">Submit Request</button>
+        <div id="modalRfqSuccess" class="hidden p-3 bg-emerald-50 border-l-2 border-emerald-600 text-emerald-900 text-xs"><strong>Submitted.</strong> Our engineers will respond shortly.</div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/noto-ui.js"></script>
   <script>
     function runSizingCalc() {
       const type = document.getElementById('calcWaterType').value;
-      const flowDay = parseFloat(document.getElementById('calcFlowRate').value) || 250;
+      const flowDay = Math.max(10, parseFloat(document.getElementById('calcFlowRate').value) || 250);
       const hours = parseFloat(document.getElementById('calcHours').value) || 24;
-
       const hourlyPermeate = flowDay / hours;
 
-      let recovery = 0.75;
-      let fluxGfd = 15; // gfd
-      let pressureBar = 14;
+      const profiles = {
+        tap:      { recovery: 0.80, fluxGfd: 17, pressureBar: 11, metal: 'SS304' },
+        borehole: { recovery: 0.75, fluxGfd: 14, pressureBar: 15, metal: 'SS304 / SS316L' },
+        brackish: { recovery: 0.70, fluxGfd: 12, pressureBar: 22, metal: 'SS316L' },
+        seawater: { recovery: 0.42, fluxGfd: 9,  pressureBar: 62, metal: 'Super Duplex + ERD' }
+      };
+      const cfg = profiles[type] || profiles.borehole;
 
-      if (type === 'tap') {
-        recovery = 0.80;
-        fluxGfd = 17;
-        pressureBar = 11;
-      } else if (type === 'borehole') {
-        recovery = 0.75;
-        fluxGfd = 14;
-        pressureBar = 15;
-      } else if (type === 'brackish') {
-        recovery = 0.70;
-        fluxGfd = 12;
-        pressureBar = 22;
-      } else if (type === 'seawater') {
-        recovery = 0.42;
-        fluxGfd = 9;
-        pressureBar = 62;
-      }
-
-      const feedFlow = hourlyPermeate / recovery;
-      
-      // Calculate membrane elements (1 element 400 sq.ft at flux)
-      // 1 m3/h = 264.172 GPH
+      const feedFlow = hourlyPermeate / cfg.recovery;
       const gph = hourlyPermeate * 264.172;
-      const totalAreaNeeded = (gph * 24) / fluxGfd;
+      const totalAreaNeeded = (gph * 24) / cfg.fluxGfd;
       const membranes = Math.max(2, Math.ceil(totalAreaNeeded / 400));
 
-      document.getElementById('resRecovery').innerText = (recovery * 100).toFixed(0) + ' %';
-      document.getElementById('resMembranes').innerText = membranes + ' Elements';
-      document.getElementById('resFeedFlow').innerText = feedFlow.toFixed(1) + ' m³/h';
-      document.getElementById('resPressure').innerText = pressureBar.toFixed(1) + ' Bar';
-      document.getElementById('resSkidModel').innerText = `Noto-RO-${Math.round(flowDay)}-${type.toUpperCase()}`;
+      document.getElementById('resRecovery').textContent = (cfg.recovery * 100).toFixed(0) + ' %';
+      document.getElementById('resMembranes').textContent = membranes + ' Elements';
+      document.getElementById('resFeedFlow').textContent = feedFlow.toFixed(1) + ' m\u00b3/h';
+      document.getElementById('resPressure').textContent = cfg.pressureBar.toFixed(1) + ' Bar';
+      document.getElementById('resSkidModel').textContent = `Noto-RO-${Math.round(flowDay)}-${type.toUpperCase()}`;
+      document.getElementById('resFootprint').textContent =
+        `Recommended Frame: ${cfg.metal} \u00b7 ${Math.ceil(membranes / 6)} Pressure Vessel(s) (6-Element)`;
     }
 
     function transferToRfq() {
-      const model = document.getElementById('resSkidModel').innerText;
+      const model = document.getElementById('resSkidModel').textContent;
       const flow = document.getElementById('calcFlowRate').value;
       window.location.href = `contact.html?system=${encodeURIComponent(model)}&capacity=${encodeURIComponent(flow + ' m3/day')}`;
     }
 
-    // Run on load
     runSizingCalc();
   </script>
-
 </body>
 </html>

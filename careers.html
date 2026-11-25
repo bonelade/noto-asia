@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Careers & Global Opportunities | PT Noto Water Envirotech</title>
-  <meta name="description" content="Build your engineering career with PT Noto Water Envirotech. Opportunities in water R&D chemistry, ASME skid welding, PLC automation, and global export logistics.">
+  <title>Engineering Careers | PT Noto Water Envirotech</title>
+  <meta name="description" content="Build your engineering career with PT Noto Water Envirotech. Opportunities in water R&amp;D chemistry, ASME skid welding, PLC automation, and global export logistics.">
   <link rel="canonical" href="https://noto.asia/careers.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,16 +20,16 @@
           colors: {
             noto: {
               navy: '#092534',
+              dark: '#051822',
               ocean: '#2B6F8B',
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822',
               border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
             mono: ['"Space Grotesk"', 'monospace'],
           }
@@ -40,193 +38,244 @@
     }
   </script>
 
-  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/waterplus-theme.css">
-
   <style>
-    /* Clean Industrial Architectural Design (Non-Neon) */
-    .pillar-card {
-      transition: all 0.25s ease;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
-    }
-    .rfq-modal-enter {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    .rfq-modal-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
   </style>
 </head>
 
-<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-navy selection:text-white">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
-          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
-          Talent & Careers
+  <!-- Top Status Bar -->
+  <div class="bg-noto-dark text-slate-400 text-[11px] py-2.5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-slate-300">
+          <span class="w-1.5 h-1.5 bg-emerald-500"></span>
+          Engineering &amp; Operations Talent Desk
         </span>
-        <span class="text-slate-300 font-medium">Join an Integrated Global Water & Wastewater Engineering Enterprise</span>
       </div>
-      <div class="flex items-center gap-5 text-slate-400">
-        <a href="mailto:careers@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
-          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
-          <span>careers@noto.asia</span>
-        </a>
+      <div class="flex items-center gap-6 font-mono">
+        <a href="mailto:careers@noto.asia" class="hover:text-white transition-colors hidden sm:inline">careers@noto.asia</a>
+        <a href="tel:+622220568900" class="hover:text-white transition-colors">+62 22 2056 8900</a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+  <!-- Unified Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
-        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
-          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
-            PT Noto Water Envirotech
-          </span>
-          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
-            R&D • Manufacturing • Global Trade
-          </span>
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-10 sm:h-11 w-auto transition-opacity group-hover:opacity-85">
+        <div class="border-l border-slate-300 pl-3.5 hidden sm:flex flex-col justify-center">
+          <span class="font-heading font-bold text-xs tracking-wider uppercase text-noto-navy">PT Noto Water Envirotech</span>
+          <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase mt-0.5">R&amp;D &middot; Manufacturing &middot; Global Trade</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-6">
-        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
-        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Lab</a>
-        <a href="solutions.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Manufacturing</a>
-        <a href="export-import.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Global Trade</a>
-        <a href="portfolio.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Case Studies</a>
-        <a href="careers.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Careers</a>
-        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact</a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Home</a>
+        <a href="solutions.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Systems &amp; Skids</a>
+        <a href="technology.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">R&amp;D Lab</a>
+        <a href="export-import.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Case Studies</a>
+        <a href="about.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">About</a>
       </nav>
 
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
-          <i class="fas fa-file-invoice"></i>
-          <span>Request B2B RFQ</span>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 bg-noto-navy hover:bg-noto-ocean text-white font-semibold text-xs tracking-wider uppercase transition-colors">
+          <span>Contact &amp; RFQ</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
         </a>
+      </div>
+
+      <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle Navigation" class="lg:hidden p-2 text-noto-navy hover:bg-slate-100">
+        <i class="fas fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl">
+      <div class="flex flex-col divide-y divide-slate-100 text-xs font-semibold uppercase tracking-wider">
+        <a href="index.html" class="py-3 text-slate-700 hover:text-noto-navy">Home</a>
+        <a href="solutions.html" class="py-3 text-slate-700 hover:text-noto-navy">Systems &amp; Skids</a>
+        <a href="technology.html" class="py-3 text-slate-700 hover:text-noto-navy">R&amp;D Lab</a>
+        <a href="export-import.html" class="py-3 text-slate-700 hover:text-noto-navy">Global Trade</a>
+        <a href="portfolio.html" class="py-3 text-slate-700 hover:text-noto-navy">Case Studies</a>
+        <a href="about.html" class="py-3 text-slate-700 hover:text-noto-navy">About Us</a>
+        <a href="careers.html" class="py-3 text-noto-navy font-bold">Careers</a>
+        <a href="contact.html" class="py-3 text-slate-700 hover:text-noto-navy">Contact &amp; RFQ</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="relative bg-noto-navy text-white py-20 ">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
-        Career Opportunities
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Pioneer the Future of <br>
-        <span class="text-noto-ice font-extrabold">Global Clean Water Engineering</span>
+  <!-- Page Hero -->
+  <section class="bg-noto-navy text-white py-20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-noto-ice/80 flex items-center gap-3">
+        <span class="w-8 h-px bg-noto-cyan inline-block"></span>
+        Talent &amp; Engineering Careers
+      </p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] max-w-4xl">
+        Build Mission-Critical<br>
+        <span class="text-noto-ice font-normal">Clean Water Infrastructure</span>
       </h1>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-        Work alongside leading water scientists, ASME-certified mechanical fabricators, and international trade directors building mission-critical water solutions.
+      <p class="text-slate-300 text-sm sm:text-base font-light max-w-2xl leading-relaxed">
+        Work alongside water scientists, ASME-certified mechanical fabricators, PLC engineers, and export logistics directors delivering systems across 18+ countries.
       </p>
     </div>
   </section>
 
-  <!-- Job Openings Grid -->
-  <section class="py-20 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-      
-      <div class="flex items-center justify-between pb-4 border-b border-slate-200">
-        <h2 class="text-xl font-bold text-noto-navy">Open Engineering & Trade Positions</h2>
-        <span class="text-xs text-slate-500 font-mono">4 Active Opportunities</span>
+  <!-- Pola A: Hairline Open Positions Directory (Replaces 4 Rounded Gray Cards) -->
+  <section class="py-20 lg:py-24 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 pb-6 border-b border-slate-300">
+        <div>
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">Open Roles</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy mt-1">Engineering &amp; Trade Positions</h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500">4 Active Opportunities</span>
       </div>
 
-      <!-- Job 1 -->
-      <div class="p-6 rounded-2xl bg-noto-slate border border-slate-200 hover:border-noto-cyan transition-all space-y-3">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <h3 class="text-lg font-bold text-noto-navy">Senior R&D Water Chemist</h3>
-          <span class="px-3 py-1 rounded-full bg-noto-cyan/10 text-slate-400 font-mono text-xs font-semibold">Bandung Lab • Full-Time</span>
-        </div>
-        <p class="text-xs text-slate-600 leading-relaxed">
-          Lead treatability simulations, heavy metal spectrometry, and formulate next-generation membrane antiscalants for high-silica industrial applications. Requirements: B.Sc/M.Sc in Chemical Engineering or Chemistry with 4+ years of industrial water lab experience.
-        </p>
-        <div class="pt-2 flex items-center justify-between text-xs">
-          <span class="text-slate-400">Department: R&D & Innovation Lab</span>
-          <a href="mailto:careers@noto.asia?subject=Application:%20Senior%20R%26D%20Water%20Chemist" class="font-bold text-noto-cyan hover:underline">Apply via Email &rarr;</a>
-        </div>
-      </div>
+      <div class="divide-y divide-slate-200 border-b border-slate-200">
 
-      <!-- Job 2 -->
-      <div class="p-6 rounded-2xl bg-noto-slate border border-slate-200 hover:border-noto-cyan transition-all space-y-3">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <h3 class="text-lg font-bold text-noto-navy">Skid Fabrication & Orbital Welding Inspector</h3>
-          <span class="px-3 py-1 rounded-full bg-noto-ocean/10 text-noto-ocean font-mono text-xs font-semibold">West Java Works • Full-Time</span>
-        </div>
-        <p class="text-xs text-slate-600 leading-relaxed">
-          Oversee precision TIG and automated orbital welding of SS316L and Duplex piping for high-pressure RO skids. Conduct non-destructive testing (NDT), hydrostatic tests, and ASME compliance audits.
-        </p>
-        <div class="pt-2 flex items-center justify-between text-xs">
-          <span class="text-slate-400">Department: Skid Manufacturing Bay</span>
-          <a href="mailto:careers@noto.asia?subject=Application:%20Welding%20Inspector" class="font-bold text-noto-ocean hover:underline">Apply via Email &rarr;</a>
-        </div>
-      </div>
+        <a href="mailto:careers@noto.asia?subject=Application:%20Senior%20R%26D%20Water%20Chemist" class="group grid grid-cols-1 lg:grid-cols-12 gap-4 py-8 items-baseline hover:bg-slate-50/80 transition-colors px-2 -mx-2">
+          <span class="lg:col-span-1 font-mono text-xs text-slate-400">01</span>
+          <div class="lg:col-span-6 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">Senior R&amp;D Water Chemist</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Lead treatability trials, heavy metal spectrometry, and high-silica membrane antiscalant synthesis. B.Sc/M.Sc in Chemical Engineering or Chemistry with 4+ years industrial water lab experience.
+            </p>
+          </div>
+          <div class="lg:col-span-3 font-mono text-xs space-y-1 text-slate-600">
+            <span class="block text-noto-navy font-semibold">Bandung Lab &middot; Full-Time</span>
+            <span class="block text-slate-500">R&amp;D &amp; Innovation Lab</span>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase tracking-wider text-noto-navy">
+            Apply <i class="fas fa-arrow-right text-[10px] ml-1 transition-transform group-hover:translate-x-1"></i>
+          </span>
+        </a>
 
-      <!-- Job 3 -->
-      <div class="p-6 rounded-2xl bg-noto-slate border border-slate-200 hover:border-noto-cyan transition-all space-y-3">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <h3 class="text-lg font-bold text-noto-navy">PLC Automation & Cloud SCADA Engineer</h3>
-          <span class="px-3 py-1 rounded-full bg-noto-cyan/10 text-slate-400 font-mono text-xs font-semibold">Bandung / Hybrid • Full-Time</span>
-        </div>
-        <p class="text-xs text-slate-600 leading-relaxed">
-          Program Siemens S7-1200/1500 and Allen-Bradley PLCs for automated RO and WWTP operations. Implement cloud-based IoT telemetry and predictive membrane health dashboards.
-        </p>
-        <div class="pt-2 flex items-center justify-between text-xs">
-          <span class="text-slate-400">Department: Engineering & Automation</span>
-          <a href="mailto:careers@noto.asia?subject=Application:%20PLC%20Automation%20Engineer" class="font-bold text-noto-cyan hover:underline">Apply via Email &rarr;</a>
-        </div>
-      </div>
+        <a href="mailto:careers@noto.asia?subject=Application:%20Skid%20Fabrication%20%26%20Welding%20Inspector" class="group grid grid-cols-1 lg:grid-cols-12 gap-4 py-8 items-baseline hover:bg-slate-50/80 transition-colors px-2 -mx-2">
+          <span class="lg:col-span-1 font-mono text-xs text-slate-400">02</span>
+          <div class="lg:col-span-6 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">Skid Fabrication &amp; Orbital Welding Inspector</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Oversee precision TIG and automated orbital welding of SS316L and Super Duplex piping for high-pressure RO skids. Conduct NDT inspection, hydrostatic FAT tests, and ASME audits.
+            </p>
+          </div>
+          <div class="lg:col-span-3 font-mono text-xs space-y-1 text-slate-600">
+            <span class="block text-noto-navy font-semibold">West Java Works &middot; Full-Time</span>
+            <span class="block text-slate-500">Skid Manufacturing Bay</span>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase tracking-wider text-noto-navy">
+            Apply <i class="fas fa-arrow-right text-[10px] ml-1 transition-transform group-hover:translate-x-1"></i>
+          </span>
+        </a>
 
-      <!-- Job 4 -->
-      <div class="p-6 rounded-2xl bg-noto-slate border border-slate-200 hover:border-noto-cyan transition-all space-y-3">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <h3 class="text-lg font-bold text-noto-navy">International Logistics & Export Officer</h3>
-          <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 font-mono text-xs font-semibold">Jakarta / Port Tanjung Priok • Full-Time</span>
-        </div>
-        <p class="text-xs text-slate-600 leading-relaxed">
-          Manage ocean container bookings, customs export clearance, Certificates of Origin (COO), and marine cargo insurance under Incoterms 2020 (FOB/CIF/DDP) for worldwide skid shipments.
-        </p>
-        <div class="pt-2 flex items-center justify-between text-xs">
-          <span class="text-slate-400">Department: Global Trade & Logistics</span>
-          <a href="mailto:careers@noto.asia?subject=Application:%20Export%20Logistics%20Officer" class="font-bold text-emerald-600 hover:underline">Apply via Email &rarr;</a>
-        </div>
-      </div>
+        <a href="mailto:careers@noto.asia?subject=Application:%20PLC%20Automation%20%26%20SCADA%20Engineer" class="group grid grid-cols-1 lg:grid-cols-12 gap-4 py-8 items-baseline hover:bg-slate-50/80 transition-colors px-2 -mx-2">
+          <span class="lg:col-span-1 font-mono text-xs text-slate-400">03</span>
+          <div class="lg:col-span-6 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">PLC Automation &amp; Cloud SCADA Engineer</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Program Siemens S7-1200/1500 and Allen-Bradley PLCs for automated RO and containerized WWTP trains. Build remote IoT telemetry and predictive fouling diagnostic alerts.
+            </p>
+          </div>
+          <div class="lg:col-span-3 font-mono text-xs space-y-1 text-slate-600">
+            <span class="block text-noto-navy font-semibold">Bandung / Hybrid &middot; Full-Time</span>
+            <span class="block text-slate-500">Engineering &amp; Automation</span>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase tracking-wider text-noto-navy">
+            Apply <i class="fas fa-arrow-right text-[10px] ml-1 transition-transform group-hover:translate-x-1"></i>
+          </span>
+        </a>
 
+        <a href="mailto:careers@noto.asia?subject=Application:%20International%20Logistics%20%26%20Export%20Officer" class="group grid grid-cols-1 lg:grid-cols-12 gap-4 py-8 items-baseline hover:bg-slate-50/80 transition-colors px-2 -mx-2">
+          <span class="lg:col-span-1 font-mono text-xs text-slate-400">04</span>
+          <div class="lg:col-span-6 space-y-2">
+            <h3 class="font-heading text-xl font-bold text-noto-navy group-hover:text-noto-ocean transition-colors">International Logistics &amp; Export Officer</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Coordinate ocean container bookings, customs export clearance, preferential COO documentation, and marine cargo insurance under Incoterms 2020 (FOB/CIF/DDP).
+            </p>
+          </div>
+          <div class="lg:col-span-3 font-mono text-xs space-y-1 text-slate-600">
+            <span class="block text-noto-navy font-semibold">Jakarta / IDTPP &middot; Full-Time</span>
+            <span class="block text-slate-500">Global Trade &amp; Logistics</span>
+          </div>
+          <span class="lg:col-span-2 lg:text-right font-mono text-xs font-bold uppercase tracking-wider text-noto-navy">
+            Apply <i class="fas fa-arrow-right text-[10px] ml-1 transition-transform group-hover:translate-x-1"></i>
+          </span>
+        </a>
+
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
-        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+  <!-- Pola D: Borderless General Application Band -->
+  <section class="py-16 bg-noto-slate">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div class="space-y-2 max-w-2xl">
+        <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">Open Application</span>
+        <h2 class="font-heading text-2xl font-bold text-noto-navy">Don&rsquo;t See Your Exact Discipline Listed?</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          We continuously welcome CVs from process engineers, hydraulic CAD modelers, and commissioning supervisors. Send your technical portfolio directly to our HR engineering desk.
+        </p>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="hover:text-white transition-colors">Manufacturing</a>
-        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      <a href="mailto:careers@noto.asia?subject=General%20Engineering%20Application" class="px-7 py-3.5 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs uppercase tracking-widest transition-colors whitespace-nowrap">
+        Send CV to careers@noto.asia
+      </a>
+    </div>
+  </section>
+
+  <!-- Unified Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-9 w-auto brightness-200 grayscale contrast-200">
+          <p class="text-slate-400 text-sm leading-relaxed font-light">PT Noto Water Envirotech engineers, fabricates, and exports industrial water and wastewater treatment systems worldwide.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Core Solutions</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="solutions.html#ro" class="hover:text-white transition-colors">Industrial RO Skids</a></li>
+            <li><a href="solutions.html#contbox" class="hover:text-white transition-colors">Containerized WWTP / MBR</a></li>
+            <li><a href="solutions.html#oem" class="hover:text-white transition-colors">OEM Skid Fabrication</a></li>
+            <li><a href="diagnostic.html" class="hover:text-white transition-colors">RO Sizing Calculator</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Company</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="technology.html" class="hover:text-white transition-colors">R&amp;D Analytical Lab</a></li>
+            <li><a href="export-import.html" class="hover:text-white transition-colors">Global Export Logistics</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">Technical Insights</a></li>
+            <li><a href="careers.html" class="hover:text-white transition-colors">Engineering Careers</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Contact &amp; Bay</h4>
+          <div class="space-y-2 text-sm font-light">
+            <p><strong class="text-white font-medium">HQ &amp; Lab:</strong> Bandung, West Java, Indonesia</p>
+            <p><strong class="text-white font-medium">Export Port:</strong> Tanjung Priok (IDTPP)</p>
+            <p><strong class="text-white font-medium">Email:</strong> <a href="mailto:careers@noto.asia" class="hover:text-white">careers@noto.asia</a></p>
+            <p><strong class="text-white font-medium">Phone:</strong> <a href="tel:+622220568900" class="hover:text-white font-mono">+62 22 2056 8900</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>&copy; 1995 &ndash; 2026 PT Noto Water Envirotech. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Contact &amp; RFQ</a>
+          <a href="export-import.html" class="hover:text-slate-300 transition-colors">Export Compliance</a>
+          <a href="about.html" class="hover:text-slate-300 transition-colors">ISO 9001:2015</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="js/noto-ui.js"></script>
 </body>
 </html>

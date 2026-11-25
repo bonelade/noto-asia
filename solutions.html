@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skid Manufacturing & Industrial Systems | PT Noto Water Envirotech</title>
+  <title>Systems &amp; Skid Manufacturing | PT Noto Water Envirotech</title>
   <meta name="description" content="Precision manufacturing of industrial water treatment skids, containerized WWTP/STP plants, Seawater RO, and DAF systems. ISO 9001:2015 certified fabrication in Indonesia.">
   <link rel="canonical" href="https://noto.asia/solutions.html">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
 
-  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,16 +20,16 @@
           colors: {
             noto: {
               navy: '#092534',
+              dark: '#051822',
               ocean: '#2B6F8B',
               cyan: '#12AABF',
               ice: '#DCEDFA',
               slate: '#F8FAFC',
-              dark: '#051822',
               border: '#E2E8F0'
             }
           },
           fontFamily: {
-            sans: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
             heading: ['"Alte Haas Grotesk"', '"Plus Jakarta Sans"', 'Helvetica', 'Arial', 'sans-serif'],
             mono: ['"Space Grotesk"', 'monospace'],
           }
@@ -40,222 +38,313 @@
     }
   </script>
 
-  <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Page Stylesheets -->
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/waterplus-theme.css">
-
   <style>
-    /* Clean Industrial Architectural Design (Non-Neon) */
-    .pillar-card {
-      transition: all 0.25s ease;
-    }
-    .pillar-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px -6px rgba(9, 37, 52, 0.12);
-    }
-    .rfq-modal-enter {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    .rfq-modal-leave {
-      opacity: 1;
-      transform: scale(1);
-    }
+    body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
   </style>
 </head>
 
-<body class="bg-white text-slate-800 antialiased selection:bg-noto-cyan selection:text-white">
+<body class="bg-white text-slate-800 antialiased selection:bg-noto-navy selection:text-white">
 
-  <!-- Top Announcement Bar -->
-  <div class="bg-noto-dark text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80 relative z-50">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-semibold tracking-wider text-[11px] uppercase border border-slate-700">
-          <span class="w-1.5 h-1.5 rounded-full bg-noto-cyan "></span>
-          Fabrication Works
+  <!-- Top Status Bar -->
+  <div class="bg-noto-dark text-slate-400 text-[11px] py-2.5 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-4">
+        <span class="inline-flex items-center gap-2 font-mono uppercase tracking-wider text-slate-300">
+          <span class="w-1.5 h-1.5 bg-emerald-500"></span>
+          ISO 9001:2015 Certified Fabrication Bay
         </span>
-        <span class="text-slate-300 font-medium">Heavy Skid Manufacturing Bay • ASME & ISO 9001:2015 Certified Fabrication</span>
+        <span class="hidden md:inline text-slate-700">|</span>
+        <span class="hidden md:inline font-mono text-slate-400">Export Port: Tanjung Priok (IDTPP)</span>
       </div>
-      <div class="flex items-center gap-5 text-slate-400">
-        <a href="mailto:mfg@noto.asia" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5">
-          <i class="fas fa-envelope text-noto-cyan text-xs"></i>
-          <span>mfg@noto.asia</span>
-        </a>
-        <span class="hidden sm:inline text-slate-700">•</span>
-        <a href="tel:+622220568900" class="hover:text-noto-cyan transition-colors flex items-center gap-1.5 font-mono">
-          <i class="fas fa-phone-alt text-noto-cyan text-xs"></i>
-          <span>+62 22 2056 8900</span>
-        </a>
+      <div class="flex items-center gap-6 font-mono">
+        <a href="mailto:mfg@noto.asia" class="hover:text-white transition-colors hidden sm:inline">mfg@noto.asia</a>
+        <a href="tel:+622220568900" class="hover:text-white transition-colors">+62 22 2056 8900</a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm" id="mainHeader">
+  <!-- Unified Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <a href="index.html" class="flex items-center gap-3.5 group">
-        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech Logo" class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105 duration-200">
-        <div class="border-l-2 border-slate-200 pl-3.5 flex flex-col justify-center">
-          <span class="font-bold text-xs sm:text-sm tracking-wider uppercase text-noto-navy leading-none">
-            PT Noto Water Envirotech
-          </span>
-          <span class="text-[10px] tracking-widest text-noto-ocean font-semibold uppercase mt-0.5">
-            R&D • Manufacturing • Global Trade
-          </span>
+        <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-10 sm:h-11 w-auto transition-opacity group-hover:opacity-85">
+        <div class="border-l border-slate-300 pl-3.5 hidden sm:flex flex-col justify-center">
+          <span class="font-heading font-bold text-xs tracking-wider uppercase text-noto-navy">PT Noto Water Envirotech</span>
+          <span class="text-[10px] font-mono tracking-widest text-slate-500 uppercase mt-0.5">R&amp;D &middot; Manufacturing &middot; Global Trade</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-7">
-        <a href="index.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Home</a>
-        <a href="about.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">About Us</a>
-        <a href="technology.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">R&D & Engineering</a>
-        <a href="solutions.html" class="text-sm font-bold text-noto-cyan border-b-2 border-noto-cyan pb-1 transition-colors">Skid Manufacturing</a>
-        <a href="contact.html" class="text-sm font-semibold text-slate-700 hover:text-noto-cyan transition-colors">Contact & RFQ</a>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Home</a>
+        <a href="solutions.html" class="text-xs font-bold text-noto-navy tracking-wider uppercase border-b-2 border-noto-navy pb-1">Systems &amp; Skids</a>
+        <a href="technology.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">R&amp;D Lab</a>
+        <a href="export-import.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Global Trade</a>
+        <a href="portfolio.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">Case Studies</a>
+        <a href="about.html" class="text-xs font-semibold text-slate-600 hover:text-noto-navy tracking-wider uppercase transition-colors">About</a>
       </nav>
 
-      <div class="hidden sm:flex items-center gap-3">
-        <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-noto-ocean hover:bg-noto-navy text-white font-bold text-xs uppercase tracking-wider transition-all duration-200 shadow-md">
-          <i class="fas fa-file-invoice"></i>
-          <span>Request B2B RFQ</span>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="https://wa.me/628122000000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-slate-600 hover:text-noto-navy transition-colors">
+          <i class="fab fa-whatsapp text-emerald-600 text-sm"></i>
+          <span>Consultation</span>
         </a>
+        <button type="button" onclick="openRfqModal('Skid Manufacturing Inquiry')" class="inline-flex items-center gap-2 px-5 py-3 bg-noto-navy hover:bg-noto-ocean text-white font-semibold text-xs tracking-wider uppercase transition-colors">
+          <span>Request RFQ</span>
+          <i class="fas fa-arrow-right text-[10px]"></i>
+        </button>
+      </div>
+
+      <button type="button" id="mobileMenuBtn" aria-expanded="false" aria-label="Toggle Navigation" class="lg:hidden p-2 text-noto-navy hover:bg-slate-100">
+        <i class="fas fa-bars text-xl" id="menuIcon"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-6 shadow-xl">
+      <div class="flex flex-col divide-y divide-slate-100 text-xs font-semibold uppercase tracking-wider">
+        <a href="index.html" class="py-3 text-slate-700 hover:text-noto-navy">Home</a>
+        <a href="solutions.html" class="py-3 text-noto-navy font-bold">Systems &amp; Skids</a>
+        <a href="technology.html" class="py-3 text-slate-700 hover:text-noto-navy">R&amp;D Lab</a>
+        <a href="export-import.html" class="py-3 text-slate-700 hover:text-noto-navy">Global Trade</a>
+        <a href="portfolio.html" class="py-3 text-slate-700 hover:text-noto-navy">Case Studies</a>
+        <a href="diagnostic.html" class="py-3 text-slate-700 hover:text-noto-navy">Sizing Calculator</a>
+        <a href="about.html" class="py-3 text-slate-700 hover:text-noto-navy">About Us</a>
+        <a href="contact.html" class="py-3 text-slate-700 hover:text-noto-navy">Contact &amp; RFQ</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Header -->
-  <section class="relative bg-noto-navy text-white py-20 ">
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-      <span class="px-3 py-1 rounded-full bg-noto-cyan/20 text-noto-cyan text-xs font-bold uppercase tracking-widest border border-noto-cyan/30">
-        Pillar 02 • Precision Fabrication
-      </span>
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
-        Industrial Skid Manufacturing & <br>
-        <span class="text-noto-ice font-extrabold">Turnkey Water Treatment Plants</span>
+  <!-- Page Hero -->
+  <section class="bg-noto-navy text-white py-20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-noto-ice/80 flex items-center gap-3">
+        <span class="w-8 h-px bg-noto-cyan inline-block"></span>
+        Pillar 02 &middot; Precision Fabrication
+      </p>
+      <h1 class="font-heading text-4xl sm:text-5xl font-bold tracking-tight leading-[1.08] max-w-4xl">
+        Industrial Skid Manufacturing &amp;<br>
+        <span class="text-noto-ice font-normal">Turnkey Water Treatment Plants</span>
       </h1>
-      <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-        We engineer, fabricate, and test industrial-grade water purification and wastewater treatment plants. Operating under ISO 9001:2015, we provide complete custom skid assembly and OEM contract manufacturing.
+      <p class="text-slate-300 text-sm sm:text-base font-light max-w-2xl leading-relaxed">
+        We engineer, fabricate, and hydro-test industrial-grade water purification and wastewater plants in our Bandung bay under ISO 9001:2015 and ASME welding codes, including private-label OEM contract manufacturing.
       </p>
     </div>
   </section>
 
-  <!-- Systems Grid -->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-      
-      <!-- System 1: Industrial RO Skids -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        <div class="lg:col-span-6 space-y-4">
-          <span class="text-xs font-mono font-bold text-noto-cyan uppercase">SYSTEM CATEGORY: 01</span>
-          <h2 class="text-2xl font-bold text-noto-navy">Industrial Reverse Osmosis (BWRO & SWRO)</h2>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Our skid-mounted reverse osmosis systems handle high TDS groundwater, surface water, and seawater. Fabricated with structural stainless steel SS304/SS316L frames, high-pressure 1200 PSI FRP vessels, and Grundfos or Danfoss duplex pumps.
+  <!-- Pola C: Master Technical Comparison Matrix -->
+  <section class="py-16 bg-noto-slate border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">Catalog Overview</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy mt-1">System Specification Matrix</h2>
+        </div>
+        <a href="diagnostic.html" class="font-mono text-xs font-bold uppercase tracking-wider text-noto-navy hover:text-noto-ocean underline underline-offset-4">
+          Open RO Sizing Calculator &rarr;
+        </a>
+      </div>
+
+      <div class="overflow-x-auto border-y border-slate-300">
+        <table class="w-full text-left border-collapse min-w-[720px]">
+          <thead>
+            <tr class="border-b border-slate-300 font-mono text-[11px] uppercase tracking-wider text-slate-500">
+              <th class="py-4 pr-4 font-semibold">Series</th>
+              <th class="py-4 px-4 font-semibold">System Class</th>
+              <th class="py-4 px-4 font-semibold">Capacity Range</th>
+              <th class="py-4 px-4 font-semibold">Performance Target</th>
+              <th class="py-4 px-4 font-semibold">Metallurgy / Build</th>
+              <th class="py-4 pl-4 text-right font-semibold">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-sm">
+            <tr class="hover:bg-white transition-colors">
+              <td class="py-4 pr-4 font-mono text-xs font-bold text-noto-ocean">N-RO-IND</td>
+              <td class="py-4 px-4 font-semibold text-noto-navy">Industrial BWRO Skid</td>
+              <td class="py-4 px-4 font-mono text-xs tabular-nums">50 &ndash; 5,000 m&sup3;/day</td>
+              <td class="py-4 px-4 font-mono text-xs">TDS Rejection &gt; 99.5%</td>
+              <td class="py-4 px-4 text-slate-600">SS304 / SS316L Frame</td>
+              <td class="py-4 pl-4 text-right"><button type="button" onclick="openRfqModal('N-RO-IND Industrial BWRO')" class="font-mono text-xs font-bold uppercase text-noto-navy hover:text-noto-ocean">RFQ &rarr;</button></td>
+            </tr>
+            <tr class="hover:bg-white transition-colors">
+              <td class="py-4 pr-4 font-mono text-xs font-bold text-noto-ocean">N-SWRO-MAR</td>
+              <td class="py-4 px-4 font-semibold text-noto-navy">Seawater Desalination</td>
+              <td class="py-4 px-4 font-mono text-xs tabular-nums">100 &ndash; 2,500 m&sup3;/day</td>
+              <td class="py-4 px-4 font-mono text-xs">&lt; 180 ppm (WHO)</td>
+              <td class="py-4 px-4 text-slate-600">Super Duplex + Danfoss ERD</td>
+              <td class="py-4 pl-4 text-right"><button type="button" onclick="openRfqModal('N-SWRO-MAR Seawater Desalination')" class="font-mono text-xs font-bold uppercase text-noto-navy hover:text-noto-ocean">RFQ &rarr;</button></td>
+            </tr>
+            <tr class="hover:bg-white transition-colors">
+              <td class="py-4 pr-4 font-mono text-xs font-bold text-noto-ocean">N-CONT-MBR</td>
+              <td class="py-4 px-4 font-semibold text-noto-navy">Noto-ContBox&trade; WWTP</td>
+              <td class="py-4 px-4 font-mono text-xs tabular-nums">50 &ndash; 1,000 m&sup3;/day</td>
+              <td class="py-4 px-4 font-mono text-xs">Effluent COD &lt; 30 mg/L</td>
+              <td class="py-4 px-4 text-slate-600">20ft / 40ft ISO High-Cube</td>
+              <td class="py-4 pl-4 text-right"><button type="button" onclick="openRfqModal('N-CONT-MBR Containerized WWTP')" class="font-mono text-xs font-bold uppercase text-noto-navy hover:text-noto-ocean">RFQ &rarr;</button></td>
+            </tr>
+            <tr class="hover:bg-white transition-colors">
+              <td class="py-4 pr-4 font-mono text-xs font-bold text-noto-ocean">N-DAF-PRO</td>
+              <td class="py-4 px-4 font-semibold text-noto-navy">Dissolved Air Flotation</td>
+              <td class="py-4 px-4 font-mono text-xs tabular-nums">10 &ndash; 600 m&sup3;/hr</td>
+              <td class="py-4 px-4 font-mono text-xs">TSS &amp; FOG Removal 99%</td>
+              <td class="py-4 px-4 text-slate-600">SS316L Flotation Tank</td>
+              <td class="py-4 pl-4 text-right"><button type="button" onclick="openRfqModal('N-DAF-PRO Flotation Clarifier')" class="font-mono text-xs font-bold uppercase text-noto-navy hover:text-noto-ocean">RFQ &rarr;</button></td>
+            </tr>
+            <tr class="hover:bg-white transition-colors">
+              <td class="py-4 pr-4 font-mono text-xs font-bold text-noto-ocean">N-UF-PRO</td>
+              <td class="py-4 px-4 font-semibold text-noto-navy">Pressurized Ultrafiltration</td>
+              <td class="py-4 px-4 font-mono text-xs tabular-nums">100 &ndash; 10,000 m&sup3;/day</td>
+              <td class="py-4 px-4 font-mono text-xs">Turbidity &lt; 0.1 NTU</td>
+              <td class="py-4 px-4 text-slate-600">0.02 &mu;m PVDF Rack + Air Scour</td>
+              <td class="py-4 pl-4 text-right"><button type="button" onclick="openRfqModal('N-UF-PRO Ultrafiltration')" class="font-mono text-xs font-bold uppercase text-noto-navy hover:text-noto-ocean">RFQ &rarr;</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Engineering Dossiers (Pola B: Asymmetric Editorial Splits, Zero Nested Cards) -->
+  <section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 divide-y divide-slate-200">
+
+      <!-- Dossier 01: Industrial RO -->
+      <div id="ro" class="pb-16 lg:pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">01 &middot; Membrane Systems</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy">Industrial Reverse Osmosis (BWRO &amp; SWRO)</h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Skid-mounted brackish and seawater reverse osmosis trains built with structural SS304/SS316L frames, ASME 1200 PSI fiberglass pressure vessels, and Grundfos or Danfoss high-pressure duplex pumps.
           </p>
-          <div class="grid grid-cols-2 gap-3 text-xs font-mono text-slate-700">
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Capacity:</strong> 50 - 5,000 m³/day</div>
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Recovery:</strong> 75% to 85%</div>
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>TDS Rejection:</strong> &gt; 99.5%</div>
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Controls:</strong> Siemens PLC / HMI</div>
-          </div>
-          <div class="pt-2">
-            <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-noto-cyan hover:underline">
-              <span>Request RO Skid Engineering Specs &rarr;</span>
-            </a>
+          <div class="pt-3">
+            <button type="button" onclick="openRfqModal('Industrial RO Skid Specifications')" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-noto-navy hover:text-noto-ocean border-b border-noto-navy pb-1">
+              <span>Request RO Engineering Specs</span>
+              <i class="fas fa-arrow-right text-[10px]"></i>
+            </button>
           </div>
         </div>
-        <div class="lg:col-span-6 bg-noto-navy rounded-2xl p-8 text-white space-y-4">
-          <h3 class="font-bold text-sm text-noto-cyan uppercase tracking-wider">Manufacturing Standards</h3>
-          <ul class="space-y-3 text-xs text-slate-300">
-            <li class="flex items-start gap-2.5">
-              <i class="fas fa-check-circle text-noto-cyan mt-0.5"></i>
-              <span><strong>Orbital TIG Welding:</strong> Sanitary and high-pressure manifold welding inspected with non-destructive testing (NDT).</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i class="fas fa-check-circle text-noto-cyan mt-0.5"></i>
-              <span><strong>Integrated CIP Skid:</strong> Dedicated clean-in-place pumping system with pH neutralization and heater loops.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i class="fas fa-check-circle text-noto-cyan mt-0.5"></i>
-              <span><strong>Hydrostatic Test:</strong> 1.5x working design pressure test conducted before crating.</span>
-            </li>
-          </ul>
+
+        <div class="lg:col-span-7 space-y-8">
+          <div class="grid grid-cols-2 sm:grid-cols-4 border-y border-slate-200 divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+            <div class="py-4 sm:pr-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Capacity</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">50&ndash;5,000 m&sup3;/d</strong>
+            </div>
+            <div class="py-4 sm:px-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Recovery</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">75% &ndash; 85%</strong>
+            </div>
+            <div class="py-4 sm:px-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Rejection</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">&gt; 99.5% TDS</strong>
+            </div>
+            <div class="py-4 sm:pl-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Controls</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">Siemens PLC</strong>
+            </div>
+          </div>
+
+          <div class="divide-y divide-slate-200 border-b border-slate-200 text-sm">
+            <div class="py-4 grid grid-cols-1 sm:grid-cols-12 gap-2">
+              <span class="sm:col-span-4 font-bold text-noto-navy">Orbital TIG Welding</span>
+              <span class="sm:col-span-8 text-slate-600">Sanitary and high-pressure manifold welds inspected via non-destructive testing (NDT) with weld maps.</span>
+            </div>
+            <div class="py-4 grid grid-cols-1 sm:grid-cols-12 gap-2">
+              <span class="sm:col-span-4 font-bold text-noto-navy">Integrated CIP Skid</span>
+              <span class="sm:col-span-8 text-slate-600">Dedicated clean-in-place pumping loop with pH neutralization, micron cartridge guard, and thermal heating.</span>
+            </div>
+            <div class="py-4 grid grid-cols-1 sm:grid-cols-12 gap-2">
+              <span class="sm:col-span-4 font-bold text-noto-navy">1.5x Hydrostatic FAT</span>
+              <span class="sm:col-span-8 text-slate-600">Full working-pressure hydraulic test and wet conductivity run documented prior to export crating.</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- System 2: Containerized WWTP & STP -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-12 border-t border-slate-100">
-        <div class="lg:col-span-6 bg-noto-slate rounded-2xl p-8 border border-slate-200 space-y-4 order-2 lg:order-1">
-          <h3 class="font-bold text-sm text-noto-navy uppercase tracking-wider">Plug & Play Modular Highlights</h3>
-          <ul class="space-y-3 text-xs text-slate-700">
-            <li class="flex items-start gap-2.5">
-              <i class="fas fa-check-circle text-emerald-600 mt-0.5"></i>
-              <span><strong>Standard ISO Dimensions:</strong> Fully transportable via ocean container ships without oversized cargo surcharges.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i class="fas fa-check-circle text-emerald-600 mt-0.5"></i>
-              <span><strong>Climate-Controlled Enclosure:</strong> Thermal polyurethane insulation, internal LED lighting, and forced ventilation.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i class="fas fa-check-circle text-emerald-600 mt-0.5"></i>
-              <span><strong>Effluent Standard Compliance:</strong> Meets strict Indonesian Permenkes and international IFC/World Bank discharge limits.</span>
-            </li>
-          </ul>
-        </div>
-        <div class="lg:col-span-6 space-y-4 order-1 lg:order-2">
-          <span class="text-xs font-mono font-bold text-emerald-600 uppercase">SYSTEM CATEGORY: 02</span>
-          <h2 class="text-2xl font-bold text-noto-navy">Noto-ContBox™ Containerized WWTP & MBR Systems</h2>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            Eliminate months of civil concrete works. Noto-ContBox™ delivers a complete biological wastewater treatment plant and membrane bioreactor pre-assembled, piped, and pre-wired inside an ISO 20ft or 40ft high-cube shipping container.
+      <!-- Dossier 02: Containerized WWTP -->
+      <div id="contbox" class="py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">02 &middot; Modular Biological</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy">Noto-ContBox&trade; Containerized WWTP &amp; MBR</h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Eliminate months of in-situ concrete construction. Noto-ContBox&trade; packages a complete biological membrane bioreactor plant pre-piped and pre-wired inside standard ISO 20ft or 40ft high-cube shipping containers.
           </p>
-          <div class="grid grid-cols-2 gap-3 text-xs font-mono text-slate-700">
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Container:</strong> 20ft / 40ft HC ISO</div>
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Deployment:</strong> &lt; 48 Hours</div>
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Effluent COD:</strong> &lt; 30 mg/L</div>
-            <div class="p-2.5 bg-noto-slate rounded-lg"><strong>Application:</strong> Mining & Resorts</div>
+          <div class="pt-3">
+            <button type="button" onclick="openRfqModal('Noto-ContBox Containerized WWTP')" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-noto-navy hover:text-noto-ocean border-b border-noto-navy pb-1">
+              <span>Request Container Catalog</span>
+              <i class="fas fa-arrow-right text-[10px]"></i>
+            </button>
           </div>
-          <div class="pt-2">
-            <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-600 hover:underline">
-              <span>Request Containerized System Catalog &rarr;</span>
-            </a>
+        </div>
+
+        <div class="lg:col-span-7 space-y-8">
+          <div class="grid grid-cols-2 sm:grid-cols-4 border-y border-slate-200 divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+            <div class="py-4 sm:pr-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Module Size</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">20ft / 40ft HC</strong>
+            </div>
+            <div class="py-4 sm:px-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Deployment</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">&lt; 48 Hours</strong>
+            </div>
+            <div class="py-4 sm:px-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Effluent COD</span>
+              <strong class="font-mono text-sm text-emerald-700 mt-1 block">&lt; 30 mg/L</strong>
+            </div>
+            <div class="py-4 sm:pl-4">
+              <span class="font-mono text-[11px] uppercase text-slate-500 block">Use Cases</span>
+              <strong class="font-mono text-sm text-noto-navy mt-1 block">Mining &amp; Resorts</strong>
+            </div>
+          </div>
+
+          <div class="divide-y divide-slate-200 border-b border-slate-200 text-sm">
+            <div class="py-4 grid grid-cols-1 sm:grid-cols-12 gap-2">
+              <span class="sm:col-span-4 font-bold text-noto-navy">Standard ISO Shipping</span>
+              <span class="sm:col-span-8 text-slate-600">CSC-plated ocean container geometry ships on standard container vessels without out-of-gauge surcharges.</span>
+            </div>
+            <div class="py-4 grid grid-cols-1 sm:grid-cols-12 gap-2">
+              <span class="sm:col-span-4 font-bold text-noto-navy">Climate-Controlled Hull</span>
+              <span class="sm:col-span-8 text-slate-600">Polyurethane thermal insulation, marine epoxy lining, internal LED work lighting, and forced ventilation.</span>
+            </div>
+            <div class="py-4 grid grid-cols-1 sm:grid-cols-12 gap-2">
+              <span class="sm:col-span-4 font-bold text-noto-navy">Regulatory Compliance</span>
+              <span class="sm:col-span-8 text-slate-600">Engineered to meet Indonesian Permenkes/KLHK discharge standards and international IFC/World Bank thresholds.</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- System 3: OEM / ODM Contract Manufacturing -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-12 border-t border-slate-100">
-        <div class="lg:col-span-6 space-y-4">
-          <span class="text-xs font-mono font-bold text-noto-ocean uppercase">CONTRACT FABRICATION</span>
-          <h2 class="text-2xl font-bold text-noto-navy">OEM & Private-Label Skid Fabrication for Global EPCs</h2>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            International engineering contractors and water system integrators leverage our Bandung manufacturing facility as their high-quality, cost-competitive fabrication hub. We build strictly according to your client's P&ID, electrical layout, and approved vendor list (AVL).
+      <!-- Dossier 03: OEM Contract Manufacturing (Replaces Nested 4-Card Box) -->
+      <div id="oem" class="pt-16 lg:pt-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="font-mono text-xs font-bold text-noto-ocean uppercase tracking-widest">03 &middot; Contract Fabrication</span>
+          <h2 class="font-heading text-2xl sm:text-3xl font-bold text-noto-navy">OEM &amp; Private-Label Fabrication for Global EPCs</h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            International EPC contractors leverage our Bandung facility as their cost-competitive fabrication hub. We build strictly to your P&amp;ID, electrical code (IEC, UL, AS/NZS), and Approved Vendor List (AVL) under full NDA.
           </p>
-          <ul class="space-y-2 text-xs text-slate-700">
-            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-ocean"></i> Private-label branding with custom client tags and color powder coating</li>
-            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-ocean"></i> Full documentation dossier: weld maps, material test certificates (MTC), FAT logs</li>
-            <li class="flex items-center gap-2"><i class="fas fa-check text-noto-ocean"></i> Direct sea container export crating addressed straight to your project site</li>
-          </ul>
         </div>
-        <div class="lg:col-span-6 bg-noto-slate rounded-2xl p-8 border border-slate-200 space-y-4">
-          <h3 class="font-bold text-sm text-noto-navy uppercase tracking-wider">OEM Manufacturing Capabilities</h3>
-          <div class="grid grid-cols-2 gap-3 text-xs">
-            <div class="p-3 bg-white rounded-xl border border-slate-200">
-              <strong class="text-noto-navy block">CNC Pipe Cutting</strong>
-              <span class="text-slate-500">Precision beveling up to 24-inch diameter pipe.</span>
-            </div>
-            <div class="p-3 bg-white rounded-xl border border-slate-200">
-              <strong class="text-noto-navy block">Sandblasting & Coating</strong>
-              <span class="text-slate-500">Marine-grade 3-layer epoxy polyurethane coatings.</span>
-            </div>
-            <div class="p-3 bg-white rounded-xl border border-slate-200">
-              <strong class="text-noto-navy block">Panel Shop</strong>
-              <span class="text-slate-500">IP65 electrical control panels with UL/IEC components.</span>
-            </div>
-            <div class="p-3 bg-white rounded-xl border border-slate-200">
-              <strong class="text-noto-navy block">Live Video FAT</strong>
-              <span class="text-slate-500">Remote inspection of hydraulic testing via high-res video.</span>
-            </div>
+
+        <div class="lg:col-span-7 border-t border-slate-200 divide-y divide-slate-200">
+          <div class="py-5 grid grid-cols-1 sm:grid-cols-12 gap-3 items-baseline">
+            <span class="sm:col-span-1 font-mono text-xs text-slate-400">01</span>
+            <strong class="sm:col-span-4 text-sm text-noto-navy">CNC Pipe Cutting &amp; Welding</strong>
+            <span class="sm:col-span-7 text-sm text-slate-600">Precision beveling up to 24-inch diameter in SS304, SS316L, Super Duplex, and Sch80 uPVC/CPVC.</span>
+          </div>
+          <div class="py-5 grid grid-cols-1 sm:grid-cols-12 gap-3 items-baseline">
+            <span class="sm:col-span-1 font-mono text-xs text-slate-400">02</span>
+            <strong class="sm:col-span-4 text-sm text-noto-navy">Sandblasting &amp; Marine Coating</strong>
+            <span class="sm:col-span-7 text-sm text-slate-600">SA 2.5 abrasive blasting and 3-layer marine epoxy polyurethane coating in custom client brand RAL colors.</span>
+          </div>
+          <div class="py-5 grid grid-cols-1 sm:grid-cols-12 gap-3 items-baseline">
+            <span class="sm:col-span-1 font-mono text-xs text-slate-400">03</span>
+            <strong class="sm:col-span-4 text-sm text-noto-navy">In-House Panel Shop</strong>
+            <span class="sm:col-span-7 text-sm text-slate-600">IP65 control cabinets built with UL/IEC-certified switchgear, VFDs, Siemens/Allen-Bradley PLCs, and wiring ferrules.</span>
+          </div>
+          <div class="py-5 grid grid-cols-1 sm:grid-cols-12 gap-3 items-baseline">
+            <span class="sm:col-span-1 font-mono text-xs text-slate-400">04</span>
+            <strong class="sm:col-span-4 text-sm text-noto-navy">Witnessed Live Video FAT</strong>
+            <span class="sm:col-span-7 text-sm text-slate-600">Remote high-resolution video inspection of pressure tests, PLC interlocks, and full 3.1 MTC dossier sign-off.</span>
           </div>
         </div>
       </div>
@@ -263,21 +352,101 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-noto-dark text-slate-400 text-xs py-12 border-t border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <img src="assets/logo/logo-noto.png" alt="Noto Logo" class="h-8 w-auto">
-        <span class="text-white font-bold">&copy; 1995 - 2026 PT Noto Water Envirotech. All rights reserved.</span>
+  <!-- Bottom CTA Band -->
+  <section class="py-16 bg-noto-navy text-white border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div class="space-y-1">
+        <span class="font-mono text-xs uppercase tracking-widest text-noto-ice/80">Next Step</span>
+        <h2 class="font-heading text-2xl sm:text-3xl font-bold">Need Preliminary Skid Sizing or OEM Quote?</h2>
       </div>
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="hover:text-white transition-colors">Home</a>
-        <a href="about.html" class="hover:text-white transition-colors">About Us</a>
-        <a href="technology.html" class="hover:text-white transition-colors">R&D & Engineering</a>
-        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      <div class="flex flex-wrap gap-4">
+        <a href="diagnostic.html" class="px-6 py-3.5 border border-white/25 hover:bg-white/10 text-white font-semibold text-xs uppercase tracking-widest transition-colors">
+          Run Sizing Calculator
+        </a>
+        <button type="button" onclick="openRfqModal('Custom Skid Manufacturing')" class="px-6 py-3.5 bg-white hover:bg-noto-ice text-noto-navy font-bold text-xs uppercase tracking-widest transition-colors">
+          Submit Technical RFQ
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unified Footer -->
+  <footer class="bg-noto-dark text-slate-400 text-xs border-t border-white/10 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+        <div class="space-y-4">
+          <img src="assets/logo/logo-noto.png" alt="PT Noto Water Envirotech" class="h-9 w-auto brightness-200 grayscale contrast-200">
+          <p class="text-slate-400 text-sm leading-relaxed font-light">PT Noto Water Envirotech engineers, fabricates, and exports industrial water and wastewater treatment systems worldwide.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Core Solutions</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="solutions.html#ro" class="hover:text-white transition-colors">Industrial RO Skids</a></li>
+            <li><a href="solutions.html#contbox" class="hover:text-white transition-colors">Containerized WWTP / MBR</a></li>
+            <li><a href="solutions.html#oem" class="hover:text-white transition-colors">OEM Skid Fabrication</a></li>
+            <li><a href="diagnostic.html" class="hover:text-white transition-colors">RO Sizing Calculator</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Company</h4>
+          <ul class="space-y-2.5 text-sm font-light">
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="technology.html" class="hover:text-white transition-colors">R&amp;D Analytical Lab</a></li>
+            <li><a href="export-import.html" class="hover:text-white transition-colors">Global Export Logistics</a></li>
+            <li><a href="portfolio.html" class="hover:text-white transition-colors">Case Studies</a></li>
+            <li><a href="news.html" class="hover:text-white transition-colors">Technical Insights</a></li>
+            <li><a href="careers.html" class="hover:text-white transition-colors">Engineering Careers</a></li>
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider font-mono">Contact &amp; Bay</h4>
+          <div class="space-y-2 text-sm font-light">
+            <p><strong class="text-white font-medium">HQ &amp; Lab:</strong> Bandung, West Java, Indonesia</p>
+            <p><strong class="text-white font-medium">Export Port:</strong> Tanjung Priok (IDTPP)</p>
+            <p><strong class="text-white font-medium">Email:</strong> <a href="mailto:global@noto.asia" class="hover:text-white">global@noto.asia</a></p>
+            <p><strong class="text-white font-medium">Phone:</strong> <a href="tel:+622220568900" class="hover:text-white font-mono">+62 22 2056 8900</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] font-mono text-slate-500">
+        <div>&copy; 1995 &ndash; 2026 PT Noto Water Envirotech. All rights reserved.</div>
+        <div class="flex items-center gap-6">
+          <a href="contact.html" class="hover:text-slate-300 transition-colors">Contact &amp; RFQ</a>
+          <a href="export-import.html" class="hover:text-slate-300 transition-colors">Export Compliance</a>
+          <a href="about.html" class="hover:text-slate-300 transition-colors">ISO 9001:2015</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- RFQ Modal -->
+  <div id="rfqModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div class="bg-white max-w-lg w-full p-8 max-h-[90vh] overflow-y-auto relative border-t-4 border-noto-navy shadow-2xl">
+      <button type="button" onclick="closeRfqModal()" aria-label="Close modal" class="absolute top-6 right-6 text-slate-400 hover:text-noto-navy text-xl"><i class="fas fa-times"></i></button>
+      <div class="mb-6 space-y-1">
+        <span class="font-mono text-[11px] font-bold text-noto-ocean uppercase tracking-widest">Project Intake</span>
+        <h3 class="font-heading text-2xl font-bold text-noto-navy">Technical RFQ</h3>
+      </div>
+      <form onsubmit="handleModalRfqSubmit(event)" class="space-y-4 text-sm">
+        <div>
+          <label for="modalSystem" class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Target System</label>
+          <input type="text" id="modalSystem" class="w-full px-4 py-2.5 border border-slate-300 bg-slate-50 font-mono text-xs" readonly>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Your Name *</label><input type="text" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Company / EPC *</label><input type="text" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Corporate Email *</label><input type="email" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+          <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">WhatsApp / Phone *</label><input type="tel" required class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></div>
+        </div>
+        <div><label class="block font-mono text-[11px] font-bold uppercase tracking-wider text-noto-navy mb-1.5">Parameters / Notes</label><textarea rows="2" class="w-full px-4 py-2.5 border border-slate-300 focus:border-noto-navy focus:outline-none"></textarea></div>
+        <button type="submit" class="w-full py-3.5 bg-noto-navy hover:bg-noto-ocean text-white font-bold text-xs uppercase tracking-widest transition-colors">Submit Technical RFQ</button>
+        <div id="modalRfqSuccess" class="hidden p-3 bg-emerald-50 border-l-2 border-emerald-600 text-emerald-900 text-xs"><strong>RFQ Submitted.</strong> Our engineering team will respond within 24&ndash;48 hours.</div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/noto-ui.js"></script>
 </body>
 </html>
